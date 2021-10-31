@@ -22,9 +22,27 @@ public class ItemButton : MonoBehaviour
 
     public void Press()
     {
-        if(GameManager.instance.itemsHeld[buttonValue] != "")
+        // if selecting an item from player inventory menu
+        if (GameMenu.instance.theMenu.activeInHierarchy)
         {
+            if (GameManager.instance.itemsHeld[buttonValue] != "")
+            {
                 GameMenu.instance.SelectItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
+            }
+        }
+
+        // if selecting an item in a shop menu
+        if (Shop.instance.shopMenu.activeInHierarchy)
+        {
+            if (Shop.instance.buyMenu.activeInHierarchy)
+            {
+                Shop.instance.SelectBuyItem(GameManager.instance.GetItemDetails(Shop.instance.itemsForSale[buttonValue]));
+            }
+
+            if(Shop.instance.sellMenu.activeInHierarchy)
+            {
+
+            }
         }
     }
 }

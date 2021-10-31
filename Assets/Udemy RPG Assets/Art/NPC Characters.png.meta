@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: NPC_0
+    second: ShopKeeper
   - first:
       213: 21300002
     second: NPC_1
@@ -163,13 +163,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC_0
+      name: ShopKeeper
       rect:
         serializedVersion: 2
-        x: 1
-        y: 51
-        width: 15
-        height: 16
+        x: 18
+        y: 50
+        width: 12
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
