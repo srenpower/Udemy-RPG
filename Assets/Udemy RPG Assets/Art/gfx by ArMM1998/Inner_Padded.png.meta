@@ -1,0 +1,7233 @@
+fileFormatVersion: 2
+guid: 1c6d3937a6785fd48aacd0d71d6f8c96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Inner_Padded_0
+  - first:
+      213: 21300002
+    second: Inner_Padded_1
+  - first:
+      213: 21300004
+    second: Inner_Padded_2
+  - first:
+      213: 21300006
+    second: Inner_Padded_3
+  - first:
+      213: 21300008
+    second: Inner_Padded_4
+  - first:
+      213: 21300010
+    second: Inner_Padded_5
+  - first:
+      213: 21300012
+    second: Inner_Padded_6
+  - first:
+      213: 21300014
+    second: Inner_Padded_7
+  - first:
+      213: 21300016
+    second: Inner_Padded_8
+  - first:
+      213: 21300018
+    second: Inner_Padded_9
+  - first:
+      213: 21300020
+    second: Inner_Padded_10
+  - first:
+      213: 21300022
+    second: Inner_Padded_11
+  - first:
+      213: 21300024
+    second: Inner_Padded_12
+  - first:
+      213: 21300026
+    second: Inner_Padded_13
+  - first:
+      213: 21300028
+    second: Inner_Padded_14
+  - first:
+      213: 21300030
+    second: Inner_Padded_15
+  - first:
+      213: 21300032
+    second: Inner_Padded_16
+  - first:
+      213: 21300034
+    second: Inner_Padded_17
+  - first:
+      213: 21300036
+    second: Inner_Padded_18
+  - first:
+      213: 21300038
+    second: Inner_Padded_19
+  - first:
+      213: 21300040
+    second: Inner_Padded_20
+  - first:
+      213: 21300042
+    second: Inner_Padded_21
+  - first:
+      213: 21300044
+    second: Inner_Padded_22
+  - first:
+      213: 21300046
+    second: Inner_Padded_23
+  - first:
+      213: 21300048
+    second: Inner_Padded_24
+  - first:
+      213: 21300050
+    second: Inner_Padded_25
+  - first:
+      213: 21300052
+    second: Inner_Padded_26
+  - first:
+      213: 21300054
+    second: Inner_Padded_27
+  - first:
+      213: 21300056
+    second: Inner_Padded_28
+  - first:
+      213: 21300058
+    second: Inner_Padded_29
+  - first:
+      213: 21300060
+    second: Inner_Padded_30
+  - first:
+      213: 21300062
+    second: Inner_Padded_31
+  - first:
+      213: 21300064
+    second: Inner_Padded_32
+  - first:
+      213: 21300066
+    second: Inner_Padded_33
+  - first:
+      213: 21300068
+    second: Inner_Padded_34
+  - first:
+      213: 21300070
+    second: Inner_Padded_35
+  - first:
+      213: 21300072
+    second: Inner_Padded_36
+  - first:
+      213: 21300074
+    second: Inner_Padded_37
+  - first:
+      213: 21300076
+    second: Inner_Padded_38
+  - first:
+      213: 21300078
+    second: Inner_Padded_39
+  - first:
+      213: 21300080
+    second: Inner_Padded_40
+  - first:
+      213: 21300082
+    second: Inner_Padded_41
+  - first:
+      213: 21300084
+    second: Inner_Padded_42
+  - first:
+      213: 21300086
+    second: Inner_Padded_43
+  - first:
+      213: 21300088
+    second: Inner_Padded_44
+  - first:
+      213: 21300090
+    second: Inner_Padded_45
+  - first:
+      213: 21300092
+    second: Inner_Padded_46
+  - first:
+      213: 21300094
+    second: Inner_Padded_47
+  - first:
+      213: 21300096
+    second: Inner_Padded_48
+  - first:
+      213: 21300098
+    second: Inner_Padded_49
+  - first:
+      213: 21300100
+    second: Inner_Padded_50
+  - first:
+      213: 21300102
+    second: Inner_Padded_51
+  - first:
+      213: 21300104
+    second: Inner_Padded_52
+  - first:
+      213: 21300106
+    second: Inner_Padded_53
+  - first:
+      213: 21300108
+    second: Inner_Padded_54
+  - first:
+      213: 21300110
+    second: Inner_Padded_55
+  - first:
+      213: 21300112
+    second: Inner_Padded_56
+  - first:
+      213: 21300114
+    second: Inner_Padded_57
+  - first:
+      213: 21300116
+    second: Inner_Padded_58
+  - first:
+      213: 21300118
+    second: Inner_Padded_59
+  - first:
+      213: 21300120
+    second: Inner_Padded_60
+  - first:
+      213: 21300122
+    second: Inner_Padded_61
+  - first:
+      213: 21300124
+    second: Inner_Padded_62
+  - first:
+      213: 21300126
+    second: Inner_Padded_63
+  - first:
+      213: 21300128
+    second: Inner_Padded_64
+  - first:
+      213: 21300130
+    second: Inner_Padded_65
+  - first:
+      213: 21300132
+    second: Inner_Padded_66
+  - first:
+      213: 21300134
+    second: Inner_Padded_67
+  - first:
+      213: 21300136
+    second: Inner_Padded_68
+  - first:
+      213: 21300138
+    second: Inner_Padded_69
+  - first:
+      213: 21300140
+    second: Inner_Padded_70
+  - first:
+      213: 21300142
+    second: Inner_Padded_71
+  - first:
+      213: 21300144
+    second: Inner_Padded_72
+  - first:
+      213: 21300146
+    second: Inner_Padded_73
+  - first:
+      213: 21300148
+    second: Inner_Padded_74
+  - first:
+      213: 21300150
+    second: Inner_Padded_75
+  - first:
+      213: 21300152
+    second: Inner_Padded_76
+  - first:
+      213: 21300154
+    second: Inner_Padded_77
+  - first:
+      213: 21300156
+    second: Inner_Padded_78
+  - first:
+      213: 21300158
+    second: Inner_Padded_79
+  - first:
+      213: 21300160
+    second: Inner_Padded_80
+  - first:
+      213: 21300162
+    second: Inner_Padded_81
+  - first:
+      213: 21300164
+    second: Inner_Padded_82
+  - first:
+      213: 21300166
+    second: Inner_Padded_83
+  - first:
+      213: 21300168
+    second: Inner_Padded_84
+  - first:
+      213: 21300170
+    second: Inner_Padded_85
+  - first:
+      213: 21300172
+    second: Inner_Padded_86
+  - first:
+      213: 21300174
+    second: Inner_Padded_87
+  - first:
+      213: 21300176
+    second: Inner_Padded_88
+  - first:
+      213: 21300178
+    second: Inner_Padded_89
+  - first:
+      213: 21300180
+    second: Inner_Padded_90
+  - first:
+      213: 21300182
+    second: Inner_Padded_91
+  - first:
+      213: 21300184
+    second: Inner_Padded_92
+  - first:
+      213: 21300186
+    second: Inner_Padded_93
+  - first:
+      213: 21300188
+    second: Inner_Padded_94
+  - first:
+      213: 21300190
+    second: Inner_Padded_95
+  - first:
+      213: 21300192
+    second: Inner_Padded_96
+  - first:
+      213: 21300194
+    second: Inner_Padded_97
+  - first:
+      213: 21300196
+    second: Inner_Padded_98
+  - first:
+      213: 21300198
+    second: Inner_Padded_99
+  - first:
+      213: 21300200
+    second: Inner_Padded_100
+  - first:
+      213: 21300202
+    second: Inner_Padded_101
+  - first:
+      213: 21300204
+    second: Inner_Padded_102
+  - first:
+      213: 21300206
+    second: Inner_Padded_103
+  - first:
+      213: 21300208
+    second: Inner_Padded_104
+  - first:
+      213: 21300210
+    second: Inner_Padded_105
+  - first:
+      213: 21300212
+    second: Inner_Padded_106
+  - first:
+      213: 21300214
+    second: Inner_Padded_107
+  - first:
+      213: 21300216
+    second: Inner_Padded_108
+  - first:
+      213: 21300218
+    second: Inner_Padded_109
+  - first:
+      213: 21300220
+    second: Inner_Padded_110
+  - first:
+      213: 21300222
+    second: Inner_Padded_111
+  - first:
+      213: 21300224
+    second: Inner_Padded_112
+  - first:
+      213: 21300226
+    second: Inner_Padded_113
+  - first:
+      213: 21300228
+    second: Inner_Padded_114
+  - first:
+      213: 21300230
+    second: Inner_Padded_115
+  - first:
+      213: 21300232
+    second: Inner_Padded_116
+  - first:
+      213: 21300234
+    second: Inner_Padded_117
+  - first:
+      213: 21300236
+    second: Inner_Padded_118
+  - first:
+      213: 21300238
+    second: Inner_Padded_119
+  - first:
+      213: 21300240
+    second: Inner_Padded_120
+  - first:
+      213: 21300242
+    second: Inner_Padded_121
+  - first:
+      213: 21300244
+    second: Inner_Padded_122
+  - first:
+      213: 21300246
+    second: Inner_Padded_123
+  - first:
+      213: 21300248
+    second: Inner_Padded_124
+  - first:
+      213: 21300250
+    second: Inner_Padded_125
+  - first:
+      213: 21300252
+    second: Inner_Padded_126
+  - first:
+      213: 21300254
+    second: Inner_Padded_127
+  - first:
+      213: 21300256
+    second: Inner_Padded_128
+  - first:
+      213: 21300258
+    second: Inner_Padded_129
+  - first:
+      213: 21300260
+    second: Inner_Padded_130
+  - first:
+      213: 21300262
+    second: Inner_Padded_131
+  - first:
+      213: 21300264
+    second: Inner_Padded_132
+  - first:
+      213: 21300266
+    second: Inner_Padded_133
+  - first:
+      213: 21300268
+    second: Inner_Padded_134
+  - first:
+      213: 21300270
+    second: Inner_Padded_135
+  - first:
+      213: 21300272
+    second: Inner_Padded_136
+  - first:
+      213: 21300274
+    second: Inner_Padded_137
+  - first:
+      213: 21300276
+    second: Inner_Padded_138
+  - first:
+      213: 21300278
+    second: Inner_Padded_139
+  - first:
+      213: 21300280
+    second: Inner_Padded_140
+  - first:
+      213: 21300282
+    second: Inner_Padded_141
+  - first:
+      213: 21300284
+    second: Inner_Padded_142
+  - first:
+      213: 21300286
+    second: Inner_Padded_143
+  - first:
+      213: 21300288
+    second: Inner_Padded_144
+  - first:
+      213: 21300290
+    second: Inner_Padded_145
+  - first:
+      213: 21300292
+    second: Inner_Padded_146
+  - first:
+      213: 21300294
+    second: Inner_Padded_147
+  - first:
+      213: 21300296
+    second: Inner_Padded_148
+  - first:
+      213: 21300298
+    second: Inner_Padded_149
+  - first:
+      213: 21300300
+    second: Inner_Padded_150
+  - first:
+      213: 21300302
+    second: Inner_Padded_151
+  - first:
+      213: 21300304
+    second: Inner_Padded_152
+  - first:
+      213: 21300306
+    second: Inner_Padded_153
+  - first:
+      213: 21300308
+    second: Inner_Padded_154
+  - first:
+      213: 21300310
+    second: Inner_Padded_155
+  - first:
+      213: 21300312
+    second: Inner_Padded_156
+  - first:
+      213: 21300314
+    second: Inner_Padded_157
+  - first:
+      213: 21300316
+    second: Inner_Padded_158
+  - first:
+      213: 21300318
+    second: Inner_Padded_159
+  - first:
+      213: 21300320
+    second: Inner_Padded_160
+  - first:
+      213: 21300322
+    second: Inner_Padded_161
+  - first:
+      213: 21300324
+    second: Inner_Padded_162
+  - first:
+      213: 21300326
+    second: Inner_Padded_163
+  - first:
+      213: 21300328
+    second: Inner_Padded_164
+  - first:
+      213: 21300330
+    second: Inner_Padded_165
+  - first:
+      213: 21300332
+    second: Inner_Padded_166
+  - first:
+      213: 21300334
+    second: Inner_Padded_167
+  - first:
+      213: 21300336
+    second: Inner_Padded_168
+  - first:
+      213: 21300338
+    second: Inner_Padded_169
+  - first:
+      213: 21300340
+    second: Inner_Padded_170
+  - first:
+      213: 21300342
+    second: Inner_Padded_171
+  - first:
+      213: 21300344
+    second: Inner_Padded_172
+  - first:
+      213: 21300346
+    second: Inner_Padded_173
+  - first:
+      213: 21300348
+    second: Inner_Padded_174
+  - first:
+      213: 21300350
+    second: Inner_Padded_175
+  - first:
+      213: 21300352
+    second: Inner_Padded_176
+  - first:
+      213: 21300354
+    second: Inner_Padded_177
+  - first:
+      213: 21300356
+    second: Inner_Padded_178
+  - first:
+      213: 21300358
+    second: Inner_Padded_179
+  - first:
+      213: 21300360
+    second: Inner_Padded_180
+  - first:
+      213: 21300362
+    second: Inner_Padded_181
+  - first:
+      213: 21300364
+    second: Inner_Padded_182
+  - first:
+      213: 21300366
+    second: Inner_Padded_183
+  - first:
+      213: 21300368
+    second: Inner_Padded_184
+  - first:
+      213: 21300370
+    second: Inner_Padded_185
+  - first:
+      213: 21300372
+    second: Inner_Padded_186
+  - first:
+      213: 21300374
+    second: Inner_Padded_187
+  - first:
+      213: 21300376
+    second: Inner_Padded_188
+  - first:
+      213: 21300378
+    second: Inner_Padded_189
+  - first:
+      213: 21300380
+    second: Inner_Padded_190
+  - first:
+      213: 21300382
+    second: Inner_Padded_191
+  - first:
+      213: 21300384
+    second: Inner_Padded_192
+  - first:
+      213: 21300386
+    second: Inner_Padded_193
+  - first:
+      213: 21300388
+    second: Inner_Padded_194
+  - first:
+      213: 21300390
+    second: Inner_Padded_195
+  - first:
+      213: 21300392
+    second: Inner_Padded_196
+  - first:
+      213: 21300394
+    second: Inner_Padded_197
+  - first:
+      213: 21300396
+    second: Inner_Padded_198
+  - first:
+      213: 21300398
+    second: Inner_Padded_199
+  - first:
+      213: 21300400
+    second: Inner_Padded_200
+  - first:
+      213: 21300402
+    second: Inner_Padded_201
+  - first:
+      213: 21300404
+    second: Inner_Padded_202
+  - first:
+      213: 21300406
+    second: Inner_Padded_203
+  - first:
+      213: 21300408
+    second: Inner_Padded_204
+  - first:
+      213: 21300410
+    second: Inner_Padded_205
+  - first:
+      213: 21300412
+    second: Inner_Padded_206
+  - first:
+      213: 21300414
+    second: Inner_Padded_207
+  - first:
+      213: 21300416
+    second: Inner_Padded_208
+  - first:
+      213: 21300418
+    second: Inner_Padded_209
+  - first:
+      213: 21300420
+    second: Inner_Padded_210
+  - first:
+      213: 21300422
+    second: Inner_Padded_211
+  - first:
+      213: 21300424
+    second: Inner_Padded_212
+  - first:
+      213: 21300426
+    second: Inner_Padded_213
+  - first:
+      213: 21300428
+    second: Inner_Padded_214
+  - first:
+      213: 21300430
+    second: Inner_Padded_215
+  - first:
+      213: 21300432
+    second: Inner_Padded_216
+  - first:
+      213: 21300434
+    second: Inner_Padded_217
+  - first:
+      213: 21300436
+    second: Inner_Padded_218
+  - first:
+      213: 21300438
+    second: Inner_Padded_219
+  - first:
+      213: 21300440
+    second: Inner_Padded_220
+  - first:
+      213: 21300442
+    second: Inner_Padded_221
+  - first:
+      213: 21300444
+    second: Inner_Padded_222
+  - first:
+      213: 21300446
+    second: Inner_Padded_223
+  - first:
+      213: 21300448
+    second: Inner_Padded_224
+  - first:
+      213: 21300450
+    second: Inner_Padded_225
+  - first:
+      213: 21300452
+    second: Inner_Padded_226
+  - first:
+      213: 21300454
+    second: Inner_Padded_227
+  - first:
+      213: 21300456
+    second: Inner_Padded_228
+  - first:
+      213: 21300458
+    second: Inner_Padded_229
+  - first:
+      213: 21300460
+    second: Inner_Padded_230
+  - first:
+      213: 21300462
+    second: Inner_Padded_231
+  - first:
+      213: 21300464
+    second: Inner_Padded_232
+  - first:
+      213: 21300466
+    second: Inner_Padded_233
+  - first:
+      213: 21300468
+    second: Inner_Padded_234
+  - first:
+      213: 21300470
+    second: Inner_Padded_235
+  - first:
+      213: 21300472
+    second: Inner_Padded_236
+  - first:
+      213: 21300474
+    second: Inner_Padded_237
+  - first:
+      213: 21300476
+    second: Inner_Padded_238
+  - first:
+      213: 21300478
+    second: Inner_Padded_239
+  - first:
+      213: 21300480
+    second: Inner_Padded_240
+  - first:
+      213: 21300482
+    second: Inner_Padded_241
+  - first:
+      213: 21300484
+    second: Inner_Padded_242
+  - first:
+      213: 21300486
+    second: Inner_Padded_243
+  - first:
+      213: 21300488
+    second: Inner_Padded_244
+  - first:
+      213: 21300490
+    second: Inner_Padded_245
+  - first:
+      213: 21300492
+    second: Inner_Padded_246
+  - first:
+      213: 21300494
+    second: Inner_Padded_247
+  - first:
+      213: 21300496
+    second: Inner_Padded_248
+  - first:
+      213: 21300498
+    second: Inner_Padded_249
+  - first:
+      213: 21300500
+    second: Inner_Padded_250
+  - first:
+      213: 21300502
+    second: Inner_Padded_251
+  - first:
+      213: 21300504
+    second: Inner_Padded_252
+  - first:
+      213: 21300506
+    second: Inner_Padded_253
+  - first:
+      213: 21300508
+    second: Inner_Padded_254
+  - first:
+      213: 21300510
+    second: Inner_Padded_255
+  - first:
+      213: 21300512
+    second: Inner_Padded_256
+  - first:
+      213: 21300514
+    second: Inner_Padded_257
+  - first:
+      213: 21300516
+    second: Inner_Padded_258
+  - first:
+      213: 21300518
+    second: Inner_Padded_259
+  - first:
+      213: 21300520
+    second: Inner_Padded_260
+  - first:
+      213: 21300522
+    second: Inner_Padded_261
+  - first:
+      213: 21300524
+    second: Inner_Padded_262
+  - first:
+      213: -7765340765311156896
+    second: Inner_Padded_0
+  - first:
+      213: 2580186581647319791
+    second: Inner_Padded_1
+  - first:
+      213: 8892348142542693023
+    second: Inner_Padded_2
+  - first:
+      213: 6380866370481033730
+    second: Inner_Padded_3
+  - first:
+      213: 2147142874637245378
+    second: Inner_Padded_4
+  - first:
+      213: -4414623821840939184
+    second: Inner_Padded_5
+  - first:
+      213: -8119882843213897026
+    second: Inner_Padded_6
+  - first:
+      213: 3880739403880594226
+    second: Inner_Padded_7
+  - first:
+      213: 1454984967426123365
+    second: Inner_Padded_8
+  - first:
+      213: 7675602670195044547
+    second: Inner_Padded_9
+  - first:
+      213: -4551933015216546100
+    second: Inner_Padded_10
+  - first:
+      213: -3451380355547274156
+    second: Inner_Padded_11
+  - first:
+      213: 8797256029484361561
+    second: Inner_Padded_12
+  - first:
+      213: -6805668387071752040
+    second: Inner_Padded_13
+  - first:
+      213: 2662269947271085146
+    second: Inner_Padded_14
+  - first:
+      213: 4326942827600112983
+    second: Inner_Padded_15
+  - first:
+      213: 1484671314125194947
+    second: Inner_Padded_16
+  - first:
+      213: 7514839878560215422
+    second: Inner_Padded_17
+  - first:
+      213: -3905707551388259020
+    second: Inner_Padded_18
+  - first:
+      213: -1282180840938844063
+    second: Inner_Padded_19
+  - first:
+      213: -1718645605185879969
+    second: Inner_Padded_20
+  - first:
+      213: 6631095850362908756
+    second: Inner_Padded_21
+  - first:
+      213: -3549468317928343412
+    second: Inner_Padded_22
+  - first:
+      213: 6492563147836134142
+    second: Inner_Padded_23
+  - first:
+      213: 6533372242571179382
+    second: Inner_Padded_24
+  - first:
+      213: 8312121420316480357
+    second: Inner_Padded_25
+  - first:
+      213: 2621866145602492386
+    second: Inner_Padded_26
+  - first:
+      213: -8805298690001974742
+    second: Inner_Padded_27
+  - first:
+      213: 8764456813456034120
+    second: Inner_Padded_28
+  - first:
+      213: 5246843332675199658
+    second: Inner_Padded_29
+  - first:
+      213: -6934181366471632510
+    second: Inner_Padded_30
+  - first:
+      213: -1029348211869416876
+    second: Inner_Padded_31
+  - first:
+      213: -8062083696077461233
+    second: Inner_Padded_32
+  - first:
+      213: -6538027650677269094
+    second: Inner_Padded_33
+  - first:
+      213: -3398578776293462265
+    second: Inner_Padded_34
+  - first:
+      213: 320153985658958573
+    second: Inner_Padded_35
+  - first:
+      213: 1670367113791681303
+    second: Inner_Padded_36
+  - first:
+      213: -2696971472498651007
+    second: Inner_Padded_37
+  - first:
+      213: 2195287258283610954
+    second: Inner_Padded_38
+  - first:
+      213: -2214425170317327975
+    second: Inner_Padded_39
+  - first:
+      213: -1806975416527859705
+    second: Inner_Padded_40
+  - first:
+      213: 4590539971417490291
+    second: Inner_Padded_41
+  - first:
+      213: -1984452628239433441
+    second: Inner_Padded_42
+  - first:
+      213: 4402655858793827231
+    second: Inner_Padded_43
+  - first:
+      213: 4594021317099947262
+    second: Inner_Padded_44
+  - first:
+      213: -2273348104704629498
+    second: Inner_Padded_45
+  - first:
+      213: 1420084947167019233
+    second: Inner_Padded_46
+  - first:
+      213: -6871264826392221451
+    second: Inner_Padded_47
+  - first:
+      213: 6262823312361277354
+    second: Inner_Padded_48
+  - first:
+      213: 7788464959813895821
+    second: Inner_Padded_49
+  - first:
+      213: 5353516888080982959
+    second: Inner_Padded_50
+  - first:
+      213: -6988254585792695966
+    second: Inner_Padded_51
+  - first:
+      213: 7187724846803771264
+    second: Inner_Padded_52
+  - first:
+      213: 2178297591342737297
+    second: Inner_Padded_53
+  - first:
+      213: 5338430147541216212
+    second: Inner_Padded_54
+  - first:
+      213: 1043733859238495789
+    second: Inner_Padded_55
+  - first:
+      213: -4639423304627035932
+    second: Inner_Padded_56
+  - first:
+      213: 2764908850479090251
+    second: Inner_Padded_57
+  - first:
+      213: -6229373370122165997
+    second: Inner_Padded_58
+  - first:
+      213: -8379543764334730050
+    second: Inner_Padded_59
+  - first:
+      213: 743108359140044231
+    second: Inner_Padded_60
+  - first:
+      213: -1001882741263214185
+    second: Inner_Padded_61
+  - first:
+      213: 2981695914551971901
+    second: Inner_Padded_62
+  - first:
+      213: -8208096054657894994
+    second: Inner_Padded_63
+  - first:
+      213: -1928311325123505619
+    second: Inner_Padded_64
+  - first:
+      213: 6907072467047585164
+    second: Inner_Padded_65
+  - first:
+      213: -7013660036674787717
+    second: Inner_Padded_66
+  - first:
+      213: -336828962199846330
+    second: Inner_Padded_67
+  - first:
+      213: -7220853656806097741
+    second: Inner_Padded_68
+  - first:
+      213: 2215636435247114346
+    second: Inner_Padded_69
+  - first:
+      213: 8208700528233903584
+    second: Inner_Padded_70
+  - first:
+      213: 1851533477192154519
+    second: Inner_Padded_71
+  - first:
+      213: 214558055595262972
+    second: Inner_Padded_72
+  - first:
+      213: 6655372731360253001
+    second: Inner_Padded_73
+  - first:
+      213: 3047335573968944048
+    second: Inner_Padded_74
+  - first:
+      213: 4280983365118944171
+    second: Inner_Padded_75
+  - first:
+      213: -6597008068530152383
+    second: Inner_Padded_76
+  - first:
+      213: -2488559182788816387
+    second: Inner_Padded_77
+  - first:
+      213: 4891545775135454112
+    second: Inner_Padded_78
+  - first:
+      213: 6221806527858963777
+    second: Inner_Padded_79
+  - first:
+      213: -1998692510180357370
+    second: Inner_Padded_80
+  - first:
+      213: -4544014734459709580
+    second: Inner_Padded_81
+  - first:
+      213: -4989067950340730536
+    second: Inner_Padded_82
+  - first:
+      213: 5379686727392979763
+    second: Inner_Padded_83
+  - first:
+      213: -276380576091014117
+    second: Inner_Padded_84
+  - first:
+      213: 6841420272667359990
+    second: Inner_Padded_85
+  - first:
+      213: -1654626426483793535
+    second: Inner_Padded_86
+  - first:
+      213: 6777745417070910350
+    second: Inner_Padded_87
+  - first:
+      213: 5130786640103970855
+    second: Inner_Padded_88
+  - first:
+      213: 1382143132879837443
+    second: Inner_Padded_89
+  - first:
+      213: -5662798872065366822
+    second: Inner_Padded_90
+  - first:
+      213: -9131777589059801620
+    second: Inner_Padded_91
+  - first:
+      213: -2369045586250530054
+    second: Inner_Padded_92
+  - first:
+      213: 4947511724364360152
+    second: Inner_Padded_93
+  - first:
+      213: -7273201888640890149
+    second: Inner_Padded_94
+  - first:
+      213: 4294772307176450430
+    second: Inner_Padded_95
+  - first:
+      213: -4423599708492462806
+    second: Inner_Padded_96
+  - first:
+      213: -8971202864840401445
+    second: Inner_Padded_97
+  - first:
+      213: -8122268172745790317
+    second: Inner_Padded_98
+  - first:
+      213: 4028265010006875339
+    second: Inner_Padded_99
+  - first:
+      213: -4396425226203366967
+    second: Inner_Padded_100
+  - first:
+      213: -3619829175923437514
+    second: Inner_Padded_101
+  - first:
+      213: -5210070773876731992
+    second: Inner_Padded_102
+  - first:
+      213: -380969932933191711
+    second: Inner_Padded_103
+  - first:
+      213: -8309406039788564824
+    second: Inner_Padded_104
+  - first:
+      213: 1259094635295504915
+    second: Inner_Padded_105
+  - first:
+      213: -4801297482416552243
+    second: Inner_Padded_106
+  - first:
+      213: -7861795008353947745
+    second: Inner_Padded_107
+  - first:
+      213: -7264194159141009533
+    second: Inner_Padded_108
+  - first:
+      213: -7312590603953690968
+    second: Inner_Padded_109
+  - first:
+      213: 4419053224977842107
+    second: Inner_Padded_110
+  - first:
+      213: 9129228132787189639
+    second: Inner_Padded_111
+  - first:
+      213: 5768017805228012037
+    second: Inner_Padded_112
+  - first:
+      213: -8208876765049213797
+    second: Inner_Padded_113
+  - first:
+      213: 4277056103232639358
+    second: Inner_Padded_114
+  - first:
+      213: 8717547384845322858
+    second: Inner_Padded_115
+  - first:
+      213: 694964940316151332
+    second: Inner_Padded_116
+  - first:
+      213: -364915008319828409
+    second: Inner_Padded_117
+  - first:
+      213: 6789614310220895838
+    second: Inner_Padded_118
+  - first:
+      213: 1155031905302005050
+    second: Inner_Padded_119
+  - first:
+      213: 9210103960946905827
+    second: Inner_Padded_120
+  - first:
+      213: -1938949922521811676
+    second: Inner_Padded_121
+  - first:
+      213: 7572342506481875134
+    second: Inner_Padded_122
+  - first:
+      213: -544525463475543130
+    second: Inner_Padded_123
+  - first:
+      213: -6002442587167738236
+    second: Inner_Padded_124
+  - first:
+      213: -4652234578855564906
+    second: Inner_Padded_125
+  - first:
+      213: 4750746424449268896
+    second: Inner_Padded_126
+  - first:
+      213: 1157783808625751297
+    second: Inner_Padded_127
+  - first:
+      213: -4622613455267612853
+    second: Inner_Padded_128
+  - first:
+      213: 5481166743556087764
+    second: Inner_Padded_129
+  - first:
+      213: -7996229080024064084
+    second: Inner_Padded_130
+  - first:
+      213: 8617005439254050775
+    second: Inner_Padded_131
+  - first:
+      213: 1739201338573863943
+    second: Inner_Padded_132
+  - first:
+      213: -399715267761454797
+    second: Inner_Padded_133
+  - first:
+      213: 648403868882402632
+    second: Inner_Padded_134
+  - first:
+      213: -86526414334485299
+    second: Inner_Padded_135
+  - first:
+      213: 3123870623520142042
+    second: Inner_Padded_136
+  - first:
+      213: 4553976167297155092
+    second: Inner_Padded_137
+  - first:
+      213: 4253415873071523817
+    second: Inner_Padded_138
+  - first:
+      213: -4362647773148217038
+    second: Inner_Padded_139
+  - first:
+      213: -162895438265873314
+    second: Inner_Padded_140
+  - first:
+      213: -4643208437822755568
+    second: Inner_Padded_141
+  - first:
+      213: -560552487302835268
+    second: Inner_Padded_142
+  - first:
+      213: 4959639935260052269
+    second: Inner_Padded_143
+  - first:
+      213: 9071353885167772987
+    second: Inner_Padded_144
+  - first:
+      213: 758901871117416544
+    second: Inner_Padded_145
+  - first:
+      213: 3281603473182501029
+    second: Inner_Padded_146
+  - first:
+      213: -5476477039783724446
+    second: Inner_Padded_147
+  - first:
+      213: 4315727060160696072
+    second: Inner_Padded_148
+  - first:
+      213: 6869252075177555240
+    second: Inner_Padded_149
+  - first:
+      213: 7030340626609853149
+    second: Inner_Padded_150
+  - first:
+      213: -2099932442614383535
+    second: Inner_Padded_151
+  - first:
+      213: -8619504669268372835
+    second: Inner_Padded_152
+  - first:
+      213: -4947841615610683864
+    second: Inner_Padded_153
+  - first:
+      213: -2664560618204515909
+    second: Inner_Padded_154
+  - first:
+      213: 3683511665073666156
+    second: Inner_Padded_155
+  - first:
+      213: 5749647742593388057
+    second: Inner_Padded_156
+  - first:
+      213: 788369364038824014
+    second: Inner_Padded_157
+  - first:
+      213: -5912536146894380487
+    second: Inner_Padded_158
+  - first:
+      213: 1747446386456451533
+    second: Inner_Padded_159
+  - first:
+      213: 8214692707445899918
+    second: Inner_Padded_160
+  - first:
+      213: 4291316166091465063
+    second: Inner_Padded_161
+  - first:
+      213: 7421293413578066473
+    second: Inner_Padded_162
+  - first:
+      213: -3414414670807169068
+    second: Inner_Padded_163
+  - first:
+      213: -1425926688852623839
+    second: Inner_Padded_164
+  - first:
+      213: -890243533995133119
+    second: Inner_Padded_165
+  - first:
+      213: 1609902048429823739
+    second: Inner_Padded_166
+  - first:
+      213: 7370893867028254354
+    second: Inner_Padded_167
+  - first:
+      213: 4712549600249039327
+    second: Inner_Padded_168
+  - first:
+      213: 4474080074531115755
+    second: Inner_Padded_169
+  - first:
+      213: -5939712195814965346
+    second: Inner_Padded_170
+  - first:
+      213: -5944372201835559453
+    second: Inner_Padded_171
+  - first:
+      213: -6616802913359905570
+    second: Inner_Padded_172
+  - first:
+      213: -3731751067663505311
+    second: Inner_Padded_173
+  - first:
+      213: 6255930417678711393
+    second: Inner_Padded_174
+  - first:
+      213: 2764113223116257016
+    second: Inner_Padded_175
+  - first:
+      213: 8684930882510517917
+    second: Inner_Padded_176
+  - first:
+      213: -7760839860023001951
+    second: Inner_Padded_177
+  - first:
+      213: -8406691658361436981
+    second: Inner_Padded_178
+  - first:
+      213: -8949216489497755067
+    second: Inner_Padded_179
+  - first:
+      213: -7324295624373196832
+    second: Inner_Padded_180
+  - first:
+      213: 5293505325499578404
+    second: Inner_Padded_181
+  - first:
+      213: -8526256066639267872
+    second: Inner_Padded_182
+  - first:
+      213: -408257355622504895
+    second: Inner_Padded_183
+  - first:
+      213: -5571794322502601329
+    second: Inner_Padded_184
+  - first:
+      213: 8682937581541044240
+    second: Inner_Padded_185
+  - first:
+      213: 1741707651271052373
+    second: Inner_Padded_186
+  - first:
+      213: -656302841945067633
+    second: Inner_Padded_187
+  - first:
+      213: 1866578414351034009
+    second: Inner_Padded_188
+  - first:
+      213: 3325059846951186976
+    second: Inner_Padded_189
+  - first:
+      213: 1385583385174647567
+    second: Inner_Padded_190
+  - first:
+      213: -1032015138372134731
+    second: Inner_Padded_191
+  - first:
+      213: -190346246437378866
+    second: Inner_Padded_192
+  - first:
+      213: 2581628054204553084
+    second: Inner_Padded_193
+  - first:
+      213: 1731224394623657100
+    second: Inner_Padded_194
+  - first:
+      213: -1405552176927145091
+    second: Inner_Padded_195
+  - first:
+      213: -102916440203638203
+    second: Inner_Padded_196
+  - first:
+      213: -1224752745339198863
+    second: Inner_Padded_197
+  - first:
+      213: 592639426754824551
+    second: Inner_Padded_198
+  - first:
+      213: -8822971525166589478
+    second: Inner_Padded_199
+  - first:
+      213: 5196324658549302053
+    second: Inner_Padded_200
+  - first:
+      213: -8974669855295735201
+    second: Inner_Padded_201
+  - first:
+      213: -5189179833012213411
+    second: Inner_Padded_202
+  - first:
+      213: -1710820162396112998
+    second: Inner_Padded_203
+  - first:
+      213: -2024709477894664735
+    second: Inner_Padded_204
+  - first:
+      213: -2499892955101844585
+    second: Inner_Padded_205
+  - first:
+      213: -5838593462611047370
+    second: Inner_Padded_206
+  - first:
+      213: -1683240770649962277
+    second: Inner_Padded_207
+  - first:
+      213: -8936033029789619033
+    second: Inner_Padded_208
+  - first:
+      213: 4741379210994127138
+    second: Inner_Padded_209
+  - first:
+      213: 2051079333464236165
+    second: Inner_Padded_210
+  - first:
+      213: -9076848204847524111
+    second: Inner_Padded_211
+  - first:
+      213: 340106196257611869
+    second: Inner_Padded_212
+  - first:
+      213: 5793754954956597908
+    second: Inner_Padded_213
+  - first:
+      213: 868893953199479250
+    second: Inner_Padded_214
+  - first:
+      213: -9124169971876901067
+    second: Inner_Padded_215
+  - first:
+      213: -6614773772111389495
+    second: Inner_Padded_216
+  - first:
+      213: -2361741993394561294
+    second: Inner_Padded_217
+  - first:
+      213: -7053735700695866924
+    second: Inner_Padded_218
+  - first:
+      213: -9036528009131524427
+    second: Inner_Padded_219
+  - first:
+      213: 6420505880362946939
+    second: Inner_Padded_220
+  - first:
+      213: 3604842184022807592
+    second: Inner_Padded_221
+  - first:
+      213: -7362602594824211440
+    second: Inner_Padded_222
+  - first:
+      213: -5785199871898441131
+    second: Inner_Padded_223
+  - first:
+      213: -417178262721179832
+    second: Inner_Padded_224
+  - first:
+      213: -4663797917646856229
+    second: Inner_Padded_225
+  - first:
+      213: 5749783460301474194
+    second: Inner_Padded_226
+  - first:
+      213: -3147054773408831629
+    second: Inner_Padded_227
+  - first:
+      213: -8599641389567066630
+    second: Inner_Padded_228
+  - first:
+      213: 7348343257603655623
+    second: Inner_Padded_229
+  - first:
+      213: -5990605533304641208
+    second: Inner_Padded_230
+  - first:
+      213: -6738051690554033328
+    second: Inner_Padded_231
+  - first:
+      213: -5917759343824756715
+    second: Inner_Padded_232
+  - first:
+      213: -3010760773242343644
+    second: Inner_Padded_233
+  - first:
+      213: 1441718664888301786
+    second: Inner_Padded_234
+  - first:
+      213: -5331179763414911103
+    second: Inner_Padded_235
+  - first:
+      213: 2290965319497646272
+    second: Inner_Padded_236
+  - first:
+      213: 2591802855494244065
+    second: Inner_Padded_237
+  - first:
+      213: -8528758479104814743
+    second: Inner_Padded_238
+  - first:
+      213: -8272476335345945252
+    second: Inner_Padded_239
+  - first:
+      213: -2311751384063581481
+    second: Inner_Padded_240
+  - first:
+      213: 3948337877185903553
+    second: Inner_Padded_241
+  - first:
+      213: 5987155655452931387
+    second: Inner_Padded_242
+  - first:
+      213: -3865412446289132013
+    second: Inner_Padded_243
+  - first:
+      213: -3068111548016369443
+    second: Inner_Padded_244
+  - first:
+      213: 8190611345398255593
+    second: Inner_Padded_245
+  - first:
+      213: -1674880076381426343
+    second: Inner_Padded_246
+  - first:
+      213: 1729180342964156857
+    second: Inner_Padded_247
+  - first:
+      213: 4502037449357265181
+    second: Inner_Padded_248
+  - first:
+      213: 1051210895296813739
+    second: Inner_Padded_249
+  - first:
+      213: -2201780862357150762
+    second: Inner_Padded_250
+  - first:
+      213: 5670036482732679594
+    second: Inner_Padded_251
+  - first:
+      213: -1376085667194473820
+    second: Inner_Padded_252
+  - first:
+      213: -4141070750611111653
+    second: Inner_Padded_253
+  - first:
+      213: -3365646587485554417
+    second: Inner_Padded_254
+  - first:
+      213: -3853999303552898102
+    second: Inner_Padded_255
+  - first:
+      213: 3422769881604487822
+    second: Inner_Padded_256
+  - first:
+      213: -7475853073035843427
+    second: Inner_Padded_257
+  - first:
+      213: -9163802199479274445
+    second: Inner_Padded_258
+  - first:
+      213: -3511514794663342807
+    second: Inner_Padded_259
+  - first:
+      213: -5479181616385696559
+    second: Inner_Padded_260
+  - first:
+      213: 7472462130783431943
+    second: Inner_Padded_261
+  - first:
+      213: 2571307927285519745
+    second: Inner_Padded_262
+  - first:
+      213: -2392564149573430816
+    second: Inner_Padded_263
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Inner_Padded_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06db4cb67b7fb3490800000000000000
+      internalID: -7765340765311156896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2615d860aaec320800000000000000
+      internalID: 2580186581647319791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92ac5f9587f76b70800000000000000
+      internalID: 8892348142542693023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20212cb18246d8850800000000000000
+      internalID: 6380866370481033730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_4
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb93c4811f2ccd10800000000000000
+      internalID: 2147142874637245378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0578132160b1cb2c0800000000000000
+      internalID: -4414623821840939184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_6
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb262783391605f80800000000000000
+      internalID: -8119882843213897026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_7
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23bf9224de72bd530800000000000000
+      internalID: 3880739403880594226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566a7f87e15213410800000000000000
+      internalID: 1454984967426123365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0f30226f7358a60800000000000000
+      internalID: 7675602670195044547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce15a23a0944d0c0800000000000000
+      internalID: -4551933015216546100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454e7d25adb3a10d0800000000000000
+      internalID: -3451380355547274156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957249bbfb1261a70800000000000000
+      internalID: 8797256029484361561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_13
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8988b71f8a86d81a0800000000000000
+      internalID: -6805668387071752040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c7a47696842f420800000000000000
+      internalID: 2662269947271085146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_15
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d678a93936c0c30800000000000000
+      internalID: 4326942827600112983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c605aea1bc9a9410800000000000000
+      internalID: 1484671314125194947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_17
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 494
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e717581ed031a4860800000000000000
+      internalID: 7514839878560215422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d21f2eca32cc9c0800000000000000
+      internalID: -3905707551388259020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_19
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16057068157c43ee0800000000000000
+      internalID: -1282180840938844063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_20
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f500c188de42628e0800000000000000
+      internalID: -1718645605185879969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_21
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450b278fa82660c50800000000000000
+      internalID: 6631095850362908756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_22
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88b068ee51cdbec0800000000000000
+      internalID: -3549468317928343412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_23
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2909ca8c73a1a50800000000000000
+      internalID: 6492563147836134142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_24
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6753ad770733baa50800000000000000
+      internalID: 6533372242571179382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_25
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56311eb64669a5370800000000000000
+      internalID: 8312121420316480357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e752414e5db26420800000000000000
+      internalID: 2621866145602492386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_27
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a48317e7b4dc580800000000000000
+      internalID: -8805298690001974742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_28
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8498c47290b91a970800000000000000
+      internalID: 8764456813456034120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_29
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa26b3c463880d840800000000000000
+      internalID: 5246843332675199658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_30
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289535b39c6d4cf90800000000000000
+      internalID: -6934181366471632510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_31
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4520759414507b1f0800000000000000
+      internalID: -1029348211869416876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_32
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09a5d9d799bd1090800000000000000
+      internalID: -8062083696077461233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_33
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d13bddd724445a0800000000000000
+      internalID: -6538027650677269094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fa8d10c92d5d0d0800000000000000
+      internalID: -3398578776293462265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_35
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2b0ac8a5a617400800000000000000
+      internalID: 320153985658958573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_36
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7133c0e3a065e2710800000000000000
+      internalID: 1670367113791681303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_37
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1801b542cbe629ad0800000000000000
+      internalID: -2696971472498651007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_38
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a439fe9512a377e10800000000000000
+      internalID: 2195287258283610954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_39
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 476
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9914d854a08c441e0800000000000000
+      internalID: -2214425170317327975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7005ef3be655ce6e0800000000000000
+      internalID: -1806975416527859705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_41
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373429348cfd4bf30800000000000000
+      internalID: 4590539971417490291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_42
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11c23449dec574e0800000000000000
+      internalID: -1984452628239433441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_43
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bc2b36d20691d30800000000000000
+      internalID: 4402655858793827231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_44
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef480583c0e31cf30800000000000000
+      internalID: 4594021317099947262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_45
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605e54881f17370e0800000000000000
+      internalID: -2273348104704629498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_46
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e005ca4cb725b310800000000000000
+      internalID: 1420084947167019233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_47
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f86141cb0d54a0a0800000000000000
+      internalID: -6871264826392221451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_48
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa74458ee940ae650800000000000000
+      internalID: 6262823312361277354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_49
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86c84bad9f261c60800000000000000
+      internalID: 7788464959813895821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_50
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa32f1dde338b4a40800000000000000
+      internalID: 5353516888080982959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_51
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261f4d5ca7bb40f90800000000000000
+      internalID: -6988254585792695966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_52
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fdcfc7aadefb360800000000000000
+      internalID: 7187724846803771264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_53
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197a2134e1eda3e10800000000000000
+      internalID: 2178297591342737297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_54
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db2e6a5fe9e51a40800000000000000
+      internalID: 5338430147541216212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_55
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2645ff3a661c7e00800000000000000
+      internalID: 1043733859238495789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_56
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0690dc5157d9fb0800000000000000
+      internalID: -4639423304627035932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_57
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ac32d43fdee5620800000000000000
+      internalID: 2764908850479090251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_58
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311279cace1dc89a0800000000000000
+      internalID: -6229373370122165997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_59
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb42df2d751e5bb80800000000000000
+      internalID: -8379543764334730050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_60
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd6a209d1d005a00800000000000000
+      internalID: 743108359140044231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_61
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 458
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799596c74f89812f0800000000000000
+      internalID: -1001882741263214185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d309a17f2ac116920800000000000000
+      internalID: 2981695914551971901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_63
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5b4db602cf61e80800000000000000
+      internalID: -8208096054657894994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_64
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2296a101134d35e0800000000000000
+      internalID: -1928311325123505619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_65
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85904440d9dadf50800000000000000
+      internalID: 6907072467047585164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_66
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7665aa4b597aae90800000000000000
+      internalID: -7013660036674787717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_67
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642c30ee7d7535bf0800000000000000
+      internalID: -336828962199846330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_68
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcfdfa5bdf5acb90800000000000000
+      internalID: -7220853656806097741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_69
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68215259958fbe10800000000000000
+      internalID: 2215636435247114346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_70
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e571fc83a92be170800000000000000
+      internalID: 8208700528233903584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_71
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d38cd33e7f1b910800000000000000
+      internalID: 1851533477192154519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_72
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3447f2a634af200800000000000000
+      internalID: 214558055595262972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_73
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9449c8ccc32ac5c50800000000000000
+      internalID: 6655372731360253001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_74
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb74dd1f8f4a4a20800000000000000
+      internalID: 3047335573968944048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_75
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3654f50bb196b30800000000000000
+      internalID: 4280983365118944171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_76
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cdfd63d18b274a0800000000000000
+      internalID: -6597008068530152383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_77
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df11653bb9cd67dd0800000000000000
+      internalID: -2488559182788816387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_78
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3f28947f242e340800000000000000
+      internalID: 4891545775135454112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_79
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1457d32921c485650800000000000000
+      internalID: 6221806527858963777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_80
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b477360c73344e0800000000000000
+      internalID: -1998692510180357370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_81
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477536a9caa60f0c0800000000000000
+      internalID: -4544014734459709580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_82
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85197a3e12543cab0800000000000000
+      internalID: -4989067950340730536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_83
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 440
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b6425639c78aa40800000000000000
+      internalID: 5379686727392979763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cf64394591a2cf0800000000000000
+      internalID: -276380576091014117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_85
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa7e779d7b91fe50800000000000000
+      internalID: 6841420272667359990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_86
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181a57d18069909e0800000000000000
+      internalID: -1654626426483793535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_87
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b1b8afb836f0e50800000000000000
+      internalID: 6777745417070910350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_88
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72897bdd347343740800000000000000
+      internalID: 5130786640103970855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_89
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3095c004bdb5e2310800000000000000
+      internalID: 1382143132879837443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_90
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4af0cbd62b961b0800000000000000
+      internalID: -5662798872065366822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_91
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceda73c3aa8654180800000000000000
+      internalID: -9131777589059801620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_92
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af284de47957f1fd0800000000000000
+      internalID: -2369045586250530054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_93
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d961d443b719a440800000000000000
+      internalID: 4947511724364360152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_94
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda0cd7da65601b90800000000000000
+      internalID: -7273201888640890149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_95
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79ef60a8a81a9b30800000000000000
+      internalID: 4294772307176450430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_96
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2509ca90873c92c0800000000000000
+      internalID: -4423599708492462806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_97
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd9831a682ef7380800000000000000
+      internalID: -8971202864840401445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_98
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ca6096128e74f80800000000000000
+      internalID: -8122268172745790317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_99
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc58961fa547e730800000000000000
+      internalID: 4028265010006875339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_100
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9f49ecc82ccf2c0800000000000000
+      internalID: -4396425226203366967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_101
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6301d7d0b88c3cdc0800000000000000
+      internalID: -3619829175923437514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_102
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 422
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afce6c3c3c12b7b0800000000000000
+      internalID: -5210070773876731992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7a96d4dd586baf0800000000000000
+      internalID: -380969932933191711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_104
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aecaef5b3f0fac80800000000000000
+      internalID: -8309406039788564824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_105
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a736b56e3397110800000000000000
+      internalID: 1259094635295504915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_106
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6859bc06d5e5db0800000000000000
+      internalID: -4801297482416552243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_107
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9faf1ee71b45e290800000000000000
+      internalID: -7861795008353947745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_108
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387ceec46e5603b90800000000000000
+      internalID: -7264194159141009533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_109
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a62b77e695748a90800000000000000
+      internalID: -7312590603953690968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_110
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf3956be71a35d30800000000000000
+      internalID: 4419053224977842107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_111
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78778483e9881be70800000000000000
+      internalID: 9129228132787189639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_112
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5027eb232ad1c0050800000000000000
+      internalID: 5768017805228012037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_113
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ca84e1316341e80800000000000000
+      internalID: -8208876765049213797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_114
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7119957dd72b5b30800000000000000
+      internalID: 4277056103232639358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_115
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a4752b823faf870800000000000000
+      internalID: 8717547384845322858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_116
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e05ee5ee205a900800000000000000
+      internalID: 694964940316151332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_117
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e43ebbbbf8feaf0800000000000000
+      internalID: -364915008319828409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_118
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5610a20e3e893e50800000000000000
+      internalID: 6789614310220895838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_119
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35c4c3f56f770010800000000000000
+      internalID: 1155031905302005050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_120
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e298a851ccd0df70800000000000000
+      internalID: 9210103960946905827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_121
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 404
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425f0d681577715e0800000000000000
+      internalID: -1938949922521811676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb87170c36d561960800000000000000
+      internalID: 7572342506481875134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_123
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3a26ad9f47178f0800000000000000
+      internalID: -544525463475543130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_124
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486b03fe44a03bca0800000000000000
+      internalID: -6002442587167738236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_125
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69966839c41ff6fb0800000000000000
+      internalID: -4652234578855564906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_126
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac7147d3ba0ee140800000000000000
+      internalID: 4750746424449268896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_127
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10536df5d36411010800000000000000
+      internalID: 1157783808625751297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_128
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4735d8dd8d29dfb0800000000000000
+      internalID: -4622613455267612853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_129
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df5850ec14011c40800000000000000
+      internalID: 5481166743556087764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_130
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf548e7400b70190800000000000000
+      internalID: -7996229080024064084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_131
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7b85acac0c59770800000000000000
+      internalID: 8617005439254050775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_132
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c349a1762e22810800000000000000
+      internalID: 1739201338573863943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_133
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33147cde41de37af0800000000000000
+      internalID: -399715267761454797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_134
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d79b322e79ff800800000000000000
+      internalID: 648403868882402632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_135
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc97e14fa89ccef0800000000000000
+      internalID: -86526414334485299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_136
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad23237f7c73a5b20800000000000000
+      internalID: 3123870623520142042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_137
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41087573239f23f30800000000000000
+      internalID: 4553976167297155092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_138
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7af64733b270b30800000000000000
+      internalID: 4253415873071523817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_139
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 386
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2310a51f6f2c473c0800000000000000
+      internalID: -4362647773148217038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c81a246774dbdf0800000000000000
+      internalID: -162895438265873314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_141
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d6a7dc682009fb0800000000000000
+      internalID: -4643208437822755568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_142
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb35a549b748838f0800000000000000
+      internalID: -560552487302835268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_143
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b440b6e3e24d440800000000000000
+      internalID: 4959639935260052269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_144
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35e845eb4ce3ed70800000000000000
+      internalID: 9071353885167772987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_145
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068355f1b39288a00800000000000000
+      internalID: 758901871117416544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_146
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a82bb0e8f89a8d20800000000000000
+      internalID: 3281603473182501029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_147
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26abb1fd525aff3b0800000000000000
+      internalID: -5476477039783724446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_148
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f4b6045ea84eb30800000000000000
+      internalID: 4315727060160696072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_149
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825b2951e5c745f50800000000000000
+      internalID: 6869252075177555240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_150
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2d3133d89c09160800000000000000
+      internalID: 7030340626609853149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_151
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cb6a1c19a8bd2e0800000000000000
+      internalID: -2099932442614383535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_152
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d921070eb2e516880800000000000000
+      internalID: -8619504669268372835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_153
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e51a0f34cb55bb0800000000000000
+      internalID: -4947841615610683864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_154
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1bc653c34950bd0800000000000000
+      internalID: -2664560618204515909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_155
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6839b2e7567e1330800000000000000
+      internalID: 3683511665073666156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_156
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 368
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ec7e0b82adacf40800000000000000
+      internalID: 5749647742593388057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_157
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40b55772c9d0fa00800000000000000
+      internalID: 788369364038824014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_158
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93224ba43b372fda0800000000000000
+      internalID: -5912536146894380487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_159
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9d6c8ea3d204810800000000000000
+      internalID: 1747446386456451533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_160
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e820e4e7e73700270800000000000000
+      internalID: 8214692707445899918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_161
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761e5c21151dd8b30800000000000000
+      internalID: 4291316166091465063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_162
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a444a3a0bbdf660800000000000000
+      internalID: 7421293413578066473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_163
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d708ae72ff8d90d0800000000000000
+      internalID: -3414414670807169068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_164
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12eb03b3b37163ce0800000000000000
+      internalID: -1425926688852623839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_165
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147b1a8f83835a3f0800000000000000
+      internalID: -890243533995133119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_166
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf655d72265875610800000000000000
+      internalID: 1609902048429823739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_167
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e035d5becaa4660800000000000000
+      internalID: 7370893867028254354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_168
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9c04da4e6566140800000000000000
+      internalID: 4712549600249039327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_169
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be294138f10271e30800000000000000
+      internalID: 4474080074531115755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_170
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fb4645a37e19da0800000000000000
+      internalID: -5939712195814965346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_171
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e582e02af8518da0800000000000000
+      internalID: -5944372201835559453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_172
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcb960cec46c24a0800000000000000
+      internalID: -6616802913359905570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_173
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 350
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1686bb5fc28263cc0800000000000000
+      internalID: -3731751067663505311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_174
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16afc4dc19781d650800000000000000
+      internalID: 6255930417678711393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_175
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6fdced45a1c5620800000000000000
+      internalID: 2764113223116257016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_176
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96fbd67f92178870800000000000000
+      internalID: 8684930882510517917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_177
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acf2a81445fb4490800000000000000
+      internalID: -7760839860023001951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_178
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4802f2a7e655b80800000000000000
+      internalID: -8406691658361436981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_179
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5420b6d840ffdc380800000000000000
+      internalID: -8949216489497755067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_180
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7a9477fefda5a90800000000000000
+      internalID: -7324295624373196832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_181
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4287a0f1c0f467940800000000000000
+      internalID: 5293505325499578404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_182
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e772fb0847aca980800000000000000
+      internalID: -8526256066639267872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_183
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1462e2d1914955af0800000000000000
+      internalID: -408257355622504895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_184
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85b1b595920da2b0800000000000000
+      internalID: -5571794322502601329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_185
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010b4aae9bdff7870800000000000000
+      internalID: 8682937581541044240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_186
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c479081e9cb2810800000000000000
+      internalID: 1741707651271052373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_187
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fe8c0ea0854e6f0800000000000000
+      internalID: -656302841945067633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_188
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9962ec4ad2b67e910800000000000000
+      internalID: 1866578414351034009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_189
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022b07a505cf42e20800000000000000
+      internalID: 3325059846951186976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_190
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 332
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03a4086fb49a3310800000000000000
+      internalID: 1385583385174647567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_191
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8d08213bb8da1f0800000000000000
+      internalID: -1032015138372134731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_192
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec465cce811cb5df0800000000000000
+      internalID: -190346246437378866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_193
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c779b098909c3d320800000000000000
+      internalID: 2581628054204553084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_194
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84a80c1a6b860810800000000000000
+      internalID: 1731224394623657100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_195
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d730bf4fdb97e7ce0800000000000000
+      internalID: -1405552176927145091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_196
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a4d1cfa0e529ef0800000000000000
+      internalID: -102916440203638203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_197
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1726f5cfdddc00fe0800000000000000
+      internalID: -1224752745339198863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_198
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769cc9f2b6a793800800000000000000
+      internalID: 592639426754824551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_199
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad91f0bd4228e8580800000000000000
+      internalID: -8822971525166589478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_200
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5232f62eebd0d1840800000000000000
+      internalID: 5196324658549302053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_201
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5af0b20151937380800000000000000
+      internalID: -8974669855295735201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_202
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59afa17f645cf7b0800000000000000
+      internalID: -5189179833012213411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_203
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97bdc96022f148e0800000000000000
+      internalID: -1710820162396112998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_204
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 314
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edc8bc0579c6e3e0800000000000000
+      internalID: -2024709477894664735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_205
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b27a23a989e4dd0800000000000000
+      internalID: -2499892955101844585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_206
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c86211e2629fea0800000000000000
+      internalID: -5838593462611047370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_207
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd844f1ff6de3a8e0800000000000000
+      internalID: -1683240770649962277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_208
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac6b36fd45dcf380800000000000000
+      internalID: -8936033029789619033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_209
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2211ab08543ccc140800000000000000
+      internalID: 4741379210994127138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_210
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580e74569c5e67c10800000000000000
+      internalID: 2051079333464236165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_211
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6dbed16ae880280800000000000000
+      internalID: -9076848204847524111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_212
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5028d598cc48b400800000000000000
+      internalID: 340106196257611869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_213
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ae8d55f6d876050800000000000000
+      internalID: 5793754954956597908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_214
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d990f3627eee0c00800000000000000
+      internalID: 868893953199479250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_215
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fcdf3a0cf606180800000000000000
+      internalID: -9124169971876901067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_216
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccdab30d4a9334a0800000000000000
+      internalID: -6614773772111389495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_217
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe18988b28693fd0800000000000000
+      internalID: -2361741993394561294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_218
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 296
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d12884a0c81c1e90800000000000000
+      internalID: -7053735700695866924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_219
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bef8dc37adc79280800000000000000
+      internalID: -9036528009131524427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_220
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b711755b4183a1950800000000000000
+      internalID: 6420505880362946939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_221
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824d50afdd8f60230800000000000000
+      internalID: 3604842184022807592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_222
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0143221e2f7c2d990800000000000000
+      internalID: -7362602594824211440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_223
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55aabd82e57d6bfa0800000000000000
+      internalID: -5785199871898441131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_224
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f4d729492e53af0800000000000000
+      internalID: -417178262721179832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_225
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfd376f08cd64fb0800000000000000
+      internalID: -4663797917646856229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_226
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2998faee7955bcf40800000000000000
+      internalID: 5749783460301474194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_227
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377e44e7b5a6354d0800000000000000
+      internalID: -3147054773408831629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_228
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdbb1318bfe7a880800000000000000
+      internalID: -8599641389567066630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_229
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c74a15724f8af560800000000000000
+      internalID: 7348343257603655623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_230
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84923edc1081ddca0800000000000000
+      internalID: -5990605533304641208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_231
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b7e4aefa1ad72a0800000000000000
+      internalID: -6738051690554033328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_232
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 278
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510a31dfa35efdda0800000000000000
+      internalID: -5917759343824756715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_233
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fa5374701a736d0800000000000000
+      internalID: -3010760773242343644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_234
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8b7b6bc73020410800000000000000
+      internalID: 1441718664888301786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_235
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18737ef3048d306b0800000000000000
+      internalID: -5331179763414911103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_236
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0856de1d42bcf10800000000000000
+      internalID: 2290965319497646272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_237
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6d39117fee7f320800000000000000
+      internalID: 2591802855494244065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_238
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9615bddb953c3a980800000000000000
+      internalID: -8528758479104814743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_239
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5531ea3a92423d80800000000000000
+      internalID: -8272476335345945252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_240
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d26fd74d520befd0800000000000000
+      internalID: -2311751384063581481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_241
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 260
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbb2ee41605bc630800000000000000
+      internalID: 3948337877185903553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_242
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 242
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b353e3ae856a61350800000000000000
+      internalID: 5987155655452931387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_243
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 242
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31600942cdb4b5ac0800000000000000
+      internalID: -3865412446289132013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_244
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 242
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0e5397dc0eb65d0800000000000000
+      internalID: -3068111548016369443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_245
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 242
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef4fb77f95eaa170800000000000000
+      internalID: 8190611345398255593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_246
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 242
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95de7e5c171a1c8e0800000000000000
+      internalID: -1674880076381426343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_247
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 242
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b977fe3c584ff710800000000000000
+      internalID: 1729180342964156857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_248
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 242
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19027615337a7e30800000000000000
+      internalID: 4502037449357265181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_249
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baadf2e5db6a69e00800000000000000
+      internalID: 1051210895296813739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_250
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 224
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3e2f1a8f3b171e0800000000000000
+      internalID: -2201780862357150762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_251
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 224
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa169c0d32400be40800000000000000
+      internalID: 5670036482732679594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_252
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 224
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2fd52606927ece0800000000000000
+      internalID: -1376085667194473820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_253
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 224
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b118018b716f786c0800000000000000
+      internalID: -4141070750611111653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_254
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 224
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09fa69b242da41d0800000000000000
+      internalID: -3365646587485554417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_255
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 224
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb60238d08d38ac0800000000000000
+      internalID: -3853999303552898102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_256
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8af0fc921f108f20800000000000000
+      internalID: 3422769881604487822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_257
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 206
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98afa42d3f604890800000000000000
+      internalID: -7475853073035843427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_258
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 206
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33438149372a3d080800000000000000
+      internalID: -9163802199479274445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_259
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 206
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d009826e7944fc0800000000000000
+      internalID: -3511514794663342807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_260
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 206
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcda7f895906f3b0800000000000000
+      internalID: -5479181616385696559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_261
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 188
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70da7e697b483b760800000000000000
+      internalID: 7472462130783431943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_262
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 188
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185dffdbfee1fa320800000000000000
+      internalID: 2571307927285519745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inner_Padded_263
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 425
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e157521597ebced0800000000000000
+      internalID: -2392564149573430816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 84d136677ebd9ee469dbc2dd897013f8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
