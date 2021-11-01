@@ -60,6 +60,9 @@ public class Shop : MonoBehaviour
 
     public void OpenBuyMenu()
     {
+        // Set first buy item as selected when opening menu
+        buyItemButtons[0].Press();
+
         // open buy and close sell
         buyMenu.SetActive(true);
         sellMenu.SetActive(false);
@@ -85,10 +88,18 @@ public class Shop : MonoBehaviour
 
     public void OpenSellMenu()
     {
+        // Set first sell item as selected when opening menu
+        buyItemButtons[0].Press();
+
         // open sell and close buy
         sellMenu.SetActive(true);
         buyMenu.SetActive(false);
 
+        ShowSellItems();
+    }
+
+    private void ShowSellItems()
+    {
         // should already be sorted but just to be certain
         GameManager.instance.SortItems();
 
@@ -116,7 +127,7 @@ public class Shop : MonoBehaviour
         selectedItem = buyItem;
         buyItemName.text = selectedItem.itemName;
         buyItemDescription.text = selectedItem.description;
-        buyItemValue.text = "Value: " + selectedItem.value;
+        buyItemValue.text = "Value: " + selectedItem.value + "g";
     }
 
     public void SelectSellItem(Item sellItem)
@@ -124,5 +135,39 @@ public class Shop : MonoBehaviour
         selectedItem = sellItem;
         sellItemName.text = selectedItem.itemName;
         sellItemDescription.text = selectedItem.description;
+        sellItemValue.text = "Value: " + Mathf.FloorToInt(selectedItem.value * .5f).ToString() + "g";
+    }
+
+    // when buy is pressed
+    public void BuyItem()
+    {
+        if (selectedItem != null)
+        {
+            // if player has enough gold to purchase selected item
+            if (GameManager.instance.currentGold >= selectedItem.value)
+            {
+                GameManager.instance.currentGold -= selectedItem.value; // remove gold from players gold
+                GameManager.instance.AddItem(selectedItem.itemName); // add selected item to inventory 
+            }
+        }
+        // update players gold 
+        goldText.text = GameManager.instance.currentGold.ToString() + "g";
+
+        // sort player inventory items
+        GameManager.instance.SortItems();
+    }
+
+    // when sell is pressed
+    public void SellItem()
+    {
+        if (selectedItem != null)
+        {
+            GameManager.instance.RemoveItem(selectedItem.itemName); // remove item from user inventory
+            GameManager.instance.currentGold += Mathf.FloorToInt(selectedItem.value * .5f); // add gold value to users gold
+        }
+        // update players gold 
+        goldText.text = GameManager.instance.currentGold.ToString() + "g";
+
+        ShowSellItems();
     }
 }

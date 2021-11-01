@@ -169,6 +169,7 @@ public class GameManager : MonoBehaviour
             {
                 // if true remove item entirely from inventory
                 itemsHeld[itemPosition] = "";
+                Debug.Log("Item should be fully removed");
             }
 
             // re-sort items in case an item has been fully removed
