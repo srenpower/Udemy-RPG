@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public string[] itemsHeld; // what items are in inventory
     public int[] numberOfItems; // how many items in inventory
     public Item[] referenceItems; // how to get info about item from inventory
-
+   
     public int currentGold;
 
     // Start is called before the first frame update
@@ -43,6 +43,16 @@ public class GameManager : MonoBehaviour
         {
             // none of these things are true so player can move
             PlayerController.instance.canMove = true;
+        }
+
+        // SP: added to check if shop menu is open to stop game menu from opening in the background
+        if(shopActive)
+        {
+            GameMenu.instance.canOpen = false;
+        }
+        else
+        {
+            GameMenu.instance.canOpen = true;
         }
 
         // GOOD FOR TESTING

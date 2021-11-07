@@ -21,7 +21,7 @@ public class Item : MonoBehaviour
 
     [Header("Weapon/Armour Details")]
     public int weaponStrength;
-    public int armourStrength; 
+    public int armourStrength;
 
     // Start is called before the first frame update
     void Start()
@@ -88,7 +88,7 @@ public class Item : MonoBehaviour
             selectedChar.equippedArmr = itemName;
             selectedChar.armrPwr = armourStrength;  
         }
-
+        
         GameManager.instance.RemoveItem(itemName);
     }
 }

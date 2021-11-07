@@ -40,6 +40,8 @@ public class GameMenu : MonoBehaviour
 
     public Text goldText; // updates text for amount of gold
 
+    public bool canOpen = true; // SP: added to control whether menu may open or not, specifically to keep it from opening when shop menu is open
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +51,7 @@ public class GameMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2") && canOpen) // SP: added canOpen to avoid menu opening when user is in a shop menu 
         {
             if (theMenu.activeInHierarchy)
             {
