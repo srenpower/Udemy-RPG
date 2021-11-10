@@ -171,6 +171,16 @@ public class Shop : MonoBehaviour
         {
             GameManager.instance.RemoveItem(selectedItem.itemName); // remove item from user inventory
             GameManager.instance.currentGold += Mathf.FloorToInt(selectedItem.value * .5f); // add gold value to users gold
+
+            // *** SP: added code portion to fix issue with selectedItem never being reset and unlimited gold (Lecture 69/70)
+            List<string> tempList = new List<string>(GameManager.instance.itemsHeld);
+            if(!tempList.Contains(selectedItem.itemName))
+            {
+                selectedItem = null;
+                sellItemName.text = "";
+                sellItemDescription.text = "";
+                sellItemValue.text = "";
+            }
         }
         // update players gold 
         goldText.text = GameManager.instance.currentGold.ToString() + "g";
