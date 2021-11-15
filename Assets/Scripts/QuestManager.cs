@@ -13,29 +13,29 @@ public class QuestManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         instance = this;
 
         questMarkersComplete = new bool[questMarkerNames.Length];
-=======
-        instance = this;    
->>>>>>> 878d4dade1d7376ca2088274fcd743251a189584
-=======
-        instance = this;    
->>>>>>> fb1402345eb28c0e56d5ae0f46e90108b56f6c3c
     }
 
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if(Input.GetKeyDown(KeyCode.Q))
         {
             Debug.Log(CheckIfComplete("quest test"));
             MarkQuestComplete("quest test");
             MarkQuestIncomplete("fight the demon");
+        }
+
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            SaveQuestData();
+        }
+
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            LoadQuestData();
         }
     }
 
@@ -91,11 +91,46 @@ public class QuestManager : MonoBehaviour
                 questObjects[i].CheckCompletion();
             }
         }
-=======
-        
->>>>>>> 878d4dade1d7376ca2088274fcd743251a189584
-=======
-        
->>>>>>> fb1402345eb28c0e56d5ae0f46e90108b56f6c3c
+    }
+
+    // loop through all quest markers and decide if they should be stored as true or false
+    public void SaveQuestData()
+    {
+        for(int i = 0; i < questMarkerNames.Length; i++)
+        {
+            // quest markers are complete
+            if(questMarkersComplete[i])
+            {
+                // Store "QuestMarker" name and set "1" as true
+                PlayerPrefs.SetInt("QuestMarker_" + questMarkerNames[i],1);
+            }
+            else
+            {
+                // Store "QuestMarker" name and set "0" as false
+                PlayerPrefs.SetInt("QuestMarker_" + questMarkerNames[i], 0);
+            }
+        }
+    }
+
+    public void LoadQuestData()
+    {
+        for(int i = 0; i < questMarkerNames.Length; i++)
+        {
+            int valueToSet = 0; // set as false by default
+            if(PlayerPrefs.HasKey("QuestMarker_" + questMarkerNames[i]))
+            {
+                // player prefs stores default data (part of unity)
+                valueToSet = PlayerPrefs.GetInt("QuestMarker_" + questMarkerNames[i]);
+            }
+
+            if(valueToSet == 0)
+            {
+                questMarkersComplete[i] = false;
+            }
+            else
+            {
+                questMarkersComplete[i] = true;
+            }
+        }
     }
 }

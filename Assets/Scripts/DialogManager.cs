@@ -18,6 +18,11 @@ public class DialogManager : MonoBehaviour
 
     public static DialogManager instance;
 
+    [Header("Quest Variables")]
+    private string questToMark;
+    private bool markQuestComplete;
+    private bool shouldMarkQuest;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +53,22 @@ public class DialogManager : MonoBehaviour
 
                         // reactivate player movement because dialog window has been closed
                         GameManager.instance.dialogActive = false;
+
+                        // if should mark quest is set to true
+                        if(shouldMarkQuest)
+                        {
+                            // set mark quest to false
+                            shouldMarkQuest = false;
+                            // if mark quest complete is true
+                            if(markQuestComplete)
+                            {
+                                QuestManager.instance.MarkQuestComplete(questToMark);
+                            }
+                            else
+                            {
+                                QuestManager.instance.MarkQuestIncomplete(questToMark);
+                            }
+                        }
                     }
                     else
                     {
@@ -100,5 +121,14 @@ public class DialogManager : MonoBehaviour
             nameText.text = dialogLines[currentLine].Replace("n-", "");
             currentLine++;
         }
+    }
+
+    // activate quest at end of dialogue
+    public void ShouldActivateQuestAtEnd(string questName, bool markComplete)
+    {
+        questToMark = questName;
+        markQuestComplete = markComplete;
+
+        shouldMarkQuest = true;
     }
 }
