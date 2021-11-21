@@ -67,6 +67,8 @@ public class GameMenu : MonoBehaviour
                 UpdateMainStats();
                 GameManager.instance.gameMenuOpen = true;
             }
+
+            AudioManager.instance.PlaySFX(5); // play beep 2 when opening and closing menu
         }
     }
 
@@ -262,5 +264,11 @@ public class GameMenu : MonoBehaviour
     {
         GameManager.instance.SaveData();
         QuestManager.instance.SaveQuestData();
+    }
+
+    // plays sound on button press
+    public void PlayButtonSound()
+    {
+        AudioManager.instance.PlaySFX(4);
     }
 }

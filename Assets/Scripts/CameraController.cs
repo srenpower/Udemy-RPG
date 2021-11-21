@@ -15,6 +15,9 @@ public class CameraController : MonoBehaviour
     private float halfHeight; // used to calculate where the camera should stop
     private float halfWidth; // used to calculate where the camera should stop
 
+    public int musicToPlay; // set what music should play in scene
+    private bool musicStarted;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,5 +48,12 @@ public class CameraController : MonoBehaviour
 
         // keep the camera inside the bounds
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
+
+        // set music if it hasn't been started
+        if(!musicStarted)
+        {
+            musicStarted = true;
+            AudioManager.instance.PlayBGM(musicToPlay);
+        }
     }
 }
