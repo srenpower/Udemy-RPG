@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool dialogActive;
     public bool fadingBetweenAreas;
     public bool shopActive;
+    public bool battleActive;
 
     [Header("Inventory Variables")]
     public string[] itemsHeld; // what items are in inventory
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // check on update if game menu or dialog box is open, or if we are switching between scenes
-        if(gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive)
+        if(gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive)
         {
             // if true stop player movement
             PlayerController.instance.canMove = false;

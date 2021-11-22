@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameMenu : MonoBehaviour
 {
@@ -40,7 +41,9 @@ public class GameMenu : MonoBehaviour
 
     public Text goldText; // updates text for amount of gold
 
+    [Header("Additional Variables")]
     public bool canOpen = true; // SP: added to control whether menu may open or not, specifically to keep it from opening when shop menu is open
+    public string mainMenuName;
 
     // Start is called before the first frame update
     void Start()
@@ -262,5 +265,15 @@ public class GameMenu : MonoBehaviour
     {
         GameManager.instance.SaveData();
         QuestManager.instance.SaveQuestData();
+    }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadScene(mainMenuName);
+
+        Destroy(GameManager.instance.gameObject);
+        Destroy(PlayerController.instance.gameObject);
+        Destroy(AudioManager.instance.gameObject);
+        Destroy(gameObject);
     }
 }

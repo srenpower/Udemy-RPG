@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 295d24bebb22f7b42a62eea6390bd8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Woody
+  charName: Florence
   playerLevel: 3
   currentEXP: 543
   expToNextLevel: 
