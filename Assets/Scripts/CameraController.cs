@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
     private float halfWidth; // used to calculate where the camera should stop
 
     public int musicToPlay; // set what music should play in scene
-    private bool musicStarted;
+    private bool musicStarted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +52,7 @@ public class CameraController : MonoBehaviour
         // set music if it hasn't been started
         if(!musicStarted)
         {
+            Debug.Log("Call PlayBGM");
             musicStarted = true;
             AudioManager.instance.PlayBGM(musicToPlay);
         }

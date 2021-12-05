@@ -99,8 +99,8 @@ MonoBehaviour:
   isPlayer: 0
   movesAvailable: []
   charName: Woody
-  currentHP: 0
-  maxHP: 0
+  currentHP: 120
+  maxHP: 120
   currentMP: 0
   maxMP: 0
   strength: 0

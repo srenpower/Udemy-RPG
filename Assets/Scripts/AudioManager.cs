@@ -30,14 +30,11 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBGM(int musicToPlay)
     {
-        if (bgm[musicToPlay].isPlaying)
+        // if music called exists (is a number less than the array length
+        if (musicToPlay < bgm.Length)
         {
             StopMusic(); // when any music is called, first stop current music
-
-            if (musicToPlay < bgm.Length)
-            {
-                bgm[musicToPlay].Play();
-            }
+            bgm[musicToPlay].Play();
         }
     }
 

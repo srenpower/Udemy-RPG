@@ -55,6 +55,7 @@ MonoBehaviour:
   dialogActive: 0
   fadingBetweenAreas: 0
   shopActive: 0
+  battleActive: 0
   itemsHeld:
   - 
   - 
@@ -173,7 +174,7 @@ MonoBehaviour:
   expToNextLevel: 
   maxLevel: 100
   baseEXP: 1000
-  currentHP: 0
+  currentHP: 150
   maxHP: 150
   currentMP: 0
   maxMP: 25
@@ -295,7 +296,7 @@ MonoBehaviour:
   expToNextLevel: 
   maxLevel: 100
   baseEXP: 1000
-  currentHP: 0
+  currentHP: 100
   maxHP: 100
   currentMP: 0
   maxMP: 30

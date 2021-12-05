@@ -178,14 +178,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Essentials Loader
       objectReference: {fileID: 0}
-    - target: {fileID: 7212373027722420020, guid: 04bf62c3752d333428ab0f25ca82ea64, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 8953008416977340223, guid: b4c60b8a9dc679c41acde593a69d7548, type: 3}
-    - target: {fileID: 7212373027722420020, guid: 04bf62c3752d333428ab0f25ca82ea64, type: 3}
-      propertyPath: UIScreen
-      value: 
-      objectReference: {fileID: 4825578809047694672, guid: e202ddef528b9e74a91e46c95794935b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04bf62c3752d333428ab0f25ca82ea64, type: 3}
 --- !u!1 &1156566691

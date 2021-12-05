@@ -5,7 +5,7 @@ using UnityEngine;
 public class BattleChar : MonoBehaviour
 {
     public bool isPlayer;
-    public string[] movesAvailable;
+    public string[] movesAvailable; // determines what moves a character can do while fighting
 
     public string charName;
     public int currentHP, maxHP, currentMP, maxMP, strength, defense, wpnPwr, armrPwr;

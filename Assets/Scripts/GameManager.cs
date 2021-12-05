@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
         }
 
         // SP: added to check if shop menu is open to stop game menu from opening in the background
-        if(shopActive)
+        if(shopActive || battleActive)
         {
             GameMenu.instance.canOpen = false;
         }
