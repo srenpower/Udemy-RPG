@@ -101,12 +101,16 @@ MonoBehaviour:
   - Fire
   - Ice
   charName: Eyeball
-  currentHP: 150
-  maxHP: 250
+  currentHP: 200
+  maxHP: 200
   currentMP: 0
   maxMP: 0
-  strength: 5
+  strength: 10
   defense: 5
   wpnPwr: 5
   armrPwr: 5
   hasDied: 0
+  theSprite: {fileID: 4810473615384775447}
+  deadSprite: {fileID: 0}
+  aliveSprite: {fileID: 0}
+  fadeSpeed: 1

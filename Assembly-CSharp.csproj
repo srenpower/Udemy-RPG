@@ -59,12 +59,20 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GetItem.cs" />
+    <Compile Include="Assets\Scripts\BattleMagicSelect.cs" />
+    <Compile Include="Assets\Scripts\BattleItems.cs" />
+    <Compile Include="Assets\Scripts\GameNotification.cs" />
     <Compile Include="Assets\Scripts\DestroyOverLifetime.cs" />
+    <Compile Include="Assets\Scripts\NotificationActivator.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PickupItem.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\EssentialsLoader.cs" />
+    <Compile Include="Assets\Scripts\BattleRewards.cs" />
+    <Compile Include="Assets\Scripts\BattleStarter.cs" />
     <Compile Include="Assets\Scripts\LoadingScene.cs" />
     <Compile Include="Assets\Scripts\BattleManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
@@ -73,6 +81,7 @@
     <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\BattleChar.cs" />
     <Compile Include="Assets\Scripts\QuestMarker.cs" />
+    <Compile Include="Assets\Scripts\SaveBetweenScenes.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\BattleMove.cs" />
@@ -83,10 +92,14 @@
     <Compile Include="Assets\Scripts\DamageNumber.cs" />
     <Compile Include="Assets\Scripts\DialogManager.cs" />
     <Compile Include="Assets\Scripts\CharStats.cs" />
+    <Compile Include="Assets\Scripts\AddPartyMember.cs" />
     <Compile Include="Assets\Scripts\QuestObjectActivator.cs" />
+    <Compile Include="Assets\Scripts\BattleTargetButton.cs" />
     <Compile Include="Assets\Scripts\QuestManager.cs" />
+    <Compile Include="Assets\Scripts\BattleType.cs" />
     <Compile Include="Assets\Scripts\UIFade.cs" />
     <Compile Include="Assets\Scripts\PlayerLoader.cs" />
+    <Compile Include="Assets\Scripts\BattleNotification.cs" />
     <Compile Include="Assets\Scripts\ItemButton.cs" />
   </ItemGroup>
   <ItemGroup>

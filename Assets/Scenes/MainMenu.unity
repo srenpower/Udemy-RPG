@@ -746,7 +746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5448bc4d026d09544ab4bb0333f8251e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGameScene: Countryside
+  newGameScene: Town
   continueButton: {fileID: 229090892}
   loadGameScene: LoadingScene
 --- !u!114 &1161719372

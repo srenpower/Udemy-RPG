@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: -284794045
   m_SortingLayer: 2
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300074, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
+  m_Sprite: {fileID: -2178467043915682464, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   itemName: Wooden Sword
   description: More of a blunt weapon
   value: 10
-  itemSprite: {fileID: 21300074, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
+  itemSprite: {fileID: -2178467043915682464, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
   amountToChange: 0
   affectHP: 0
   affectMP: 0

@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 topRightLimit; // used to calculate boundaries of map 
 
     public bool canMove = true; // controls whether or not a player should be able to move
+    public bool firstLoad = false; // checks whether this is the first load of the playercontroller and loads theRB into position
+
     // Start is called before the first frame update
     // Use for initialization
     void Start()
@@ -36,6 +38,12 @@ public class PlayerController : MonoBehaviour
             {
                Destroy(gameObject);
             }
+        }
+
+        if(firstLoad == false)
+        {
+            theRB.transform.position = new Vector3(11.475f, -10.327f, 0);
+            firstLoad = true;
         }
 
         DontDestroyOnLoad(gameObject);

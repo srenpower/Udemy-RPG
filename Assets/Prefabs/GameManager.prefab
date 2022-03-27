@@ -60,19 +60,6 @@ MonoBehaviour:
   - 
   - 
   - 
-  - Health Potion
-  - 
-  - 
-  - 
-  - Iron Sword
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - Mana Potion
   - 
   - 
   - 
@@ -89,7 +76,20 @@ MonoBehaviour:
   - 
   - 
   - 
-  - Leather Armour
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -120,11 +120,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questMarkerNames:
   - 
-  - fight the demon
-  - enter the cave
-  - quest test
-  - save the world
-  questMarkersComplete: 0000000000
+  - Starting Dialog
+  - Open Chest 1
+  - Talk to Del & Phil
+  - Tater is missing
+  - Talk to Wanda
+  - Gift from Wanda
+  - Found Woody
+  - Woody in party
+  - Moved Log
+  questMarkersComplete: 00000000000000000000
 --- !u!1 &4366026564263288344
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5218088444873435286
 Transform:
   m_ObjectHideFlags: 0

@@ -101,12 +101,16 @@ MonoBehaviour:
   - Slash
   - Plasma
   charName: Spider
-  currentHP: 200
-  maxHP: 250
+  currentHP: 150
+  maxHP: 150
   currentMP: 0
   maxMP: 0
-  strength: 10
+  strength: 7
   defense: 10
-  wpnPwr: 10
-  armrPwr: 10
+  wpnPwr: 7
+  armrPwr: 7
   hasDied: 0
+  theSprite: {fileID: 3224600891458982132}
+  deadSprite: {fileID: 0}
+  aliveSprite: {fileID: 0}
+  fadeSpeed: 1

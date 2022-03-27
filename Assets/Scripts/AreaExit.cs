@@ -42,6 +42,9 @@ public class AreaExit : MonoBehaviour
             //SceneManager.LoadScene(areaToLoad);
             shouldLoadAfterFade = true; // when hitting an exit we change bool to load after fade to true
             GameManager.instance.fadingBetweenAreas = true; // stop player movement while fading between scenes is occuring 
+
+            GameManager.instance.SaveData(0); // saves persistent state data
+
             UIFade.instance.FadeToBlack(); // call fade from UIFade instance
 
             PlayerController.instance.areaTransitionName = areaTransitionName;

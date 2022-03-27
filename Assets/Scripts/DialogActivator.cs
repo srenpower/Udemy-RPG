@@ -6,12 +6,14 @@ public class DialogActivator : MonoBehaviour
 {
     public string[] lines; // store lines for dialog
 
-    public bool isPerson = true; // set default that dialog objects are people  
+    public bool isPerson = true; // set default that dialog objects are people
+
+    public bool activateOnEnter = false; // auto activate dialog  
 
     private bool canActivate; // determines if character for dialog can be activated
 
     [Header("Quest Variables")]
-    public bool shouldActivateQuest;
+    // public bool shouldActivateQuest;
     public string questToMark;
     public bool markComplete;
 
@@ -24,11 +26,24 @@ public class DialogActivator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
+        if (!activateOnEnter)
         {
-            DialogManager.instance.ShowDialog(lines, isPerson);
-            DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+            if (canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
+            {
+                DialogManager.instance.ShowDialog(lines, isPerson);
+                DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+            }
         }
+        else
+        {
+            if(canActivate && !DialogManager.instance.dialogBox.activeInHierarchy)
+            {
+                DialogManager.instance.ShowDialog(lines, isPerson);
+                DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+            }
+        }
+
+
     }
     
     // normally (Collider2D collision) we change to other because "collision" is just a name and makes it confusing because Collision is an object in unity and leaves room for error

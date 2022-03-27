@@ -9,6 +9,8 @@ public class GameMenu : MonoBehaviour
     public GameObject theMenu;
     public GameObject[] windows; // array of available menu windows
 
+    public GameNotification gameNotification;
+
     public GameObject[] statsButtons; // buttons for status window
 
     private CharStats[] playerStats; // stores player stats
@@ -35,7 +37,9 @@ public class GameMenu : MonoBehaviour
     public Text useButtonText;
 
     public GameObject itemCharChoiceMenu;
+    public GameObject battleItemCharChoiceMenu; // for battle menu
     public Text[] itemCharChoiceNames;
+    public Text[] battleItemCharChoiceNames;
 
     public static GameMenu instance;
 
@@ -117,7 +121,8 @@ public class GameMenu : MonoBehaviour
             {
                 Debug.Log(windowNumber);
                 windows[i].SetActive(!windows[i].activeInHierarchy);
-            } else
+            }
+            else
             {
                 windows[i].SetActive(false);
             }
@@ -232,7 +237,7 @@ public class GameMenu : MonoBehaviour
     // use remove item class in GameManager to discard items with discard button
     public void DiscardItem()
     {
-        if(activeItem != null)
+        if (activeItem != null)
         {
             GameManager.instance.RemoveItem(activeItem.itemName);
         }
@@ -241,12 +246,25 @@ public class GameMenu : MonoBehaviour
     // when using an item (with use button), bring up menu to choose which character to use it on
     public void OpenItemCharChoice()
     {
-        itemCharChoiceMenu.SetActive(true);
-
-        for(int i = 0; i < itemCharChoiceNames.Length; i++)
+        if (GameMenu.instance.theMenu.activeInHierarchy)
         {
-            itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].charName;
-            itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
+            itemCharChoiceMenu.SetActive(true);
+
+            for (int i = 0; i < itemCharChoiceNames.Length; i++)
+            {
+                itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].charName;
+                itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
+            }
+        }
+        else
+        {
+            battleItemCharChoiceMenu.SetActive(true);
+
+            for (int i = 0; i < battleItemCharChoiceNames.Length; i++)
+            {
+                battleItemCharChoiceNames[i].text = GameManager.instance.playerStats[i].charName;
+                battleItemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
+            }
         }
     }
 
@@ -254,6 +272,7 @@ public class GameMenu : MonoBehaviour
     public void CloseItemCharChoice()
     {
         itemCharChoiceMenu.SetActive(false);
+        battleItemCharChoiceMenu.SetActive(false);
     }
 
     public void UseItem(int selectChar)
@@ -263,10 +282,10 @@ public class GameMenu : MonoBehaviour
     }
 
     // Save game by calling save functions in GameManager and QuestManager
-    public void SaveGame()
+    public void SaveGame(int saveNum)
     {
-        GameManager.instance.SaveData();
-        QuestManager.instance.SaveQuestData();
+        GameManager.instance.SaveData(saveNum);
+        //QuestManager.instance.SaveQuestData();
     }
 
     // plays sound on button press
@@ -283,5 +302,17 @@ public class GameMenu : MonoBehaviour
         Destroy(PlayerController.instance.gameObject);
         Destroy(AudioManager.instance.gameObject);
         Destroy(gameObject);
+    }
+
+    // when using an item (with use button), bring up menu to choose which character to use it on
+    public void OpenBattleItemCharChoice()
+    {
+        battleItemCharChoiceMenu.SetActive(true);
+
+        for (int i = 0; i < itemCharChoiceNames.Length; i++)
+        {
+            itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].charName;
+            itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
+        }
     }
 }

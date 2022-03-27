@@ -8,6 +8,7 @@ public class Item : MonoBehaviour
     public bool isItem; // basic item
     public bool isWeapon;
     public bool isArmour;
+    public bool isGold;
 
     [Header("Item Details")]
     public string itemName;
@@ -26,50 +27,109 @@ public class Item : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void Use(int charToUseOn)
+    public void UseBattle(int charToUseOn)
     {
-        CharStats selectedChar = GameManager.instance.playerStats[charToUseOn];
+        BattleChar selectedChar = BattleManager.instance.activeBattlers[charToUseOn];
 
-        if(isItem)
+        if (isItem)
         {
-            if(affectHP)
+            if (affectHP)
             {
                 selectedChar.currentHP += amountToChange;
 
-                if(selectedChar.currentHP > selectedChar.maxHP)
+                if (selectedChar.currentHP > selectedChar.maxHP)
                 {
                     selectedChar.currentHP = selectedChar.maxHP;
                 }
             }
 
-            if(affectMP)
+            if (affectMP)
             {
                 selectedChar.currentMP += amountToChange;
 
-                if(selectedChar.currentMP > selectedChar.maxMP)
+                if (selectedChar.currentMP > selectedChar.maxMP)
                 {
                     selectedChar.currentMP = selectedChar.maxMP;
                 }
             }
 
-            if(affectStr)
+            if (affectStr)
             {
                 selectedChar.strength += amountToChange;
             }
         }
 
-        if(isWeapon)
+        // TODO: Figure out battle time item swapping
+        //if (isWeapon)
+        //{
+        //    if (selectedChar.equippedWpn != "")
+        //    {
+        //        GameManager.instance.AddItem(selectedChar.equippedWpn);
+        //    }
+
+        //    selectedChar.equippedWpn = itemName;
+        //    selectedChar.wpnPwr = weaponStrength;
+        //}
+
+        //if (isArmour)
+        //{
+        //    if (selectedChar.equippedArmr != "")
+        //    {
+        //        GameManager.instance.AddItem(selectedChar.equippedArmr);
+        //    }
+
+        //    selectedChar.equippedArmr = itemName;
+        //    selectedChar.armrPwr = armourStrength;
+        //}
+
+        GameManager.instance.RemoveItem(itemName);
+    }
+
+
+    public void Use(int charToUseOn)
+    { 
+        CharStats selectedChar = GameManager.instance.playerStats[charToUseOn];
+
+        if (isItem)
         {
-            if(selectedChar.equippedWpn != "")
+            if (affectHP)
+            {
+                selectedChar.currentHP += amountToChange;
+
+                if (selectedChar.currentHP > selectedChar.maxHP)
+                {
+                    selectedChar.currentHP = selectedChar.maxHP;
+                }
+            }
+
+            if (affectMP)
+            {
+                selectedChar.currentMP += amountToChange;
+
+                if (selectedChar.currentMP > selectedChar.maxMP)
+                {
+                    selectedChar.currentMP = selectedChar.maxMP;
+                }
+            }
+
+            if (affectStr)
+            {
+                selectedChar.strength += amountToChange;
+            }
+        }
+
+        if (isWeapon)
+        {
+            if (selectedChar.equippedWpn != "")
             {
                 GameManager.instance.AddItem(selectedChar.equippedWpn);
             }
@@ -78,17 +138,17 @@ public class Item : MonoBehaviour
             selectedChar.wpnPwr = weaponStrength;
         }
 
-        if(isArmour)
+        if (isArmour)
         {
-            if(selectedChar.equippedArmr != "")
+            if (selectedChar.equippedArmr != "")
             {
                 GameManager.instance.AddItem(selectedChar.equippedArmr);
             }
 
             selectedChar.equippedArmr = itemName;
-            selectedChar.armrPwr = armourStrength;  
+            selectedChar.armrPwr = armourStrength;
         }
-        
+
         GameManager.instance.RemoveItem(itemName);
     }
-}
+}   

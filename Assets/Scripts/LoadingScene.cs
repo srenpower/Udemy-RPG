@@ -21,10 +21,10 @@ public class LoadingScene : MonoBehaviour
             waitToLoad -= Time.deltaTime;
             if(waitToLoad <= 0)
             {
-                SceneManager.LoadScene(PlayerPrefs.GetString("Current_Scene"));
+                SceneManager.LoadScene(PlayerPrefs.GetString("Save_One_Scene")); // need to change when switching to a 3 save system
 
-                GameManager.instance.LoadData();
-                QuestManager.instance.LoadQuestData();
+                GameManager.instance.LoadData("Save_One");
+                //QuestManager.instance.LoadQuestData();
             }
         }
     }

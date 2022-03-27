@@ -13,7 +13,7 @@ public class CharStats : MonoBehaviour
     // variables for level up system 
     public int[] expToNextLevel; // how much exp required at each level
     public int maxLevel = 20;
-    public int baseEXP = 1000;
+    public int baseEXP = 200;
 
 
     // other stat variables
@@ -43,7 +43,14 @@ public class CharStats : MonoBehaviour
         // calculate experience required to level up at each level
         for(int i = 2; i < maxLevel; i++)
         {
-            expToNextLevel[i] = (int)(expToNextLevel[i - 1] * 1.05);
+            if (i < 20)
+            {
+                expToNextLevel[i] = (int)(expToNextLevel[i - 1] * 1.35);
+            }
+            else
+            {
+                expToNextLevel[i] = (int)(expToNextLevel[i - 1] * 1.05);
+            }
         }
 
         int newMP = 1; // used for calculating mp for random levelups

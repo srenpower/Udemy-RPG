@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public Item[] referenceItems; // how to get info about item from inventory
    
     public int currentGold;
+    private string saveState;
 
     // Start is called before the first frame update
     void Start()
@@ -55,22 +56,6 @@ public class GameManager : MonoBehaviour
         else
         {
             GameMenu.instance.canOpen = true;
-        }
-
-        // GOOD FOR TESTING
-        if(Input.GetKeyDown(KeyCode.J))
-        {
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            SaveData();
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            LoadData();
         }
     }
 
@@ -195,7 +180,14 @@ public class GameManager : MonoBehaviour
             }
 
             // re-sort items in case an item has been fully removed
-            GameMenu.instance.ShowItems();
+            if (GameMenu.instance.theMenu.activeInHierarchy)
+            {
+                GameMenu.instance.ShowItems();
+            }
+            else
+            {
+                BattleItems.instance.ShowItems();
+            }
         }
         else
         {
@@ -203,13 +195,36 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SaveData()
+    public void SaveData(int saveNum)
     {
-        // store current scene state
-        PlayerPrefs.SetString("Current_Scene", SceneManager.GetActiveScene().name);
-        // store player coordinates
-        PlayerPrefs.SetFloat("Player_Position_x", PlayerController.instance.transform.position.x);
-        PlayerPrefs.SetFloat("Player_Position_y", PlayerController.instance.transform.position.y);
+        if(saveNum == 1)
+        {
+            saveState = "Save_One";
+        }
+        else if(saveNum == 2)
+        {
+            saveState = "Save_Two";
+        }
+        else if(saveNum == 3)
+        {
+            saveState = "Save_Three";
+        }
+        else
+        {
+            saveState = "Persistent_Save";
+            Debug.Log("Save persistent state");
+        }
+        PlayerPrefs.SetString(saveState, saveState);
+
+        if (saveState != "Persistent_Save")
+        {
+            Debug.Log("Not used during persistent state");
+            // store current scene state
+            PlayerPrefs.SetString(saveState + "_Scene", SceneManager.GetActiveScene().name);
+            // store player coordinates
+            PlayerPrefs.SetFloat(saveState + "_" + "Player_Position_x", PlayerController.instance.transform.position.x);
+            PlayerPrefs.SetFloat(saveState + "_" + "Player_Position_y", PlayerController.instance.transform.position.y);
+        }
 
         // save character info
         for(int i = 0; i < playerStats.Length; i++)
@@ -217,45 +232,69 @@ public class GameManager : MonoBehaviour
             if(playerStats[i].gameObject.activeInHierarchy)
             {
                 // if player is active set tag as Player_playername_active and "1" for true
-                PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 1);
+                PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_active", 1);
             }
             else
             {
-                PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 0);
+                PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_active", 0);
 
             }
 
             // store other character info
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Level", playerStats[i].playerLevel);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentExp", playerStats[i].currentEXP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentHP", playerStats[i].currentHP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_MaxHP", playerStats[i].maxHP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentMP", playerStats[i].currentMP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_MaxMP", playerStats[i].maxMP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Strength", playerStats[i].strength);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Defense", playerStats[i].defense);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_WpnPwr", playerStats[i].wpnPwr);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_ArmrPwr", playerStats[i].armrPwr);
-            PlayerPrefs.SetString("Player_" + playerStats[i].charName + "_EquippedWpn", playerStats[i].equippedWpn);
-            PlayerPrefs.SetString("Player_" + playerStats[i].charName + "_EquippedArmr", playerStats[i].equippedArmr);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_Level", playerStats[i].playerLevel);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_CurrentExp", playerStats[i].currentEXP);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_CurrentHP", playerStats[i].currentHP);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_MaxHP", playerStats[i].maxHP);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_CurrentMP", playerStats[i].currentMP);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_MaxMP", playerStats[i].maxMP);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_Strength", playerStats[i].strength);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_Defense", playerStats[i].defense);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_WpnPwr", playerStats[i].wpnPwr);
+            PlayerPrefs.SetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_ArmrPwr", playerStats[i].armrPwr);
+            PlayerPrefs.SetString(saveState + "_" + "Player_" + playerStats[i].charName + "_EquippedWpn", playerStats[i].equippedWpn);
+            PlayerPrefs.SetString(saveState + "_" + "Player_" + playerStats[i].charName + "_EquippedArmr", playerStats[i].equippedArmr);
         }
 
         // store inventory data
         for(int i = 0; i < itemsHeld.Length; i++)
         {
-            PlayerPrefs.SetString("ItemInInventory_" + i, itemsHeld[i]);
-            PlayerPrefs.SetInt("ItemAmount_" + i, numberOfItems[i]);
+            PlayerPrefs.SetString(saveState + "_" + "ItemInInventory_" + i, itemsHeld[i]);
+            PlayerPrefs.SetInt(saveState + "_" + "ItemAmount_" + i, numberOfItems[i]);
+        }
+
+        // Store quest data
+        for(int i = 0; i < QuestManager.instance.questMarkerNames.Length; i++)
+        {
+            //PlayerPrefs.SetString(saveState + "_" + "QuestName_" + i, QuestManager.instance.questMarkerNames[i]);
+            if (QuestManager.instance.questMarkersComplete[i])
+            {
+                PlayerPrefs.SetInt(saveState + "_" + "QuestCompletion_" + i, 1);
+            }
+            else
+            {
+                PlayerPrefs.SetInt(saveState + "_" + "QuestCompletion_" + i, 0);
+            }
         }
     }
 
-    public void LoadData()
+    public void LoadData(string saveName)
     {
-        // set player position in scene based on loaded game state
-        PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"));
-
-        for(int i = 0; i < playerStats.Length; i++)
+        saveState = saveName;
+        Debug.Log("Save State = " + saveState);
+        if (PlayerPrefs.GetString(saveState) != "Persistent_Save")
         {
-            if(PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_active") == 0)
+            Debug.Log("Set Player Position");
+            Debug.Log("x-position: " + PlayerPrefs.GetFloat(saveState + "_" + "Player_Position_x") + ", y-position: " + PlayerPrefs.GetFloat(saveState + "_" + "Player_Position_y"));
+            // set player scene
+            //Scene sceneName = (PlayerPrefs.GetString(saveState + "_Scene");
+            //SceneManager.SetActiveScene(PlayerPrefs.GetString(saveState + "_Scene");
+            // set player position in scene based on loaded game state
+            PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat(saveState + "_" + "Player_Position_x"), PlayerPrefs.GetFloat(saveState + "_" + "Player_Position_y"));
+        }
+        Debug.Log("Persistent x-position: " + PlayerPrefs.GetFloat(saveState + "_" + "Player_Position_x") + ", y-position: " + PlayerPrefs.GetFloat(saveState + "_" + "Player_Position_y"));
+        for (int i = 0; i < playerStats.Length; i++)
+        {
+            if(PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_active") == 0)
             {
                 playerStats[i].gameObject.SetActive(false);
             }
@@ -265,25 +304,40 @@ public class GameManager : MonoBehaviour
             }
 
             // set other character info
-            playerStats[i].playerLevel = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Level");
-            playerStats[i].currentEXP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentExp");
-            playerStats[i].currentHP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentHP");
-            playerStats[i].maxHP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_MaxHP");
-            playerStats[i].currentMP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentMP");
-            playerStats[i].maxMP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_MaxMP");
-            playerStats[i].strength = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Strength");
-            playerStats[i].defense = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Defense");
-            playerStats[i].wpnPwr = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_WpnPwr");
-            playerStats[i].armrPwr = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_ArmrPwr");
-            playerStats[i].equippedWpn = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedWpn");
-            playerStats[i].equippedArmr = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedArmr");
+            playerStats[i].playerLevel = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_Level");
+            playerStats[i].currentEXP = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_CurrentExp");
+            playerStats[i].currentHP = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_CurrentHP");
+            playerStats[i].maxHP = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_MaxHP");
+            playerStats[i].currentMP = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_CurrentMP");
+            playerStats[i].maxMP = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_MaxMP");
+            playerStats[i].strength = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_Strength");
+            playerStats[i].defense = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_Defense");
+            playerStats[i].wpnPwr = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_WpnPwr");
+            playerStats[i].armrPwr = PlayerPrefs.GetInt(saveState + "_" + "Player_" + playerStats[i].charName + "_ArmrPwr");
+            playerStats[i].equippedWpn = PlayerPrefs.GetString(saveState + "_" + "Player_" + playerStats[i].charName + "_EquippedWpn");
+            playerStats[i].equippedArmr = PlayerPrefs.GetString(saveState + "_" + "Player_" + playerStats[i].charName + "_EquippedArmr");
         }
 
         // set saved items
         for(int i = 0; i < itemsHeld.Length; i++)
         {
-            itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
-            numberOfItems[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
+            itemsHeld[i] = PlayerPrefs.GetString(saveState + "_" + "ItemInInventory_" + i);
+            numberOfItems[i] = PlayerPrefs.GetInt(saveState + "_" + "ItemAmount_" + i);
+        }
+
+        // set quest data
+        for(int i = 0; i < QuestManager.instance.questMarkerNames.Length; i++)
+        {
+            //PlayerPrefs.SetString(saveState + "_" + "QuestName_" + i, QuestManager.instance.questMarkerNames[i]);
+            if (PlayerPrefs.GetInt(saveState + "_" + "QuestCompletion_" + i) == 1)
+            {
+                QuestManager.instance.questMarkersComplete[i] = true;
+                Debug.Log("Quest " + i + " Complete");
+            }
+            else
+            {
+                QuestManager.instance.questMarkersComplete[i] = false;
+            }
         }
     }
 }
