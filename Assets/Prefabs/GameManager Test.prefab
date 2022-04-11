@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8142836737255755149}
   - component: {fileID: 2033778083}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameManager Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,20 +121,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questMarkerNames:
   - 
-  - Starting Dialog
-  - Open Chest 1
-  - Talk to Del & Phil
-  - Tater is missing
-  - Talk to Wanda
-  - Gift from Wanda
-  - Found Bone
-  - Skeleton Battle Starts
-  - Fought Skeleton
-  - Found Woody
-  - Woody in party
-  - Moved Log 1
-  - Moved Log 2
-  questMarkersComplete: 0000000000000000000000000000
+  - Read the sign
+  - Talk to Fringella
+  questMarkersComplete: 000000
 --- !u!114 &2033778083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,9 +139,7 @@ MonoBehaviour:
   pickupItemNames:
   - 
   - Coin 1
-  - Coin 2
-  - Coin 3
-  itemsPickedUp: 00000000
+  itemsPickedUp: 000000
 --- !u!1 &4366026564263288344
 GameObject:
   m_ObjectHideFlags: 0

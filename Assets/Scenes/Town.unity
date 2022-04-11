@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668336d672868b44f806e9a263e77b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoAdd: 0
   playerIndex: 1
 --- !u!1001 &181434071
 PrefabInstance:
@@ -350,7 +351,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5064403094706203890, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_Name
-      value: Gold Coin (1)
+      value: Coin 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: itemName
+      value: Coin 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: markPickupItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: uniqueItemName
+      value: Coin 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: shouldDisableItem
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_RootOrder
@@ -7737,6 +7754,11 @@ Transform:
   m_Father: {fileID: 1506543139}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &769258698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5064403094706203890, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+  m_PrefabInstance: {fileID: 1715352150}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &813874608
 GameObject:
   m_ObjectHideFlags: 0
@@ -7746,6 +7768,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 813874609}
+  - component: {fileID: 813874612}
+  - component: {fileID: 813874611}
+  - component: {fileID: 813874610}
   m_Layer: 0
   m_Name: In Scene Items
   m_TagString: Untagged
@@ -7771,6 +7796,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &813874610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813874608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ddb7a9dc9bc3f488ee9d6ceca46e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToDeactivate: {fileID: 769258698}
+  itemToCheck: Coin 3
+  deactivateOnPickup: 1
+--- !u!114 &813874611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813874608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ddb7a9dc9bc3f488ee9d6ceca46e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToDeactivate: {fileID: 2023981539}
+  itemToCheck: Coin 2
+  deactivateOnPickup: 1
+--- !u!114 &813874612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813874608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ddb7a9dc9bc3f488ee9d6ceca46e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToDeactivate: {fileID: 2047866057}
+  itemToCheck: Coin 1
+  deactivateOnPickup: 1
 --- !u!1 &875001134
 GameObject:
   m_ObjectHideFlags: 0
@@ -28358,7 +28428,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593098889}
-  - component: {fileID: 1593098888}
   - component: {fileID: 1593098887}
   - component: {fileID: 1593098886}
   - component: {fileID: 1593098885}
@@ -28426,21 +28495,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.086468, y: 1.9704504}
   m_EdgeRadius: 0
---- !u!114 &1593098888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593098884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rewardItems:
-  - Wooden Sword
-  autoReceive: 1
 --- !u!4 &1593098889
 Transform:
   m_ObjectHideFlags: 0
@@ -28464,7 +28518,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5064403094706203890, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_Name
-      value: Gold Coin (2)
+      value: Coin 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: itemName
+      value: Coin 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: markPickupItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: uniqueItemName
+      value: Coin 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: shouldDisableItem
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_RootOrder
@@ -28523,6 +28593,7 @@ GameObject:
   - component: {fileID: 1815766493}
   - component: {fileID: 1815766490}
   - component: {fileID: 1815766489}
+  - component: {fileID: 1815766491}
   - component: {fileID: 1815766494}
   m_Layer: 0
   m_Name: Wanda Dialog 1
@@ -28582,6 +28653,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9239686, y: 1.7398374}
   m_EdgeRadius: 0
+--- !u!114 &1815766491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815766488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardItems:
+  - Wooden Sword
+  autoReceive: 1
 --- !u!4 &1815766493
 Transform:
   m_ObjectHideFlags: 0
@@ -28892,6 +28978,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
   m_PrefabInstance: {fileID: 1715352150}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2023981539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5064403094706203890, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+  m_PrefabInstance: {fileID: 353768272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2047866057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5064403094706203890, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+  m_PrefabInstance: {fileID: 6684291709664102544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2651084543638225650
 GameObject:
   m_ObjectHideFlags: 0
@@ -29101,7 +29197,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5064403094706203890, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_Name
-      value: Gold Coin
+      value: Coin 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: itemName
+      value: Coin 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: markPickupItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: uniqueItemName
+      value: Coin 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: shouldDisableItem
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_RootOrder

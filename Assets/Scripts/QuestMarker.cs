@@ -8,7 +8,7 @@ public class QuestMarker : MonoBehaviour
     public bool markComplete; // bool to mark quest complete
 
     public bool markOnEnter; // should quest marker trigger complete as soon as player enters zone
-    private bool canMark; // sets whether 
+    private bool canMark; // sets whether item has been marked already or not
 
     public bool deactivateOnMarking;
 
@@ -39,7 +39,7 @@ public class QuestMarker : MonoBehaviour
             QuestManager.instance.MarkQuestIncomplete(questToMark);
         }
 
-        gameObject.SetActive(!deactivateOnMarking);
+        gameObject.SetActive(!deactivateOnMarking); // set game object to inactive if deactivateOnMarking is true
     }
 
     // when entering quest zone

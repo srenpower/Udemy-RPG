@@ -18,6 +18,7 @@ public class BattleItems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        battleItemMenu.name = battleItemMenu.name + UnityEngine.Random.RandomRange(0.0f, 100000.0f).ToString();
         instance = this;   
     }
 
@@ -30,15 +31,17 @@ public class BattleItems : MonoBehaviour
     // open battle item menu
     public void OpenMenu()
     {
-        Debug.Log("Open Battle Items Menu");
-        battleItemMenu.SetActive(true);
+        Debug.Log("Open Battle Items Menu " + instance.battleItemMenu.name);
+        instance.battleItemMenu.gameObject.SetActive(true);
+        instance.battleItemMenu.SetActive(true);
 
         ShowItems();
     }
 
     public void CloseMenu()
     {
-        battleItemMenu.SetActive(false);
+        Debug.Log("Close Battle Items Menu" + instance.battleItemMenu.name);
+        instance.battleItemMenu.SetActive(false);
     }
 
     public void ShowItems()

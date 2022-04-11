@@ -21,22 +21,7 @@ public class QuestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            Debug.Log(CheckIfComplete("quest test"));
-            MarkQuestComplete("quest test");
-            MarkQuestIncomplete("fight the demon");
-        }
 
-        if(Input.GetKeyDown(KeyCode.O))
-        {
-            SaveQuestData();
-        }
-
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            LoadQuestData();
-        }
     }
 
     public int GetQuestNumber(string questToFind)
@@ -92,7 +77,7 @@ public class QuestManager : MonoBehaviour
             }
         }
     }
-
+    /* SWITCHED SAVING OVER TO 
     // loop through all quest markers and decide if they should be stored as true or false
     public void SaveQuestData()
     {
@@ -133,4 +118,5 @@ public class QuestManager : MonoBehaviour
             }
         }
     }
+    */
 }

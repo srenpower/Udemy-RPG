@@ -38,8 +38,10 @@ public class GetItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Trigger pickup");
         if (other.tag == "Player")
         {
+            Debug.Log("Player TRUE");
             canPickup = true;
         }
     }
@@ -48,7 +50,6 @@ public class GetItem : MonoBehaviour
     {
         if (other.tag == "Player" && !autoReceive)
         {
-            Debug.Log("SHOULD NOT REACH");
             canPickup = false;
         }
     }
@@ -57,6 +58,7 @@ public class GetItem : MonoBehaviour
     {
         for (int i = 0; i < rewardItems.Length; i++)
         {
+            Debug.Log("Received " + rewardItems[i]);
             GameManager.instance.AddItem(rewardItems[i]);
         }
     }

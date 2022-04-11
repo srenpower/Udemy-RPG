@@ -275,6 +275,19 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt(saveState + "_" + "QuestCompletion_" + i, 0);
             }
         }
+
+        // Store pickup item data
+        for (int i = 0; i < PickupManager.instance.pickupItemNames.Length; i++)
+        {
+            if (PickupManager.instance.itemsPickedUp[i])
+            {
+                PlayerPrefs.SetInt(saveState + "_" + "PickupItems_" + i, 1);
+            }
+            else
+            {
+                PlayerPrefs.SetInt(saveState + "_" + "PickupItems_" + i, 0);
+            }
+        }
     }
 
     public void LoadData(string saveName)
@@ -337,6 +350,19 @@ public class GameManager : MonoBehaviour
             else
             {
                 QuestManager.instance.questMarkersComplete[i] = false;
+            }
+        }
+
+        // set pickup item data
+        for (int i = 0; i < PickupManager.instance.pickupItemNames.Length; i++)
+        {
+            if (PlayerPrefs.GetInt(saveState + "_" + "PickupItems_" + i) == 1)
+            {
+                PickupManager.instance.itemsPickedUp[i] = true;
+            }
+            else
+            {
+                PickupManager.instance.itemsPickedUp[i] = false;
             }
         }
     }

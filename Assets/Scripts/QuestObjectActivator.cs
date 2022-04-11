@@ -40,6 +40,16 @@ public class QuestObjectActivator : MonoBehaviour
             {
                 allComplete = true;
                 oneComplete = true;
+                if(mustCompleteAll)
+                {
+                    for(int j = 0; j < questsToCheck.Length; j++)
+                    {
+                        if(!QuestManager.instance.CheckIfComplete(questsToCheck[j]))
+                        {
+                            allComplete = false;
+                        }    
+                    }
+                }
             }
             else
             {

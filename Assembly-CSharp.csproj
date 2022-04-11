@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\EssentialsLoader.cs" />
     <Compile Include="Assets\Scripts\BattleRewards.cs" />
+    <Compile Include="Assets\Scripts\PickupManager.cs" />
     <Compile Include="Assets\Scripts\BattleStarter.cs" />
     <Compile Include="Assets\Scripts\LoadingScene.cs" />
     <Compile Include="Assets\Scripts\BattleManager.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Scripts\DialogActivator.cs" />
     <Compile Include="Assets\Scripts\AreaEntrance.cs" />
     <Compile Include="Assets\Scripts\ShopKeeper.cs" />
+    <Compile Include="Assets\Scripts\PickupItemActivator.cs" />
     <Compile Include="Assets\Scripts\AttackEffect.cs" />
     <Compile Include="Assets\Scripts\DamageNumber.cs" />
     <Compile Include="Assets\Scripts\DialogManager.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="Assets\Scripts\AddPartyMember.cs" />
     <Compile Include="Assets\Scripts\QuestObjectActivator.cs" />
     <Compile Include="Assets\Scripts\BattleTargetButton.cs" />
+    <Compile Include="Assets\Scripts\PickupMarker.cs" />
     <Compile Include="Assets\Scripts\QuestManager.cs" />
     <Compile Include="Assets\Scripts\BattleType.cs" />
     <Compile Include="Assets\Scripts\UIFade.cs" />

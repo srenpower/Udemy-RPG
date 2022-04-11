@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PickupItem : MonoBehaviour
 {
-
     private bool canPickup;
     public bool isGold;
+
+    [Header("Pickup Manager Variables")]
+    public bool markPickupItem; // mark whether pickup item is in pickup manager or not
+    public string itemName; // pickup manager unique name
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +27,12 @@ public class PickupItem : MonoBehaviour
                 GameManager.instance.currentGold += GetComponent<Item>().value;
             }
             GameManager.instance.AddItem(GetComponent<Item>().itemName);
-            Destroy(gameObject); 
+
+            if(markPickupItem)
+            {
+                PickupManager.instance.PickupItemComplete(itemName);
+            }
+            //gameObject.SetActive(false);
         }
     }
 

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class AddPartyMember : MonoBehaviour
 {
-    private bool isInTrigger = false;
+    public bool autoAdd;
+    private bool isInTrigger;
     private bool isInParty = false;
 
     [SerializeField]
@@ -19,13 +20,25 @@ public class AddPartyMember : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && isInTrigger && !isInParty)
+        if (!autoAdd)
         {
-            //GameMenu.instance.gameNotification.Activate(buttonOn);
-            //GameMenu.instance.gameNotification.theText.text = message;
-
-            GameManager.instance.playerStats[playerIndex].gameObject.SetActive(true);
-            isInParty = true;
+            if (Input.GetButtonDown("Fire1") && isInTrigger && !isInParty)
+            {
+                //GameMenu.instance.gameNotification.Activate(buttonOn);
+                //GameMenu.instance.gameNotification.theText.text = message;
+                Debug.Log("Activate Player");
+                GameManager.instance.playerStats[playerIndex].gameObject.SetActive(true);
+                isInParty = true;
+            }
+        }
+        else
+        {
+            if (isInTrigger && !isInParty)
+            {
+                Debug.Log("Activate Player");
+                GameManager.instance.playerStats[playerIndex].gameObject.SetActive(true);
+                isInParty = true;
+            }
         }
     }
 
@@ -39,7 +52,7 @@ public class AddPartyMember : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "player")
+        if (other.tag == "Player")
         {
             isInTrigger = false;
         }
