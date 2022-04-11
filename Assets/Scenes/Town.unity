@@ -123,78 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &17070333
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 17070335}
-  - component: {fileID: 17070334}
-  - component: {fileID: 17070336}
-  m_Layer: 0
-  m_Name: TriggerOb
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &17070334
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17070333}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.58079004, y: -0.50633}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.16158, y: 2.01266}
-  m_EdgeRadius: 0
---- !u!4 &17070335
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17070333}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.36, y: -4.83, z: -5.118015}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &17070336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17070333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 668336d672868b44f806e9a263e77b15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoAdd: 0
-  playerIndex: 1
 --- !u!1001 &181434071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -311,7 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - n-Loris
-  - I shouldn't go in there
+  - I don't think Tater would be in here
   isPerson: 1
   activateOnEnter: 0
   questToMark: 
@@ -445,7 +373,83 @@ Transform:
   - {fileID: 1403867360}
   - {fileID: 1394394424}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &422079473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422079476}
+  - component: {fileID: 422079475}
+  - component: {fileID: 422079474}
+  m_Layer: 0
+  m_Name: Sign 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &422079474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422079473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cc6877829d415429e8cd610b32c277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - Daisy Park
+  isPerson: 0
+  activateOnEnter: 0
+  questToMark: 
+  markComplete: 0
+--- !u!61 &422079475
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422079473}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.022496343, y: -0.4724238}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7648766, y: 1.9448476}
+  m_EdgeRadius: 0
+--- !u!4 &422079476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422079473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: -9.4, z: -33.520622}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &455765084
 GameObject:
@@ -622,7 +626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - n-Loris
-  - I shouldn't go in there
+  - Hmm. It doesn't look like anyone is home.
   isPerson: 1
   activateOnEnter: 0
   questToMark: 
@@ -664,6 +668,7 @@ GameObject:
   - component: {fileID: 551134798}
   - component: {fileID: 551134797}
   - component: {fileID: 551134799}
+  - component: {fileID: 551134800}
   m_Layer: 0
   m_Name: Wanda Dialog 2
   m_TagString: Untagged
@@ -730,6 +735,97 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2185183, y: 1.8265578}
   m_EdgeRadius: 0
+--- !u!114 &551134800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551134796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardItems:
+  - Wooden Sword
+  autoReceive: 1
+--- !u!1 &593295143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593295146}
+  - component: {fileID: 593295145}
+  - component: {fileID: 593295144}
+  m_Layer: 0
+  m_Name: Sign 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &593295144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593295143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cc6877829d415429e8cd610b32c277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - << Countryside
+  isPerson: 0
+  activateOnEnter: 0
+  questToMark: 
+  markComplete: 0
+--- !u!61 &593295145
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593295143}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.022496343, y: -0.4724238}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7648766, y: 1.9448476}
+  m_EdgeRadius: 0
+--- !u!4 &593295146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593295143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.64, y: 5.66, z: -33.520622}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &654624208
 GameObject:
   m_ObjectHideFlags: 0
@@ -7651,7 +7747,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -284794045
   m_SortingLayer: 2
-  m_SortingOrder: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: -7426982183413531617, guid: fb8cc55af4b7a034584793949fd90500, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7794,7 +7890,7 @@ Transform:
   - {fileID: 532168641}
   - {fileID: 1997870643}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &813874610
 MonoBehaviour:
@@ -7899,7 +7995,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -284794045
   m_SortingLayer: 2
-  m_SortingOrder: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7758943322866322770, guid: fb8cc55af4b7a034584793949fd90500, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11045,7 +11141,7 @@ Transform:
   - {fileID: 1593098889}
   - {fileID: 551134798}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1042073965
 BoxCollider2D:
@@ -11236,7 +11332,7 @@ Transform:
   - {fileID: 875001136}
   - {fileID: 691315225}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1051717355
 MonoBehaviour:
@@ -11398,7 +11494,7 @@ Transform:
   m_Children:
   - {fileID: 1501233409}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1207199881
 GameObject:
@@ -28029,12 +28125,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1420544165}
   - component: {fileID: 1420544164}
+  - component: {fileID: 1420544168}
   - component: {fileID: 1420544170}
   - component: {fileID: 1420544169}
   - component: {fileID: 1420544167}
   - component: {fileID: 1420544166}
   - component: {fileID: 1420544171}
-  - component: {fileID: 1420544168}
   m_Layer: 0
   m_Name: Closed Chest
   m_TagString: Untagged
@@ -28340,7 +28436,7 @@ Transform:
   - {fileID: 1113952284}
   - {fileID: 746907802}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1543918142
 GameObject:
@@ -28593,7 +28689,6 @@ GameObject:
   - component: {fileID: 1815766493}
   - component: {fileID: 1815766490}
   - component: {fileID: 1815766489}
-  - component: {fileID: 1815766491}
   - component: {fileID: 1815766494}
   m_Layer: 0
   m_Name: Wanda Dialog 1
@@ -28653,21 +28748,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9239686, y: 1.7398374}
   m_EdgeRadius: 0
---- !u!114 &1815766491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815766488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rewardItems:
-  - Wooden Sword
-  autoReceive: 1
 --- !u!4 &1815766493
 Transform:
   m_ObjectHideFlags: 0
@@ -28788,9 +28868,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -284794045
-  m_SortingLayer: 2
-  m_SortingOrder: 4
+  m_SortingLayerID: 306602143
+  m_SortingLayer: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300002, guid: 88ae461370fb3334d8f7009dad27cd8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -131,14 +131,19 @@ public class GameManager : MonoBehaviour
                 {
                     itemExists = true;
 
-                    i = referenceItems.Length;
+                    i = referenceItems.Length; // goes to end of loop because item name exists in reference items
                 }
             }
+
             // if item exists add it to the posisition and increment the number of items
             if(itemExists)
             {
                 itemsHeld[newItemPosition] = itemToAdd;
                 numberOfItems[newItemPosition]++;
+            }
+            else if(itemToAdd == "Gold Coin")
+            {
+
             }
             else
             {

@@ -45,11 +45,11 @@ public class CharStats : MonoBehaviour
         {
             if (i < 20)
             {
-                expToNextLevel[i] = (int)(expToNextLevel[i - 1] * 1.35);
+                expToNextLevel[i] = (int)(expToNextLevel[i - 1] * 1.15);
             }
             else
             {
-                expToNextLevel[i] = (int)(expToNextLevel[i - 1] * 1.05);
+                expToNextLevel[i] = (int)(expToNextLevel[i - 1] * 1.02);
             }
         }
 

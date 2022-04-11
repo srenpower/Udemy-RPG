@@ -127,6 +127,7 @@ MonoBehaviour:
   - Tater is missing
   - Talk to Wanda
   - Gift from Wanda
+  - Open Chest 2
   - Found Bone
   - Skeleton Battle Starts
   - Fought Skeleton
@@ -134,7 +135,7 @@ MonoBehaviour:
   - Woody in party
   - Moved Log 1
   - Moved Log 2
-  questMarkersComplete: 0000000000000000000000000000
+  questMarkersComplete: 000000000000000000000000000000
 --- !u!114 &2033778083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,10 +199,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charName: Woody
   playerLevel: 3
-  currentEXP: 543
+  currentEXP: 0
   expToNextLevel: 
-  maxLevel: 100
-  baseEXP: 1000
+  maxLevel: 20
+  baseEXP: 450
   currentHP: 150
   maxHP: 150
   currentMP: 0
@@ -257,15 +258,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 295d24bebb22f7b42a62eea6390bd8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Florence
-  playerLevel: 3
-  currentEXP: 543
+  charName: Tater
+  playerLevel: 4
+  currentEXP: 250
   expToNextLevel: 
-  maxLevel: 100
-  baseEXP: 1000
-  currentHP: 0
-  maxHP: 150
-  currentMP: 0
+  maxLevel: 20
+  baseEXP: 600
+  currentHP: 200
+  maxHP: 200
+  currentMP: 25
   maxMP: 25
   mpLvlBonus: 
   strength: 20
@@ -274,7 +275,7 @@ MonoBehaviour:
   armrPwr: 0
   equippedWpn: 
   equippedArmr: 
-  charImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
+  charImage: {fileID: -9041646763189933228, guid: 19a08689932ad494087ad00bbf572161, type: 3}
 --- !u!1 &8142836737689907867
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,10 +321,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charName: Jams
   playerLevel: 1
-  currentEXP: 250
+  currentEXP: 0
   expToNextLevel: 
-  maxLevel: 100
-  baseEXP: 1000
+  maxLevel: 20
+  baseEXP: 300
   currentHP: 100
   maxHP: 100
   currentMP: 0
