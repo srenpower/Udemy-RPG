@@ -48,7 +48,7 @@ public class ItemButton : MonoBehaviour
         // if selecting an item in the battle item menu
         if (BattleItems.instance.battleItemMenu.activeInHierarchy)
         {
-            BattleItems.instance.SelectItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
+            BattleItems.SelectItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
         }
     }
 }

@@ -50,6 +50,12 @@ public class BattleManager : MonoBehaviour
 
     public bool cannotFlee;
 
+    private static readonly FontStyle CHARACTER_TURN_STYLE = FontStyle.Bold;
+    private static readonly FontStyle CHARACTER_IDLE_STYLE = FontStyle.Normal;
+    private static readonly Color CHARACTER_TURN_COLOUR = Color.yellow;
+    private static readonly Color CHARACTER_IDLE_COLOUR = Color.white;
+
+
     [Header("Rewards Variables")]
     public int rewardXP;
     public string[] rewardItems;
@@ -324,6 +330,17 @@ public class BattleManager : MonoBehaviour
                     playerName[i].text = playerData.charName;
                     playerHP[i].text = Mathf.Clamp(playerData.currentHP, 0, int.MaxValue) + "/" + playerData.maxHP;
                     playerMP[i].text = Mathf.Clamp(playerData.currentMP, 0, int.MaxValue) + "/" + playerData.maxMP;
+
+                    if(i == currentTurn)
+                    {
+                        playerName[i].fontStyle = CHARACTER_TURN_STYLE;
+                        playerName[i].color = CHARACTER_TURN_COLOUR;
+                    }
+                    else
+                    {
+                        playerName[i].fontStyle = CHARACTER_IDLE_STYLE;
+                        playerName[i].color = CHARACTER_IDLE_COLOUR; ;
+                    }
                 }
                 else
                 {
@@ -393,6 +410,11 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+    public void CloseTargetMenu()
+    {
+        targetMenu.SetActive(false);
+    }
+
     public void OpenMagicMenu()
     {
         magicMenu.SetActive(true); // open magic menu
@@ -421,6 +443,11 @@ public class BattleManager : MonoBehaviour
                 magicButtons[i].gameObject.SetActive(false);
             }
         }
+    }
+
+    public void CloseMagicMenu()
+    {
+        magicMenu.SetActive(false);
     }
 
     public void Flee()
@@ -453,6 +480,8 @@ public class BattleManager : MonoBehaviour
 
     public IEnumerator EndBattleCo()
     {
+        battleActive = false;
+
         yield return new WaitForSeconds(.5f);
 
         UIFade.instance.FadeToBlack();
@@ -463,7 +492,6 @@ public class BattleManager : MonoBehaviour
         uiButtonsHolder.SetActive(false);
         targetMenu.SetActive(false);
         magicMenu.SetActive(false);
-        battleActive = false;
 
         for (int i = 0; i < activeBattlers.Count; i++)
         {

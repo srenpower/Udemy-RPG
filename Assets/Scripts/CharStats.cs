@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharStats : MonoBehaviour
 {
@@ -30,6 +29,10 @@ public class CharStats : MonoBehaviour
     public string equippedArmr;
     public Sprite charImage;
 
+    [Header("Level Up Notice")]
+    public Object noticeWindow;
+    public Text noticeMessage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +44,7 @@ public class CharStats : MonoBehaviour
         currentMP = maxMP;
 
         // calculate experience required to level up at each level
-        for(int i = 2; i < maxLevel; i++)
+        for (int i = 2; i < maxLevel; i++)
         {
             if (i < 20)
             {
@@ -57,24 +60,28 @@ public class CharStats : MonoBehaviour
         // calculate MP jumps to increase at quasi-random levels
         for (int i = 2; i < maxLevel; i++)
         {
-            i += rand.Next(2,5); // save randomly generated level
-            if(i >= maxLevel)
+            i += rand.Next(2, 5); // save randomly generated level
+            if (i >= maxLevel)
             {
-                i = maxLevel-1;
+                i = maxLevel - 1;
             }
 
             newMP += rand.Next(4, 8); // assign random amount of MP 
             mpLvlBonus[i] = newMP;
+
+            // Level up notification
+            
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.K))
+        // For testing purposes only 
+        /*if (Input.GetKeyDown(KeyCode.K))
         {
             AddExp(500);
-        }
+        }*/
     }
 
     // add experience
@@ -82,9 +89,9 @@ public class CharStats : MonoBehaviour
     {
         currentEXP += expToAdd;
 
-        if(playerLevel < maxLevel)
+        if (playerLevel < maxLevel)
         {
-            if(currentEXP >= expToNextLevel[playerLevel])
+            if (currentEXP >= expToNextLevel[playerLevel])
             {
                 currentEXP -= expToNextLevel[playerLevel];
 

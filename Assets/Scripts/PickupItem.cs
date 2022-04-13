@@ -22,13 +22,13 @@ public class PickupItem : MonoBehaviour
     {
         if(canPickup && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove)
         {
-            if(isGold)
-            {
-                GameManager.instance.currentGold += GetComponent<Item>().value;
-            }
+            //if(isGold)
+            //{
+            //    GameManager.instance.currentGold += GetComponent<Item>().value;
+            //}
             GameManager.instance.AddItem(GetComponent<Item>().itemName);
 
-            if(markPickupItem)
+            if (markPickupItem)
             {
                 PickupManager.instance.PickupItemComplete(itemName);
             }

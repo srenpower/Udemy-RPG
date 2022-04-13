@@ -19,7 +19,8 @@ public class GameManager : MonoBehaviour
     public string[] itemsHeld; // what items are in inventory
     public int[] numberOfItems; // how many items in inventory
     public Item[] referenceItems; // how to get info about item from inventory
-   
+
+    private int goldValue = 10; // value of gold coin - could not figure out how to get value from gold 
     public int currentGold;
     private string saveState;
 
@@ -108,49 +109,57 @@ public class GameManager : MonoBehaviour
         int newItemPosition = 0;
         bool foundSpace = false;
 
-        for(int i = 0; i < itemsHeld.Length; i++)
+        // if item is gold piece, just add gold value
+        if (itemToAdd == "Gold Coin")
         {
-            // check if itemToAdd is an existing item in the inventory, _or_ if there is a blank space to hold it
-            if (itemsHeld[i] == "" || itemsHeld[i] == itemToAdd)
-            {
-                newItemPosition = i; // store position of existing item or blank space
-                i = itemsHeld.Length; // set i to itemsHeld length to stop looping
-                foundSpace = true; // set foundSpace to true
-            }
+            currentGold += goldValue;
         }
-
-        // either item already exists in inventory or a blank is available to add item
-        if(foundSpace)
+        // otherwise, go through process of adding item to inventory
+        else
         {
-            bool itemExists = false; // reset to false
-
-            // find out if item exists in inventory and set bool
-            for(int i = 0; i < referenceItems.Length; i++)
+            for (int i = 0; i < itemsHeld.Length; i++)
             {
-                if(referenceItems[i].itemName == itemToAdd)
+                // check if itemToAdd is an existing item in the inventory, _or_ if there is a blank space to hold it
+                if (itemsHeld[i] == "" || itemsHeld[i] == itemToAdd)
                 {
-                    itemExists = true;
-
-                    i = referenceItems.Length; // goes to end of loop because item name exists in reference items
+                    newItemPosition = i; // store position of existing item or blank space
+                    i = itemsHeld.Length; // set i to itemsHeld length to stop looping
+                    foundSpace = true; // set foundSpace to true
                 }
             }
 
-            // if item exists add it to the posisition and increment the number of items
-            if(itemExists)
+            // either item already exists in inventory or a blank is available to add item
+            if (foundSpace)
             {
-                itemsHeld[newItemPosition] = itemToAdd;
-                numberOfItems[newItemPosition]++;
-            }
-            else if(itemToAdd == "Gold Coin")
-            {
+                bool itemExists = false; // reset to false
 
-            }
-            else
-            {
-                Debug.LogError(itemToAdd + " Does Not Exist!!");
+                // find out if item exists in inventory and set bool
+                for (int i = 0; i < referenceItems.Length; i++)
+                {
+                    if (referenceItems[i].itemName == itemToAdd)
+                    {
+                        itemExists = true;
+
+                        i = referenceItems.Length; // goes to end of loop because item name exists in reference items
+                    }
+                }
+
+                // if item exists add it to the posisition and increment the number of items
+                if (itemExists)
+                {
+                    itemsHeld[newItemPosition] = itemToAdd;
+                    numberOfItems[newItemPosition]++;
+                }
+                else if (itemToAdd == "Gold Coin")
+                {
+
+                }
+                else
+                {
+                    Debug.LogError(itemToAdd + " Does Not Exist!!");
+                }
             }
         }
-
         GameMenu.instance.ShowItems();
     }
 
@@ -181,7 +190,6 @@ public class GameManager : MonoBehaviour
             {
                 // if true remove item entirely from inventory
                 itemsHeld[itemPosition] = "";
-                Debug.Log("Item should be fully removed");
             }
 
             // re-sort items in case an item has been fully removed
@@ -189,9 +197,9 @@ public class GameManager : MonoBehaviour
             {
                 GameMenu.instance.ShowItems();
             }
-            else
+            else if(BattleItems.instance.battleItemMenu.activeInHierarchy)
             {
-                BattleItems.instance.ShowItems();
+                BattleItems.ShowItems();
             }
         }
         else

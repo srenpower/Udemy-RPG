@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: You know there's no way to move the log without help
-  isTrigger: 1
+  isTrigger: 0
   buttonOn: 1
 --- !u!1 &291002388
 GameObject:

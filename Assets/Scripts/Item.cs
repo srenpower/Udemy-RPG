@@ -39,6 +39,7 @@ public class Item : MonoBehaviour
     public void UseBattle(int charToUseOn)
     {
         BattleChar selectedChar = BattleManager.instance.activeBattlers[charToUseOn];
+        CharStats inGameChar = GameManager.instance.playerStats[charToUseOn];
 
         if (isItem)
         {
@@ -68,30 +69,39 @@ public class Item : MonoBehaviour
             }
         }
 
-        // TODO: Figure out battle time item swapping
-        //if (isWeapon)
-        //{
-        //    if (selectedChar.equippedWpn != "")
-        //    {
-        //        GameManager.instance.AddItem(selectedChar.equippedWpn);
-        //    }
+        // todo: figure out battle time item swapping
+        if (isWeapon)
+        {
+            if (selectedChar.equippedWpn != "")
+            {
+                //GameManager.instance.AddItem(selectedChar.equippedWpn); // add current item equipped back into battle inventory
+                GameManager.instance.AddItem(inGameChar.equippedWpn); // add current item equppied back into regular inventory
+            }
+            // change battle items
+            selectedChar.equippedWpn = itemName;
+            selectedChar.wpnPwr = weaponStrength;
+            // change in-game items
+            inGameChar.equippedWpn = itemName;
+            inGameChar.wpnPwr = weaponStrength;
+        }
 
-        //    selectedChar.equippedWpn = itemName;
-        //    selectedChar.wpnPwr = weaponStrength;
-        //}
+        if (isArmour)
+        {
+            if (selectedChar.equippedArmr != "")
+            {
+               //GameManager.instance.AddItem(selectedChar.equippedArmr); // add current item equipped back into battle inventory
+                GameManager.instance.AddItem(inGameChar.equippedArmr); // add current item equppied back into regular inventory
+            }
+            // change battle items
+            selectedChar.equippedArmr = itemName;
+            // change in-game items
+            selectedChar.armrPwr = armourStrength;
 
-        //if (isArmour)
-        //{
-        //    if (selectedChar.equippedArmr != "")
-        //    {
-        //        GameManager.instance.AddItem(selectedChar.equippedArmr);
-        //    }
-
-        //    selectedChar.equippedArmr = itemName;
-        //    selectedChar.armrPwr = armourStrength;
-        //}
-
+            inGameChar.equippedWpn = itemName;
+            inGameChar.wpnPwr = armourStrength;
+        }
         GameManager.instance.RemoveItem(itemName);
+        //BattleItems.instance.ShowItems();
     }
 
 

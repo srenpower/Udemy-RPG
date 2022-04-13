@@ -18,7 +18,7 @@ public class BattleItems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        battleItemMenu.name = battleItemMenu.name + UnityEngine.Random.RandomRange(0.0f, 100000.0f).ToString();
+       // battleItemMenu.name = battleItemMenu.name + UnityEngine.Random.RandomRange(0.0f, 100000.0f).ToString();
         instance = this;   
     }
 
@@ -29,67 +29,66 @@ public class BattleItems : MonoBehaviour
     }
 
     // open battle item menu
-    public void OpenMenu()
+    public static void OpenMenu()
     {
         Debug.Log("Open Battle Items Menu " + instance.battleItemMenu.name);
         instance.battleItemMenu.gameObject.SetActive(true);
         instance.battleItemMenu.SetActive(true);
-
         ShowItems();
     }
 
-    public void CloseMenu()
+    public static void CloseMenu()
     {
         Debug.Log("Close Battle Items Menu" + instance.battleItemMenu.name);
         instance.battleItemMenu.SetActive(false);
     }
 
-    public void ShowItems()
+    public static void ShowItems()
     {
         // should already be sorted but just to be certain
         GameManager.instance.SortItems();
 
         // show player inventory in sell menu
-        for (int i = 0; i < itemButtons.Length; i++)
+        for (int i = 0; i < instance.itemButtons.Length; i++)
         {
-            itemButtons[i].buttonValue = i;
+            instance.itemButtons[i].buttonValue = i;
 
             if (GameManager.instance.itemsHeld[i] != "")
             {
-                itemButtons[i].buttonImage.gameObject.SetActive(true);
-                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite; // show player items
-                itemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString(); // show players item quantities
+                instance.itemButtons[i].buttonImage.gameObject.SetActive(true);
+                instance.itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite; // show player items
+                instance.itemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString(); // show players item quantities
             }
             else
             {
-                itemButtons[i].buttonImage.gameObject.SetActive(false);
-                itemButtons[i].amountText.text = "";
+                instance.itemButtons[i].buttonImage.gameObject.SetActive(false);
+                instance.itemButtons[i].amountText.text = "";
             }
         }
 
         if(GameManager.instance.itemsHeld.Length > 0 && GameManager.instance.itemsHeld[0] != "")
         {
-            selectedItem = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[0]);
-            SelectItem(selectedItem);
+            instance.selectedItem = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[0]);
+            SelectItem(instance.selectedItem);
         }
     }
 
-    public void SelectItem(Item battleItem)
+    public static void SelectItem(Item battleItem)
     {
-        if (selectedItem != null)
+        if (instance.selectedItem != null)
         {
-            selectedItem = battleItem;
-            itemName.text = selectedItem.itemName;
-            itemDescription.text = selectedItem.description;
+            instance.selectedItem = battleItem;
+            instance.itemName.text = instance.selectedItem.itemName;
+            instance.itemDescription.text = instance.selectedItem.description;
         }
     }
 
-    public void UseItem(int selectChar)
+    public static void UseItem(int selectChar)
     {
-        if (selectedItem != null)
+        if (instance.selectedItem != null)
         {
             // usebattle in battle to update the correct instance of the player
-            selectedItem.UseBattle(selectChar);
+            instance.selectedItem.UseBattle(selectChar);
             GameMenu.instance.CloseItemCharChoice();
 
             BattleManager.instance.UpdateUIStats();

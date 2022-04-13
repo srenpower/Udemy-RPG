@@ -9,6 +9,7 @@ public class BattleChar : MonoBehaviour
 
     public string charName;
     public int currentHP, maxHP, currentMP, maxMP, strength, defense, wpnPwr, armrPwr;
+    public string equippedWpn, equippedArmr; // added to try to include armour/weapons
     public bool hasDied;
 
     public SpriteRenderer theSprite;
