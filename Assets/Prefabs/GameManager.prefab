@@ -103,9 +103,17 @@ MonoBehaviour:
   - {fileID: 2189776616972550890, guid: 75ee04a16461d77478dd59da4c452a96, type: 3}
   - {fileID: 1723102780757396653, guid: a103f917d522ed146a33bae19db661b7, type: 3}
   - {fileID: 7806871702496250587, guid: d0132d9a3e9710e48ae05320f30eae56, type: 3}
+  - {fileID: 635012871929317899, guid: 001e5560ceaafb7419d066a55df7479e, type: 3}
+  - {fileID: 666993360319167375, guid: b01291ad2d4cdbf489277bbb48736ec1, type: 3}
   - {fileID: 7186645937406587051, guid: 694ffe7e0e24dc147b29e5c920054a89, type: 3}
+  - {fileID: 5182081512337182684, guid: 777b219194115b9458cac7cfef94910e, type: 3}
+  - {fileID: 632708218194813243, guid: d2c4987babcca3e4f93152ae35133959, type: 3}
   - {fileID: 16349817498698427, guid: 765648376a412b84a9d4436f5a00255f, type: 3}
+  - {fileID: 8761631521088936574, guid: 131d8cb3eb5527246a0ab54f1eab3559, type: 3}
+  - {fileID: 5093105033011936113, guid: e0789507cd836b24d8a247245fbb5288, type: 3}
   - {fileID: 7259158902645931045, guid: 72558ba381d689e4f93465d14e4d263a, type: 3}
+  - {fileID: 1693575088074151055, guid: c628b86d158b68f4c80dfbc2dcd5260c, type: 3}
+  - {fileID: 4929860601084094161, guid: 1b02ca27f8129c94d8160ee7d5b858fe, type: 3}
   - {fileID: 8471242542387707293, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
   currentGold: 0
 --- !u!114 &8142836737255755149
@@ -136,7 +144,16 @@ MonoBehaviour:
   - Woody in party
   - Moved Log 1
   - Moved Log 2
-  questMarkersComplete: 000000000000000000000000000000
+  - Enter Cave
+  - Enter Cave 2
+  - Found Tater
+  - Open Chest 3
+  - Daisy Found
+  - Dragon appears
+  - Beat final boss
+  - Open Chest 4
+  - Del & Phil Final
+  questMarkersComplete: 000000000000000000000000000000000000000000000000
 --- !u!114 &2033778083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,25 +216,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charName: Woody
-  playerLevel: 3
+  playerLevel: 2
   currentEXP: 0
   expToNextLevel: 
   maxLevel: 20
-  baseEXP: 450
+  baseEXP: 300
   currentHP: 150
   maxHP: 150
-  currentMP: 0
+  currentMP: 25
   maxMP: 25
   mpLvlBonus: 
-  strength: 20
-  defense: 14
+  strength: 4
+  defense: 8
   wpnPwr: 0
   armrPwr: 0
   equippedWpn: 
   equippedArmr: 
   charImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
-  noticeWindow: {fileID: 0}
-  noticeMessage: {fileID: 0}
 --- !u!1 &6812672594241629758
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,25 +277,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charName: Tater
-  playerLevel: 4
-  currentEXP: 250
+  playerLevel: 3
+  currentEXP: 0
   expToNextLevel: 
   maxLevel: 20
-  baseEXP: 600
-  currentHP: 200
-  maxHP: 200
+  baseEXP: 300
+  currentHP: 170
+  maxHP: 170
   currentMP: 25
   maxMP: 25
   mpLvlBonus: 
-  strength: 20
-  defense: 14
+  strength: 8
+  defense: 8
   wpnPwr: 0
   armrPwr: 0
   equippedWpn: 
   equippedArmr: 
   charImage: {fileID: -9041646763189933228, guid: 19a08689932ad494087ad00bbf572161, type: 3}
-  noticeWindow: {fileID: 0}
-  noticeMessage: {fileID: 0}
 --- !u!1 &8142836737689907867
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,15 +345,13 @@ MonoBehaviour:
   baseEXP: 300
   currentHP: 100
   maxHP: 100
-  currentMP: 0
+  currentMP: 30
   maxMP: 30
   mpLvlBonus: 
-  strength: 15
-  defense: 12
+  strength: 4
+  defense: 6
   wpnPwr: 0
   armrPwr: 0
   equippedWpn: 
   equippedArmr: 
   charImage: {fileID: 7152930139536384079, guid: da884cda8a9b6fb4aa961f6e75b7b08c, type: 3}
-  noticeWindow: {fileID: 0}
-  noticeMessage: {fileID: 0}

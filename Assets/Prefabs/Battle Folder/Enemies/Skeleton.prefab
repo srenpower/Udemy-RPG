@@ -101,14 +101,16 @@ MonoBehaviour:
   - Slash
   - Fire
   charName: Skeleton
-  currentHP: 70
-  maxHP: 70
+  currentHP: 85
+  maxHP: 85
   currentMP: 0
   maxMP: 0
-  strength: 5
+  strength: 6
   defense: 4
-  wpnPwr: 5
-  armrPwr: 5
+  wpnPwr: 4
+  armrPwr: 1
+  equippedWpn: 
+  equippedArmr: 
   hasDied: 0
   theSprite: {fileID: 2695362619123524324}
   deadSprite: {fileID: 0}

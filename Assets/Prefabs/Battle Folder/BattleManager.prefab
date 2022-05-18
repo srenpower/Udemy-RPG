@@ -3111,6 +3111,7 @@ MonoBehaviour:
   playerPrefabs:
   - {fileID: 9115833761646609476, guid: 14f3e3798eae5f8418011881e493b6c9, type: 3}
   - {fileID: 3898282021074388188, guid: 96a59be73a8d7c74a99e18575ed8aca1, type: 3}
+  - {fileID: 3280403090753669054, guid: 6dde5ee70d95dd1458da542fb708228f, type: 3}
   enemyPrefabs:
   - {fileID: 796587184121280120, guid: 111359700c136bb46bddb5214cc887e4, type: 3}
   - {fileID: 2115077301831525215, guid: 6101dd2485201004a865bb0075733ab6, type: 3}

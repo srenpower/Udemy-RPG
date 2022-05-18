@@ -99,6 +99,7 @@ MonoBehaviour:
   isItem: 0
   isWeapon: 1
   isArmour: 0
+  isGold: 0
   itemName: Wooden Sword
   description: More of a blunt weapon
   value: 10
@@ -107,5 +108,5 @@ MonoBehaviour:
   affectHP: 0
   affectMP: 0
   affectStr: 0
-  weaponStrength: 5
+  weaponStrength: 4
   armourStrength: 0

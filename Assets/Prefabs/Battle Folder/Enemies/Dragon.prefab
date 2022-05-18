@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2032213379
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300012, guid: dd61146dbe36aa6449131fb544979165, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109,7 +109,9 @@ MonoBehaviour:
   strength: 10
   defense: 10
   wpnPwr: 10
-  armrPwr: 10
+  armrPwr: 5
+  equippedWpn: 
+  equippedArmr: 
   hasDied: 0
   theSprite: {fileID: 5884569027612076175}
   deadSprite: {fileID: 0}

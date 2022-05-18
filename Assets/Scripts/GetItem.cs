@@ -7,6 +7,7 @@ public class GetItem : MonoBehaviour
     private bool canPickup;
     public string[] rewardItems;
     public bool autoReceive;
+    private bool firstPickup = true;
 
     // Start is called before the first frame update
     void Start()
@@ -39,10 +40,11 @@ public class GetItem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Trigger pickup");
-        if (other.tag == "Player")
+        if (other.tag == "Player" && firstPickup)
         {
             Debug.Log("Player TRUE");
             canPickup = true;
+            firstPickup = false;
         }
     }
 

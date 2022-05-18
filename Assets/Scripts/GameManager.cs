@@ -275,6 +275,9 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt(saveState + "_" + "ItemAmount_" + i, numberOfItems[i]);
         }
 
+        // store gold
+        PlayerPrefs.SetInt(saveState + "_" + "GoldAmount", currentGold);
+
         // Store quest data
         for(int i = 0; i < QuestManager.instance.questMarkerNames.Length; i++)
         {
@@ -301,6 +304,9 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt(saveState + "_" + "PickupItems_" + i, 0);
             }
         }
+        // Level up notification
+        GameMenu.instance.gameNotification.theText.text = string.Format("Game Saved");
+        GameMenu.instance.gameNotification.Activate(true);
     }
 
     public void LoadData(string saveName)
@@ -351,8 +357,11 @@ public class GameManager : MonoBehaviour
             numberOfItems[i] = PlayerPrefs.GetInt(saveState + "_" + "ItemAmount_" + i);
         }
 
+        // set gold
+        currentGold = PlayerPrefs.GetInt(saveState + "_" + "GoldAmount");
+
         // set quest data
-        for(int i = 0; i < QuestManager.instance.questMarkerNames.Length; i++)
+        for (int i = 0; i < QuestManager.instance.questMarkerNames.Length; i++)
         {
             //PlayerPrefs.SetString(saveState + "_" + "QuestName_" + i, QuestManager.instance.questMarkerNames[i]);
             if (PlayerPrefs.GetInt(saveState + "_" + "QuestCompletion_" + i) == 1)

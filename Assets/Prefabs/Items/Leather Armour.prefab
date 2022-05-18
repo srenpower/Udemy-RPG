@@ -99,6 +99,7 @@ MonoBehaviour:
   isItem: 0
   isWeapon: 0
   isArmour: 1
+  isGold: 0
   itemName: Leather Armour
   description: Sturdy leather armour
   value: 25
@@ -108,4 +109,4 @@ MonoBehaviour:
   affectMP: 0
   affectStr: 0
   weaponStrength: 0
-  armourStrength: 10
+  armourStrength: 6

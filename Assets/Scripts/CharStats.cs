@@ -29,10 +29,6 @@ public class CharStats : MonoBehaviour
     public string equippedArmr;
     public Sprite charImage;
 
-    [Header("Level Up Notice")]
-    public Object noticeWindow;
-    public Text noticeMessage;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -68,8 +64,6 @@ public class CharStats : MonoBehaviour
 
             newMP += rand.Next(4, 8); // assign random amount of MP 
             mpLvlBonus[i] = newMP;
-
-            // Level up notification
             
         }
     }
@@ -78,10 +72,12 @@ public class CharStats : MonoBehaviour
     void Update()
     {
         // For testing purposes only 
-        /*if (Input.GetKeyDown(KeyCode.K))
+        /*
+        if (Input.GetKeyDown(KeyCode.K))
         {
-            AddExp(500);
-        }*/
+            AddExp(300);
+        }
+        */
     }
 
     // add experience
@@ -91,7 +87,7 @@ public class CharStats : MonoBehaviour
 
         if (playerLevel < maxLevel)
         {
-            if (currentEXP >= expToNextLevel[playerLevel])
+            while (currentEXP >= expToNextLevel[playerLevel])
             {
                 currentEXP -= expToNextLevel[playerLevel];
 
@@ -116,6 +112,10 @@ public class CharStats : MonoBehaviour
                 // set new mp
                 maxMP += mpLvlBonus[playerLevel];
                 currentMP = maxMP;
+
+                // Level up notification
+                GameMenu.instance.gameNotification.theText.text = string.Format("{0} Reached Level {1}", charName, playerLevel);
+                GameMenu.instance.gameNotification.Activate(true);
             }
         }
         else

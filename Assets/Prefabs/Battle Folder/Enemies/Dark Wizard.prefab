@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2032213379
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300012, guid: 988d560df8d322a468c97243cbfd76e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -101,14 +101,16 @@ MonoBehaviour:
   - Fire
   - Ice
   charName: Dark Wizard
-  currentHP: 150
-  maxHP: 150
+  currentHP: 200
+  maxHP: 200
   currentMP: 0
   maxMP: 0
-  strength: 12
-  defense: 2
+  strength: 9
+  defense: 6
   wpnPwr: 5
-  armrPwr: 5
+  armrPwr: 2
+  equippedWpn: 
+  equippedArmr: 
   hasDied: 0
   theSprite: {fileID: 7842827160290299064}
   deadSprite: {fileID: 0}

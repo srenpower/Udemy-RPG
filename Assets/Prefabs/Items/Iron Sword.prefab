@@ -99,13 +99,14 @@ MonoBehaviour:
   isItem: 0
   isWeapon: 1
   isArmour: 0
+  isGold: 0
   itemName: Iron Sword
   description: A heavy sword for amputating limbs
-  value: 50
+  value: 45
   itemSprite: {fileID: -3074023447068413781, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
   amountToChange: 0
   affectHP: 0
   affectMP: 0
   affectStr: 0
-  weaponStrength: 10
+  weaponStrength: 8
   armourStrength: 0

@@ -6,8 +6,10 @@ public class NotificationActivator : MonoBehaviour
 {
     public string message;
     public bool isTrigger;
+    public bool deactivateAfterUse; // message only shown once
     public bool buttonOn;
     private bool inZone = false;
+    private bool doNotActivate = false; // keeps notification from activating repeatedly
    // public GameNotification gameNotice;
     
 
@@ -20,24 +22,33 @@ public class NotificationActivator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isTrigger && inZone)
+        if (!isTrigger && inZone && !doNotActivate)
         {
             if (Input.GetButtonDown("Fire1"))
             {
                 GameMenu.instance.gameNotification.Activate(buttonOn);
                 GameMenu.instance.gameNotification.theText.text = message;
+
+                if(deactivateAfterUse)
+                {
+                    doNotActivate = true;
+                }
             }
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !doNotActivate)
         {
             inZone = true;
             if (isTrigger)
             {
                 GameMenu.instance.gameNotification.Activate(buttonOn);
                 GameMenu.instance.gameNotification.theText.text = message;
+                if (deactivateAfterUse)
+                {
+                    doNotActivate = true;
+                }
             }
         }
     }

@@ -99,6 +99,7 @@ MonoBehaviour:
   isItem: 0
   isWeapon: 0
   isArmour: 1
+  isGold: 0
   itemName: Iron Armour
   description: Heavy iron armour
   value: 50
@@ -108,4 +109,4 @@ MonoBehaviour:
   affectMP: 0
   affectStr: 0
   weaponStrength: 0
-  armourStrength: 25
+  armourStrength: 10

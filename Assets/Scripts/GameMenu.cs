@@ -45,6 +45,8 @@ public class GameMenu : MonoBehaviour
 
     public Text goldText; // updates text for amount of gold
 
+    private string noItemEquippedMsg = "None Equipped";
+
     [Header("Additional Variables")]
     public bool canOpen = true; // SP: added to control whether menu may open or not, specifically to keep it from opening when shop menu is open
     public string mainMenuName;
@@ -180,6 +182,10 @@ public class GameMenu : MonoBehaviour
         {
             statWpnEqpd.text = playerStats[selected].equippedWpn;
         }
+        else
+        {
+            statWpnEqpd.text = noItemEquippedMsg;
+        }
         statWpnPwr.text = playerStats[selected].wpnPwr.ToString(); // show weapon power even if there is no weapon so power is "0"
 
         // only show equipped armour if one exists - otherwise leave "none" placeholder
@@ -187,7 +193,12 @@ public class GameMenu : MonoBehaviour
         {
             statArmEqpd.text = playerStats[selected].equippedArmr;// show weapon power even if there is no armour so power is "0"
         }
+        else
+        {
+            statArmEqpd.text = noItemEquippedMsg;
+        }
         statArmrPwr.text = playerStats[selected].armrPwr.ToString();
+        
         statExp.text = (playerStats[selected].expToNextLevel[playerStats[selected].playerLevel] - playerStats[selected].currentEXP).ToString();
         statImage.sprite = playerStats[selected].charImage;
     }
@@ -259,12 +270,12 @@ public class GameMenu : MonoBehaviour
         else
         {
             battleItemCharChoiceMenu.SetActive(true);
-
+            
             for (int i = 0; i < battleItemCharChoiceNames.Length; i++)
-            {
-                battleItemCharChoiceNames[i].text = GameManager.instance.playerStats[i].charName;
-                battleItemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
-            }
+             {
+                 battleItemCharChoiceNames[i].text = GameManager.instance.playerStats[i].charName;
+                 battleItemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
+             }
         }
     }
 
