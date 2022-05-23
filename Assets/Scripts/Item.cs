@@ -24,6 +24,8 @@ public class Item : MonoBehaviour
     public int weaponStrength;
     public int armourStrength;
 
+    private string noItemEquipped = "None Equipped";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,7 +74,7 @@ public class Item : MonoBehaviour
         // todo: figure out battle time item swapping
         if (isWeapon)
         {
-            if (selectedChar.equippedWpn != "")
+            if (selectedChar.equippedWpn != noItemEquipped)
             {
                 //GameManager.instance.AddItem(selectedChar.equippedWpn); // add current item equipped back into battle inventory
                 GameManager.instance.AddItem(inGameChar.equippedWpn); // add current item equppied back into regular inventory
@@ -87,7 +89,7 @@ public class Item : MonoBehaviour
 
         if (isArmour)
         {
-            if (selectedChar.equippedArmr != "")
+            if (selectedChar.equippedArmr != noItemEquipped)
             {
                //GameManager.instance.AddItem(selectedChar.equippedArmr); // add current item equipped back into battle inventory
                 GameManager.instance.AddItem(inGameChar.equippedArmr); // add current item equppied back into regular inventory
@@ -139,7 +141,7 @@ public class Item : MonoBehaviour
 
         if (isWeapon)
         {
-            if (selectedChar.equippedWpn != "")
+            if (selectedChar.equippedWpn != noItemEquipped)
             {
                 GameManager.instance.AddItem(selectedChar.equippedWpn);
             }
@@ -150,7 +152,7 @@ public class Item : MonoBehaviour
 
         if (isArmour)
         {
-            if (selectedChar.equippedArmr != "")
+            if (selectedChar.equippedArmr != noItemEquipped)
             {
                 GameManager.instance.AddItem(selectedChar.equippedArmr);
             }

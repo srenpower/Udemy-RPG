@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class BattleRewards : MonoBehaviour
 {
@@ -15,6 +16,13 @@ public class BattleRewards : MonoBehaviour
 
     public bool markQuestComplete;
     public string questToMark;
+
+    public Button closeButton;
+
+    private void OnEnable()
+    {
+        EventSystem.current.SetSelectedGameObject(closeButton.gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()

@@ -779,12 +779,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 551134796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewardItems:
-  - Wooden Sword
-  autoReceive: 1
+  objectToActivate: {fileID: 1593098884}
+  questsToCheck:
+  - Gift from Wanda
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
 --- !u!1 &573120379
 GameObject:
   m_ObjectHideFlags: 0
@@ -11175,7 +11178,6 @@ GameObject:
   - component: {fileID: 1042073966}
   - component: {fileID: 1042073965}
   - component: {fileID: 1042073963}
-  - component: {fileID: 1042073962}
   - component: {fileID: 1042073961}
   m_Layer: 0
   m_Name: Wanda Dialog
@@ -11198,29 +11200,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToActivate: {fileID: 551134796}
   questsToCheck:
-  - Talk to Wanda
-  - Gift from Wanda
-  mustCompleteAll: 1
-  activeIfComplete: 1
-  deactivateIfComplete: 0
---- !u!114 &1042073962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042073960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1593098884}
-  questsToCheck:
   - Gift from Wanda
   mustCompleteAll: 0
-  activeIfComplete: 0
-  deactivateIfComplete: 1
+  activeIfComplete: 1
+  deactivateIfComplete: 0
 --- !u!114 &1042073963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28424,6 +28407,115 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5426044, y: 1.6165953}
   m_EdgeRadius: 0
+--- !u!1 &1561104577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1561104578}
+  - component: {fileID: 1561104579}
+  - component: {fileID: 1561104581}
+  - component: {fileID: 1561104580}
+  - component: {fileID: 1561104582}
+  m_Layer: 0
+  m_Name: Received Item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1561104578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561104577}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4454752378240676140}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1561104579
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561104577}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.15451145, y: 1.1842105}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.88797, y: 2.1403508}
+  m_EdgeRadius: 0
+--- !u!114 &1561104580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561104577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a889ce923890744ad54a3b2604f467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Health Potion Received!
+  isTrigger: 1
+  deactivateAfterUse: 1
+  buttonOn: 1
+--- !u!114 &1561104581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561104577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardItems:
+  - Health Potion
+  autoReceive: 1
+--- !u!114 &1561104582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561104577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 6698518576749059890}
+  questsToCheck:
+  - Open Chest 1
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
 --- !u!1 &1593098884
 GameObject:
   m_ObjectHideFlags: 0
@@ -28435,7 +28527,9 @@ GameObject:
   - component: {fileID: 1593098889}
   - component: {fileID: 1593098887}
   - component: {fileID: 1593098886}
+  - component: {fileID: 1593098890}
   - component: {fileID: 1593098885}
+  - component: {fileID: 1593098888}
   m_Layer: 0
   m_Name: Receive Gift
   m_TagString: Untagged
@@ -28458,7 +28552,7 @@ MonoBehaviour:
   questToMark: Gift from Wanda
   markComplete: 1
   markOnEnter: 1
-  deactivateOnMarking: 1
+  deactivateOnMarking: 0
 --- !u!114 &1593098886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28501,6 +28595,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.086468, y: 1.9704504}
   m_EdgeRadius: 0
+--- !u!114 &1593098888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593098884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 551134796}
+  questsToCheck:
+  - Gift from Wanda
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
 --- !u!4 &1593098889
 Transform:
   m_ObjectHideFlags: 0
@@ -28515,6 +28627,21 @@ Transform:
   m_Father: {fileID: 1042073964}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1593098890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593098884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardItems:
+  - Wooden Sword
+  autoReceive: 1
 --- !u!1 &1661746957
 GameObject:
   m_ObjectHideFlags: 0
@@ -28901,47 +29028,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5064403094706203890, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
   m_PrefabInstance: {fileID: 6684291709664102544}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1775718176595872002
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6698518576749059890}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.12048894, y: -0.6084733}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.6868424, y: 2.2169466}
-  m_EdgeRadius: 0
---- !u!114 &1775718176595872003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6698518576749059890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rewardItems:
-  - Health Potion
-  autoReceive: 1
 --- !u!4 &3719974744014217143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
@@ -29100,6 +29186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6698518577698963916}
+  - {fileID: 1561104578}
   - {fileID: 6698518576749059892}
   m_Father: {fileID: 813874609}
   m_RootOrder: 3
@@ -29188,8 +29275,6 @@ GameObject:
   - component: {fileID: 6698518576749059892}
   - component: {fileID: 6698518576749059893}
   - component: {fileID: 6698518576749059895}
-  - component: {fileID: 1775718176595872002}
-  - component: {fileID: 1775718176595872003}
   - component: {fileID: 6698518576749059891}
   m_Layer: 0
   m_Name: Open Chest
@@ -29207,13 +29292,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6698518576749059890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79a889ce923890744ad54a3b2604f467, type: 3}
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Health Potion Received!
-  isTrigger: 1
-  deactivateAfterUse: 1
-  buttonOn: 1
+  objectToActivate: {fileID: 1561104577}
+  questsToCheck:
+  - Open Chest 1
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
 --- !u!4 &6698518576749059892
 Transform:
   m_ObjectHideFlags: 0
@@ -29226,7 +29313,7 @@ Transform:
   m_LocalScale: {x: 1.0604, y: 0.9799, z: 1}
   m_Children: []
   m_Father: {fileID: 4454752378240676140}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6698518576749059893
 SpriteRenderer:
@@ -29361,6 +29448,7 @@ GameObject:
   - component: {fileID: 6698518577698963907}
   - component: {fileID: 6698518577698963918}
   - component: {fileID: 6698518577698963906}
+  - component: {fileID: 6698518577698963915}
   m_Layer: 0
   m_Name: Closed Chest
   m_TagString: Untagged
@@ -29368,6 +29456,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6698518577698963915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698518577698963914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1561104577}
+  questsToCheck:
+  - Open Chest 1
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
 --- !u!4 &6698518577698963916
 Transform:
   m_ObjectHideFlags: 0
@@ -29460,7 +29566,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6540413, y: 1.4142246}
   m_EdgeRadius: 0
---- !u!114 &8664750306671987610
+--- !u!1 &8664750306671987611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4454752378240676140}
+  - component: {fileID: 8664750306671987612}
+  m_Layer: 0
+  m_Name: Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &8664750306671987612
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29472,26 +29595,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 6698518576749059890}
+  objectToActivate: {fileID: 6698518577698963914}
   questsToCheck:
   - Open Chest 1
   mustCompleteAll: 0
-  activeIfComplete: 1
-  deactivateIfComplete: 0
---- !u!1 &8664750306671987611
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4454752378240676140}
-  - component: {fileID: 8664750306671987610}
-  m_Layer: 0
-  m_Name: Chest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  activeIfComplete: 0
+  deactivateIfComplete: 1

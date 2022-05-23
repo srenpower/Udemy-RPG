@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     private int goldValue = 10; // value of gold coin - could not figure out how to get value from gold 
     public int currentGold;
     private string saveState;
+    //private string noneEquipped = "None Equipped";
 
     // Start is called before the first frame update
     void Start()
@@ -150,7 +151,7 @@ public class GameManager : MonoBehaviour
                     itemsHeld[newItemPosition] = itemToAdd;
                     numberOfItems[newItemPosition]++;
                 }
-                else if (itemToAdd == "Gold Coin")
+                else if (itemToAdd == "Gold Coin" || itemToAdd == "")
                 {
 
                 }
@@ -225,13 +226,11 @@ public class GameManager : MonoBehaviour
         else
         {
             saveState = "Persistent_Save";
-            Debug.Log("Save persistent state");
         }
         PlayerPrefs.SetString(saveState, saveState);
 
         if (saveState != "Persistent_Save")
         {
-            Debug.Log("Not used during persistent state");
             // store current scene state
             PlayerPrefs.SetString(saveState + "_Scene", SceneManager.GetActiveScene().name);
             // store player coordinates
@@ -305,8 +304,11 @@ public class GameManager : MonoBehaviour
             }
         }
         // Level up notification
-        GameMenu.instance.gameNotification.theText.text = string.Format("Game Saved");
-        GameMenu.instance.gameNotification.Activate(true);
+        if (saveState != "Persistent_Save")
+        {
+            GameMenu.instance.gameNotification.theText.text = string.Format("Game Saved");
+            GameMenu.instance.gameNotification.Activate(true);
+        }
     }
 
     public void LoadData(string saveName)

@@ -10,6 +10,7 @@ public class GameMenu : MonoBehaviour
     public GameObject[] windows; // array of available menu windows
 
     public GameNotification gameNotification;
+    public GameObject creditWindow;
 
     public GameObject[] statsButtons; // buttons for status window
 

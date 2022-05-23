@@ -57,7 +57,6 @@ public class GameNotification : MonoBehaviour
     public void CloseNotification()
     {
         gameObject.SetActive(false);
-        Debug.Log("Button Pressed");
     }
 }
 

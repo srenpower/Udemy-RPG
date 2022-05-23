@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\PickupItem.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\CreditWindow.cs" />
     <Compile Include="Assets\Scripts\EssentialsLoader.cs" />
     <Compile Include="Assets\Scripts\BattleRewards.cs" />
     <Compile Include="Assets\Scripts\PickupManager.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\Scripts\DamageNumber.cs" />
     <Compile Include="Assets\Scripts\DialogManager.cs" />
     <Compile Include="Assets\Scripts\CharStats.cs" />
+    <Compile Include="Assets\Scripts\CreditActivator.cs" />
     <Compile Include="Assets\Scripts\AddPartyMember.cs" />
     <Compile Include="Assets\Scripts\QuestObjectActivator.cs" />
     <Compile Include="Assets\Scripts\BattleTargetButton.cs" />

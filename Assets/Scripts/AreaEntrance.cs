@@ -15,7 +15,7 @@ public class AreaEntrance : MonoBehaviour
             PlayerController.instance.transform.position = transform.position;
         }
         Debug.Log("Arrived in new scene");
-        //GameManager.instance.LoadData("Persistent_Save");
+        // GameManager.instance.LoadData("Persistent_Save");
         UIFade.instance.FadeFromBlack(); // fade from black in new scene
         GameManager.instance.fadingBetweenAreas = false; // allow player movement once fade is complete 
     }

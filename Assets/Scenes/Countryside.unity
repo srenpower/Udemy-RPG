@@ -403,47 +403,6 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
---- !u!114 &206386158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4922844930604606943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rewardItems:
-  - Mana Potion
-  autoReceive: 1
---- !u!61 &206386159
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4922844930604606943}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.12048894, y: -0.6084733}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.6868424, y: 2.2169466}
-  m_EdgeRadius: 0
 --- !u!1001 &402251719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -509,6 +468,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15ffe126fd4638f40bb6dfbcb5e51517, type: 3}
+--- !u!1 &434648919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434648921}
+  - component: {fileID: 434648920}
+  m_Layer: 0
+  m_Name: Objects & Items
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &434648920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434648919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ddb7a9dc9bc3f488ee9d6ceca46e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToDeactivate: {fileID: 1456456284}
+  itemToCheck: Coin 4
+  deactivateOnPickup: 1
+--- !u!4 &434648921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434648919}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.112707, y: 9.510019, z: 5.826217}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2699604414865476545}
+  - {fileID: 2145927499}
+  - {fileID: 995481227}
+  - {fileID: 1456456285}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582465977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,12 +1146,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995481224}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.45, y: -0.76, z: -0.29500955}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.662707, y: -10.27002, z: -6.121227}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 434648921}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &995481228
 BoxCollider2D:
@@ -1217,6 +1226,115 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1200616037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1200616042}
+  - component: {fileID: 1200616041}
+  - component: {fileID: 1200616040}
+  - component: {fileID: 1200616039}
+  - component: {fileID: 1200616038}
+  m_Layer: 0
+  m_Name: Received Item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1200616038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200616037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 4922844930604606943}
+  questsToCheck:
+  - Open Chest 2
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+--- !u!61 &1200616039
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200616037}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.04604101, y: 1.3351818}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9208155, y: 2.0128963}
+  m_EdgeRadius: 0
+--- !u!114 &1200616040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200616037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a889ce923890744ad54a3b2604f467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Mana Potion Received!
+  isTrigger: 1
+  deactivateAfterUse: 1
+  buttonOn: 1
+--- !u!114 &1200616041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200616037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardItems:
+  - Mana Potion
+  autoReceive: 1
+--- !u!4 &1200616042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200616037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2699604414865476545}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1332052399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,7 +1387,7 @@ Transform:
   - {fileID: 919389542}
   - {fileID: 2034927377}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1332052402
 MonoBehaviour:
@@ -1358,6 +1476,81 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+--- !u!1001 &1456456283
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 434648921}
+    m_Modifications:
+    - target: {fileID: 5064403094706203890, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_Name
+      value: Coin 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: itemName
+      value: Coin 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064403094706203891, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: markPickupItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.8144
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21.932592
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+--- !u!1 &1456456284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5064403094706203890, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+  m_PrefabInstance: {fileID: 1456456283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1456456285 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+  m_PrefabInstance: {fileID: 1456456283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1769886559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11051,23 +11244,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 434648921}
     m_Modifications:
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.61
+      value: 11.722707
       objectReference: {fileID: 0}
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.66
+      value: -10.170019
       objectReference: {fileID: 0}
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.7359157
+      value: -12.562133
       objectReference: {fileID: 0}
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11075,15 +11268,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11127,6 +11320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
+--- !u!4 &2145927499 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
+  m_PrefabInstance: {fileID: 2145927498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2699604414865476545
 Transform:
   m_ObjectHideFlags: 0
@@ -11134,14 +11332,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6961437170030260598}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.951694, y: -0.9225733, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.0644, y: -10.432592, z: -5.826217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4922844931265182497}
+  - {fileID: 1200616042}
   - {fileID: 4922844930604606937}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 434648921}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4922844930604606936
 SpriteRenderer:
@@ -11207,7 +11406,7 @@ Transform:
   m_LocalScale: {x: 1.0604, y: 0.9799, z: 1}
   m_Children: []
   m_Father: {fileID: 2699604414865476545}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4922844930604606938
 BoxCollider2D:
@@ -11246,8 +11445,6 @@ GameObject:
   - component: {fileID: 4922844930604606937}
   - component: {fileID: 4922844930604606936}
   - component: {fileID: 4922844930604606938}
-  - component: {fileID: 206386159}
-  - component: {fileID: 206386158}
   - component: {fileID: 4922844930604606944}
   m_Layer: 0
   m_Name: Open Chest
@@ -11265,13 +11462,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4922844930604606943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79a889ce923890744ad54a3b2604f467, type: 3}
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Mana Potion Received!
-  isTrigger: 1
-  deactivateAfterUse: 1
-  buttonOn: 1
+  objectToActivate: {fileID: 1200616037}
+  questsToCheck:
+  - Open Chest 2
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
 --- !u!212 &4922844931265182496
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11436,6 +11635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2699604414865476545}
   - component: {fileID: 6961437170030260599}
+  - component: {fileID: 6961437170030260600}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -11455,7 +11655,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 4922844930604606943}
+  objectToActivate: {fileID: 4922844931265182503}
+  questsToCheck:
+  - Open Chest 2
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 1
+--- !u!114 &6961437170030260600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6961437170030260598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1200616037}
   questsToCheck:
   - Open Chest 2
   mustCompleteAll: 0

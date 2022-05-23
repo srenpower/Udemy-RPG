@@ -115,6 +115,7 @@ MonoBehaviour:
   - {fileID: 1693575088074151055, guid: c628b86d158b68f4c80dfbc2dcd5260c, type: 3}
   - {fileID: 4929860601084094161, guid: 1b02ca27f8129c94d8160ee7d5b858fe, type: 3}
   - {fileID: 8471242542387707293, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
+  - {fileID: 2270018167608661638, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
   currentGold: 0
 --- !u!114 &8142836737255755149
 MonoBehaviour:
@@ -171,7 +172,11 @@ MonoBehaviour:
   - Coin 1
   - Coin 2
   - Coin 3
-  itemsPickedUp: 00000000
+  - Coin 4
+  - Coin 5
+  - Coin 6
+  - Coin 7
+  itemsPickedUp: 0000000000000000
 --- !u!1 &4366026564263288344
 GameObject:
   m_ObjectHideFlags: 0
