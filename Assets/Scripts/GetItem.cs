@@ -8,6 +8,7 @@ public class GetItem : MonoBehaviour
     public string[] rewardItems;
     public bool autoReceive;
     private bool firstPickup = true;
+    public bool DidRewardItem = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,9 @@ public class GetItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DidRewardItem)
+            return;
+
         if (!autoReceive)
         {
             if (canPickup && Input.GetButtonDown("Fire1"))
@@ -63,5 +67,7 @@ public class GetItem : MonoBehaviour
             Debug.Log("Received " + rewardItems[i]);
             GameManager.instance.AddItem(rewardItems[i]);
         }
+
+        DidRewardItem = true;
     }
 }

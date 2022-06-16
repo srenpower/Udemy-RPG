@@ -58,11 +58,27 @@ public class BattleItems : MonoBehaviour
                 instance.itemButtons[i].buttonImage.gameObject.SetActive(true);
                 instance.itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite; // show player items
                 instance.itemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString(); // show players item quantities
+
+                // add +1 and +2 modifiers to armour and weapon buttons
+                if ((GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemName).Contains("+"))
+                {
+                    string[] splitString = (GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemName).Split('+');
+                    Debug.Assert(splitString.Length == 2, "Uh oh, this should be size 2");
+                    if (splitString.Length == 2)
+                    {
+                        instance.itemButtons[i].modifierValue.text = "+" + splitString[1];
+                    }
+                }
+                else
+                {
+                    instance.itemButtons[i].modifierValue.text = "";
+                }
             }
             else
             {
                 instance.itemButtons[i].buttonImage.gameObject.SetActive(false);
                 instance.itemButtons[i].amountText.text = "";
+                instance.itemButtons[i].modifierValue.text = "";
             }
         }
 

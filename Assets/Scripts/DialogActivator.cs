@@ -28,22 +28,23 @@ public class DialogActivator : MonoBehaviour
     {
         if (!activateOnEnter)
         {
-            if (canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
+            if (!BattleManager.instance.battleScene.activeInHierarchy && !GameMenu.instance.gameNotification.isActiveAndEnabled)
             {
-                DialogManager.instance.ShowDialog(lines, isPerson);
-                DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+                if (canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
+                {
+                    DialogManager.instance.ShowDialog(lines, isPerson);
+                    DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+                }
             }
         }
         else
         {
-            if(canActivate && !DialogManager.instance.dialogBox.activeInHierarchy)
+            if(canActivate && !DialogManager.instance.dialogBox.activeInHierarchy && !GameMenu.instance.gameNotification.isActiveAndEnabled)
             {
                 DialogManager.instance.ShowDialog(lines, isPerson);
                 DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
             }
         }
-
-
     }
     
     // normally (Collider2D collision) we change to other because "collision" is just a name and makes it confusing because Collision is an object in unity and leaves room for error

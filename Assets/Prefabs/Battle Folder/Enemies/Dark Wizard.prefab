@@ -100,15 +100,17 @@ MonoBehaviour:
   movesAvailable:
   - Fire
   - Ice
+  - Ice
   charName: Dark Wizard
   currentHP: 200
   maxHP: 200
   currentMP: 0
-  maxMP: 0
+  maxMP: 18
   strength: 9
   defense: 6
   wpnPwr: 5
   armrPwr: 2
+  magDef: 3
   equippedWpn: 
   equippedArmr: 
   hasDied: 0

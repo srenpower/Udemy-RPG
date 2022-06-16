@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class GameMenu : MonoBehaviour
 {
     public GameObject theMenu;
@@ -219,11 +220,27 @@ public class GameMenu : MonoBehaviour
                 itemButtons[i].buttonImage.gameObject.SetActive(true);
                 itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite;
                 itemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString();
+                
+                // add +1 or +2 modifier to weapon and armour buttons
+                if((GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemName).Contains("+"))
+                {
+                    string[] splitString = (GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemName).Split('+');
+                    Debug.Assert(splitString.Length == 2, "Uh oh, this should be size 2");
+                    if(splitString.Length == 2)
+                    {
+                        itemButtons[i].modifierValue.text = "+" + splitString[1];
+                    }
+                }
+                else
+                {
+                    itemButtons[i].modifierValue.text = "";
+                }
             }
             else
             {
                 itemButtons[i].buttonImage.gameObject.SetActive(false);
                 itemButtons[i].amountText.text = "";
+                itemButtons[i].modifierValue.text = "";
             }
         }
     }
@@ -306,8 +323,9 @@ public class GameMenu : MonoBehaviour
         AudioManager.instance.PlaySFX(4);
     }
 
-    public void QuitGame()
+    public void QuitGame(int saveNum)
     {
+        GameManager.instance.SaveData(saveNum);
         SceneManager.LoadScene(mainMenuName);
 
         Destroy(GameManager.instance.gameObject);

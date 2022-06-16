@@ -21,6 +21,7 @@ public class LoadingScene : MonoBehaviour
             waitToLoad -= Time.deltaTime;
             if(waitToLoad <= 0)
             {
+                AudioManager.instance.StopMusic();
                 SceneManager.LoadScene(PlayerPrefs.GetString("Save_One_Scene")); // need to change when switching to a 3 save system
 
                 GameManager.instance.LoadData("Save_One");

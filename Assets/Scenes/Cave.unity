@@ -123,6 +123,78 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &67851911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67851912}
+  - component: {fileID: 67851914}
+  - component: {fileID: 67851913}
+  m_Layer: 0
+  m_Name: Endgame Changes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &67851912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67851911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.0762935, y: 0.033943474, z: -3.1481054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &67851913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67851911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 880296474}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &67851914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67851911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 273943891}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &92025491
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +278,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 121707544}
+  - component: {fileID: 121707545}
+  - component: {fileID: 121707547}
+  - component: {fileID: 121707546}
   m_Layer: 0
   m_Name: Battles
   m_TagString: Untagged
@@ -226,9 +301,70 @@ Transform:
   m_Children:
   - {fileID: 1330649745}
   - {fileID: 277953484}
+  - {fileID: 1006139118}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &121707545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121707543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1006139116}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &121707546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121707543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 277953482}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &121707547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121707543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1330649739}
+  questsToCheck:
+  - Beat Cave Wizard
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &217499504
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +455,97 @@ Transform:
   m_Father: {fileID: 273943892}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &219167792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 219167793}
+  - component: {fileID: 219167796}
+  - component: {fileID: 219167795}
+  - component: {fileID: 219167794}
+  m_Layer: 0
+  m_Name: Received
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &219167793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219167792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.53, y: 4.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1997534310288058955}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &219167794
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219167792}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.029603243, y: -0.5032513}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.2433276, y: 2.0065026}
+  m_EdgeRadius: 0
+--- !u!114 &219167795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219167792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a889ce923890744ad54a3b2604f467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Iron Sword +1 Received!
+  isTrigger: 0
+  deactivateAfterUse: 1
+  buttonOn: 1
+--- !u!114 &219167796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219167792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardItems:
+  - Iron Sword +1
+  autoReceive: 0
+  DidRewardItem: 0
 --- !u!1 &273943891
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &277953483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,6 +620,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!4 &277953484
 Transform:
   m_ObjectHideFlags: 0
@@ -428,6 +657,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &277953486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +677,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &277953487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,6 +697,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &379979252
 GameObject:
   m_ObjectHideFlags: 0
@@ -8308,10 +8543,13 @@ MonoBehaviour:
   activateOnStay: 1
   activateOnExit: 0
   timeBetweenBattles: 0
-  deactivateAfterStarting: 1
+  deactivateOnceComplete: 1
+  deactivateOnFlee: 0
   cannotFlee: 1
+  completeWithFlee: 0
   shouldCompleteQuest: 1
   questToComplete: Beat final boss
+  customChanceToFlee: 0
 --- !u!61 &641171532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11596,6 +11834,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &913986866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11614,6 +11854,214 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &1006139116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1006139118}
+  - component: {fileID: 1006139117}
+  - component: {fileID: 1006139119}
+  m_Layer: 0
+  m_Name: Endgame Battles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1006139117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006139116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Spider
+    - Spider
+    - Spider
+    - Spider
+    rewardXP: 520
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Spider
+    - Spider
+    - Spider
+    rewardXP: 390
+    rewardItems:
+    - Resurrection Potion
+    - Gold Coin
+  - enemies:
+    - Eyeball
+    - Eyeball
+    - Eyeball
+    rewardXP: 600
+    rewardItems:
+    - Iron Armour +1
+    - Health Potion
+  - enemies:
+    - Eyeball
+    - Eyeball
+    - Eyeball
+    rewardXP: 600
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Eyeball
+    - Eyeball
+    - Eyeball
+    - Eyeball
+    rewardXP: 800
+    rewardItems:
+    - Iron Armour +2
+    - Gold Coin
+  - enemies:
+    - Eyeball
+    - Eyeball
+    - Spider
+    - Spider
+    rewardXP: 660
+    rewardItems:
+    - Iron Sword
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Skeleton
+    - Skeleton
+    - Skeleton
+    rewardXP: 450
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Skeleton
+    - Skeleton
+    - Skeleton
+    rewardXP: 450
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Skeleton
+    - Spider
+    - Spider
+    rewardXP: 410
+    rewardItems:
+    - Leather Armour +1
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Skeleton
+    - Spider
+    - Spider
+    rewardXP: 410
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Dark Wizard
+    - Spider
+    - Spider
+    rewardXP: 510
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Dark Wizard
+    - Spider
+    - Spider
+    rewardXP: 510
+    rewardItems:
+    - Resurrection Potion
+    - Mana Potion
+  - enemies:
+    - Dark Wizard
+    - Spider
+    - Eyeball
+    rewardXP: 510
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Dark Wizard
+    rewardXP: 250
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Dark Wizard
+    rewardXP: 250
+    rewardItems:
+    - Resurrection Potion
+    - Gold Coin
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 5
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 0
+  questToComplete: 
+  customChanceToFlee: 0
+--- !u!4 &1006139118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006139116}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.358434, y: 3.2046278, z: -7.5368404}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 121707544}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1006139119
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006139116}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.2401428, y: -0.17921114}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 32.89964, y: 16.77061}
+  m_EdgeRadius: 0
 --- !u!1 &1006564893
 GameObject:
   m_ObjectHideFlags: 0
@@ -11651,6 +12099,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &1006564895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11665,6 +12115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questToMark: Found Tater
   markComplete: 1
+  markIncomplete: 0
   markOnEnter: 1
   deactivateOnMarking: 1
 --- !u!61 &1006564896
@@ -11854,6 +12305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questToMark: Dragon appears
   markComplete: 1
+  markIncomplete: 0
   markOnEnter: 1
   deactivateOnMarking: 0
 --- !u!114 &1066165185
@@ -11931,6 +12383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questToMark: Enter Cave 2
   markComplete: 1
+  markIncomplete: 0
   markOnEnter: 1
   deactivateOnMarking: 1
 --- !u!114 &1241742644
@@ -12010,7 +12463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1330649740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12029,6 +12482,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &1330649741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12047,6 +12502,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &1330649742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12091,10 +12548,13 @@ MonoBehaviour:
   activateOnStay: 0
   activateOnExit: 0
   timeBetweenBattles: 0
-  deactivateAfterStarting: 1
+  deactivateOnceComplete: 1
+  deactivateOnFlee: 0
   cannotFlee: 1
+  completeWithFlee: 0
   shouldCompleteQuest: 1
   questToComplete: Found Tater
+  customChanceToFlee: 0
 --- !u!114 &1330649743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12113,6 +12573,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!61 &1330649744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12260,6 +12722,10 @@ PrefabInstance:
       propertyPath: theMap
       value: 
       objectReference: {fileID: 724898824}
+    - target: {fileID: 8890956782647350415, guid: 15ffe126fd4638f40bb6dfbcb5e51517, type: 3}
+      propertyPath: musicToPlay
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15ffe126fd4638f40bb6dfbcb5e51517, type: 3}
 --- !u!1 &1618077476
@@ -13127,6 +13593,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1001 &1971912389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13416,6 +13884,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &2103153994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13434,6 +13904,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!4 &2103153995
 Transform:
   m_ObjectHideFlags: 0
@@ -13468,6 +13940,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &2103153997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13486,6 +13960,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1001 &2140988619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13559,25 +14035,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8835838543752944299}
+  - {fileID: 219167793}
   - {fileID: 8835838543876637779}
   m_Father: {fileID: 1377100898}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4525626378509406820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8835838543876637781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rewardItems:
-  - Iron Sword +1
-  autoReceive: 1
 --- !u!61 &4525626378509406821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13614,6 +14076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1997534310288058955}
   - component: {fileID: 6797549286493475069}
+  - component: {fileID: 6797549286493475070}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -13639,6 +14102,28 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &6797549286493475070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797549286493475068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 8835838543752944301}
+  questsToCheck:
+  - Open Chest 4
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &7285277498074747265
 GameObject:
   m_ObjectHideFlags: 0
@@ -13727,6 +14212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questToMark: Open Chest 4
   markComplete: 1
+  markIncomplete: 0
   markOnEnter: 0
   deactivateOnMarking: 1
 --- !u!61 &8835838543752944293
@@ -13957,7 +14443,7 @@ Transform:
   m_LocalScale: {x: 1.0604, y: 0.9799, z: 1}
   m_Children: []
   m_Father: {fileID: 1997534310288058955}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8835838543876637781
 GameObject:
@@ -13971,7 +14457,6 @@ GameObject:
   - component: {fileID: 8835838543876637778}
   - component: {fileID: 8835838543876637776}
   - component: {fileID: 4525626378509406821}
-  - component: {fileID: 4525626378509406820}
   - component: {fileID: 8835838543876637782}
   m_Layer: 0
   m_Name: Open Chest
@@ -13989,10 +14474,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8835838543876637781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79a889ce923890744ad54a3b2604f467, type: 3}
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Iron Sword +1 Received!
-  isTrigger: 1
-  deactivateAfterUse: 1
-  buttonOn: 1
+  objectToActivate: {fileID: 219167792}
+  questsToCheck:
+  - Open Chest 4
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0

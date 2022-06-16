@@ -379,7 +379,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 306602143
   m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -1788,12 +1788,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6610015202153852503, guid: fb8cc55af4b7a034584793949fd90500, type: 3}
     - target: {fileID: 8105196517093747703, guid: 45bb026f2fe436441a79a18e0d6d9eda, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105196517093747703, guid: 45bb026f2fe436441a79a18e0d6d9eda, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8105196517093747705, guid: 45bb026f2fe436441a79a18e0d6d9eda, type: 3}
+      propertyPath: ItemsForSale.Array.data[2]
+      value: Resurrection Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105196517093747705, guid: 45bb026f2fe436441a79a18e0d6d9eda, type: 3}
       propertyPath: ItemsForSale.Array.data[3]
-      value: 
+      value: Leather Armour
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105196517093747705, guid: 45bb026f2fe436441a79a18e0d6d9eda, type: 3}
+      propertyPath: ItemsForSale.Array.data[4]
+      value: Wooden Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105196517093747705, guid: 45bb026f2fe436441a79a18e0d6d9eda, type: 3}
+      propertyPath: ItemsForSale.Array.data[5]
+      value: Iron Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105196517093747705, guid: 45bb026f2fe436441a79a18e0d6d9eda, type: 3}
+      propertyPath: ItemsForSale.Array.data[6]
+      value: Iron Armour
       objectReference: {fileID: 0}
     - target: {fileID: 8105196517093747706, guid: 45bb026f2fe436441a79a18e0d6d9eda, type: 3}
       propertyPath: m_Name

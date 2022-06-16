@@ -6,6 +6,7 @@ public class QuestMarker : MonoBehaviour
 {
     public string questToMark; // set quest the zone/marker is attached to
     public bool markComplete; // bool to mark quest complete
+    public bool markIncomplete;
 
     public bool markOnEnter; // should quest marker trigger complete as soon as player enters zone
     private bool canMark; // sets whether item has been marked already or not
@@ -34,7 +35,7 @@ public class QuestMarker : MonoBehaviour
         {
             QuestManager.instance.MarkQuestComplete(questToMark);
         }
-        else
+        else if(markIncomplete)
         {
             QuestManager.instance.MarkQuestIncomplete(questToMark);
         }

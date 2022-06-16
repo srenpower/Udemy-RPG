@@ -77,7 +77,7 @@ public class QuestManager : MonoBehaviour
             }
         }
     }
-    /* SWITCHED SAVING OVER TO 
+    /* SWITCHED SAVING OVER TO GAMEMANAGER
     // loop through all quest markers and decide if they should be stored as true or false
     public void SaveQuestData()
     {

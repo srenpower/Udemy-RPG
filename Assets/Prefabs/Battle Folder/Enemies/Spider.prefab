@@ -100,15 +100,17 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   - Plasma
+  - Slash
   charName: Spider
   currentHP: 70
   maxHP: 70
   currentMP: 0
-  maxMP: 0
+  maxMP: 10
   strength: 5
-  defense: 5
-  wpnPwr: 4
+  defense: 6
+  wpnPwr: 3
   armrPwr: 2
+  magDef: 2
   equippedWpn: 
   equippedArmr: 
   hasDied: 0

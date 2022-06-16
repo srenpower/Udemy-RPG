@@ -6,10 +6,9 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string newGameScene;
-
     public GameObject continueButton; // button that appears/disappears based on whether there has been saved data
-
     public string loadGameScene; // scene to load into when hitting continue
+    public GameObject controlsWindow;
 
     // Start is called before the first frame update
     void Start()
@@ -43,5 +42,15 @@ public class MainMenu : MonoBehaviour
     public void Exit()
     {
         Application.Quit(); // built in quit function in unity      
+    }
+
+    public void OpenControls()
+    {
+        controlsWindow.SetActive(true);
+    }
+
+    public void CloseControls()
+    {
+        controlsWindow.SetActive(false);
     }
 }

@@ -43,7 +43,7 @@ public class BattleManager : MonoBehaviour
 
     public BattleNotification battleNotice;
 
-    public int chanceToFlee = 35;
+    public int chanceToFlee = 40;
     private bool fleeing = false;
 
     public string gameOverScene;
@@ -55,6 +55,13 @@ public class BattleManager : MonoBehaviour
     private static readonly Color CHARACTER_TURN_COLOUR = Color.yellow;
     private static readonly Color CHARACTER_IDLE_COLOUR = Color.white;
 
+    // Extras
+    public bool markQuestComplete;
+    public string questToMark;
+    public bool completeWithFlee;
+    public bool deactivateOnceComplete;
+    public bool deactivateOnFlee;
+    private BattleStarter activeBattleStarter;
 
     [Header("Rewards Variables")]
     public int rewardXP;
@@ -70,12 +77,13 @@ public class BattleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         // for testing purposes
         if(Input.GetKeyDown(KeyCode.T))
         {
             BattleStart(new string[] { "Eyeball" }, false); // create new array to send to function
         }
-
+        */
         // if battle scene is open
         if (battleActive)
         {
@@ -85,7 +93,7 @@ public class BattleManager : MonoBehaviour
             if (turnWaiting)
             {
                 // if it is a players turn
-                if(activeBattlers[currentTurn].isPlayer)
+                if (activeBattlers[currentTurn].isPlayer)
                 {
                     uiButtonsHolder.SetActive(true); // show option buttons for player turn
                 }
@@ -98,17 +106,19 @@ public class BattleManager : MonoBehaviour
                 }
             }
             // for testing purposes
-            if(Input.GetKeyDown(KeyCode.N))
+            if (Input.GetKeyDown(KeyCode.N))
             {
                 NextTurn();
             }
         }
     }
 
-    public void BattleStart(string[] enemiesToSpawn, bool setCannotFlee)
+    public void BattleStart(string[] enemiesToSpawn, bool setCannotFlee, BattleStarter battleStarter)
     {
-        if(!battleActive)
+        if (!battleActive)
         {
+            Debug.Assert(activeBattleStarter == null, "trying to start a battle when we already have one");
+            activeBattleStarter = battleStarter;
             cannotFlee = setCannotFlee;
             battleActive = true; // battle is now active
 
@@ -119,15 +129,15 @@ public class BattleManager : MonoBehaviour
 
             AudioManager.instance.PlayBGM(0); // set battle music
 
-            for(int i = 0; i < playerPositions.Length; i++)
+            for (int i = 0; i < playerPositions.Length; i++)
             {
                 // check if player is active 
-                if(GameManager.instance.playerStats[i].gameObject.activeInHierarchy)
+                if (GameManager.instance.playerStats[i].gameObject.activeInHierarchy)
                 {
-                    for(int j = 0; j < playerPrefabs.Length; j++)
+                    for (int j = 0; j < playerPrefabs.Length; j++)
                     {
                         // find player prefab that matches name in playerStats
-                        if(playerPrefabs[j].charName == GameManager.instance.playerStats[i].charName)
+                        if (playerPrefabs[j].charName == GameManager.instance.playerStats[i].charName)
                         {
                             Transform tempTest;
                             // show player in battle scene
@@ -145,6 +155,8 @@ public class BattleManager : MonoBehaviour
                             activeBattlers[i].defense = thePlayer.defense;
                             activeBattlers[i].wpnPwr = thePlayer.wpnPwr;
                             activeBattlers[i].armrPwr = thePlayer.armrPwr;
+                            activeBattlers[i].magDef = thePlayer.magDef;
+                            activeBattlers[i].hasDied = thePlayer.isDead;
                         }
                     }
                 }
@@ -152,13 +164,13 @@ public class BattleManager : MonoBehaviour
 
             UpdateUIStats();
 
-            for(int i = 0; i < enemiesToSpawn.Length; i++)
+            for (int i = 0; i < enemiesToSpawn.Length; i++)
             {
-                if(enemiesToSpawn[i] != "")
+                if (enemiesToSpawn[i] != "")
                 {
-                    for(int j = 0; j < enemyPrefabs.Length; j++)
+                    for (int j = 0; j < enemyPrefabs.Length; j++)
                     {
-                        if(enemyPrefabs[j].charName == enemiesToSpawn[i])
+                        if (enemyPrefabs[j].charName == enemiesToSpawn[i])
                         {
                             BattleChar newEnemy = Instantiate(enemyPrefabs[j], enemyPositions[i].position, enemyPositions[i].rotation);
                             newEnemy.transform.parent = enemyPositions[i];
@@ -168,7 +180,7 @@ public class BattleManager : MonoBehaviour
                 }
             }
             turnWaiting = true;
-            currentTurn = Random.Range(0, activeBattlers.Count);    
+            currentTurn = Random.Range(0, activeBattlers.Count);
         }
     }
 
@@ -176,7 +188,7 @@ public class BattleManager : MonoBehaviour
     public void NextTurn()
     {
         currentTurn++;
-        if(currentTurn >= activeBattlers.Count)
+        if (currentTurn >= activeBattlers.Count)
         {
             currentTurn = 0;
         }
@@ -192,20 +204,23 @@ public class BattleManager : MonoBehaviour
         bool allEnemiesDead = true;
         bool allPlayersDead = true;
 
-        for(int i = 0; i < activeBattlers.Count; i++)
+        for (int i = 0; i < activeBattlers.Count; i++)
         {
             // hp is less than 0, so player is dead
-            if(activeBattlers[i].currentHP < 0)
+            if (activeBattlers[i].currentHP < 0)
             {
                 // set hp to zero
                 activeBattlers[i].currentHP = 0;
             }
-            if(activeBattlers[i].currentHP == 0)
+            if (activeBattlers[i].currentHP == 0)
             {
                 // Handle dead battler
-                if(activeBattlers[i].isPlayer)
+                    if (activeBattlers[i].isPlayer)
                 {
                     activeBattlers[i].theSprite.sprite = activeBattlers[i].deadSprite;
+                    // set player to *dead* so that they can't be given hp and must have rejuvinate 
+                    GameManager.instance.playerStats[i].isDead = true; // sets player in game manager to dead
+                    activeBattlers[i].hasDied = true; // sets active battler to dead
                 }
                 else
                 {
@@ -215,7 +230,7 @@ public class BattleManager : MonoBehaviour
             else
             {
                 // set all players or enemies dead to false based on living player/enemy
-                if(activeBattlers[i].isPlayer)
+                if (activeBattlers[i].isPlayer)
                 {
                     allPlayersDead = false;
                     activeBattlers[i].theSprite.sprite = activeBattlers[i].aliveSprite;
@@ -226,11 +241,11 @@ public class BattleManager : MonoBehaviour
                 }
             }
         }
-        
+
         // if all enemies or all players are dead
-        if(allEnemiesDead || allPlayersDead)
+        if (allEnemiesDead || allPlayersDead)
         {
-            if(allEnemiesDead)
+            if (allEnemiesDead)
             {
                 Debug.Log("Enemies are dead!");
                 // end battle in victory
@@ -251,10 +266,10 @@ public class BattleManager : MonoBehaviour
         else
         {
             // if battler in turn order is dead increment turn without player getting turn
-            while(activeBattlers[currentTurn].currentHP == 0)
+            while (activeBattlers[currentTurn].currentHP == 0)
             {
                 currentTurn++;
-                if(currentTurn >= activeBattlers.Count)
+                if (currentTurn >= activeBattlers.Count)
                 {
                     currentTurn = 0;
                 }
@@ -273,9 +288,9 @@ public class BattleManager : MonoBehaviour
     public void EnemyyAttack()
     {
         List<int> players = new List<int>(); // create new list of players (not enemies)
-        for(int i = 0; i < activeBattlers.Count; i++)
+        for (int i = 0; i < activeBattlers.Count; i++)
         {
-            if(activeBattlers[i].isPlayer && activeBattlers[i].currentHP > 0)
+            if (activeBattlers[i].isPlayer && activeBattlers[i].currentHP > 0)
             {
                 players.Add(i); // add living players
             }
@@ -285,27 +300,45 @@ public class BattleManager : MonoBehaviour
 
         int selectAttack = Random.Range(0, activeBattlers[currentTurn].movesAvailable.Length);
         int movePower = 0; // amount of damage a chosen move does
-        for(int i = 0; i < movesList.Length; i++)
+        bool isMagic = false;
+        for (int i = 0; i < movesList.Length; i++)
         {
-            if(movesList[i].moveName == activeBattlers[currentTurn].movesAvailable[selectAttack])
+            if (movesList[i].moveName == activeBattlers[currentTurn].movesAvailable[selectAttack])
             {
                 Instantiate(movesList[i].theEffect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation);
                 movePower = movesList[i].movePower;
+                isMagic = movesList[i].isSpell;
+                Debug.Log(activeBattlers[currentTurn].charName + " is using " + movesList[i].moveName); 
             }
         }
 
         Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation);
 
-        DealDamage(selectedTarget, movePower);
+        DealDamage(selectedTarget, movePower, isMagic);
     }
 
-    public void DealDamage(int target, int movePower)
+    public void DealDamage(int target, int movePower, bool isMagic)
     {
         float atkPwr = activeBattlers[currentTurn].strength + activeBattlers[currentTurn].wpnPwr;
         float defPwr = activeBattlers[target].defense + activeBattlers[target].armrPwr;
-
-        float damageCalc = (atkPwr / defPwr) * movePower * Random.Range(.9f, 1.1f);
-        int damageToGive = Mathf.RoundToInt(damageCalc); 
+        float magPwr = ((activeBattlers[currentTurn].maxMP) * .20f); // magic power 33% of maxMP
+        float magDef = ((activeBattlers[target].defense) * .33f) + activeBattlers[target].magDef; // magic defense provided by armour
+        float damageCalc;
+        int damageToGive;
+        
+        // regular attack uses regular attack and defense power
+        if(!isMagic)
+        {
+            damageCalc = (atkPwr / defPwr) * movePower * Random.Range(.9f, 1.1f);
+            damageToGive = Mathf.RoundToInt(damageCalc);
+        }
+        // magic attack uses magic power and defense
+        else
+        {
+            damageCalc = (magPwr / magDef) * movePower * Random.Range(.9f, 1.1f);
+            damageToGive = Mathf.RoundToInt(damageCalc);
+        }
+        // damageCalc = magic power 30% * movePower / .33% reg defense + armMagicDefense
 
         Debug.Log(activeBattlers[currentTurn].charName + " is dealing " + damageCalc + "(" + damageToGive + ") damage to " + activeBattlers[target].charName);
 
@@ -318,7 +351,7 @@ public class BattleManager : MonoBehaviour
 
     public void UpdateUIStats()
     {
-        for(int i = 0; i < playerName.Length; i++)
+        for (int i = 0; i < playerName.Length; i++)
         {
             if (activeBattlers.Count > i)
             {
@@ -331,7 +364,7 @@ public class BattleManager : MonoBehaviour
                     playerHP[i].text = Mathf.Clamp(playerData.currentHP, 0, int.MaxValue) + "/" + playerData.maxHP;
                     playerMP[i].text = Mathf.Clamp(playerData.currentMP, 0, int.MaxValue) + "/" + playerData.maxMP;
 
-                    if(i == currentTurn)
+                    if (i == currentTurn)
                     {
                         playerName[i].fontStyle = CHARACTER_TURN_STYLE;
                         playerName[i].color = CHARACTER_TURN_COLOUR;
@@ -353,23 +386,25 @@ public class BattleManager : MonoBehaviour
             }
         }
     }
-    
+
     // function which is called when player attacks
     public void PlayerAttack(string moveName, int selectedTarget)
     {
         int movePower = 0; // amount of damage a chosen move does
+        bool isMagic = false;
         for (int i = 0; i < movesList.Length; i++)
         {
             if (movesList[i].moveName == moveName)
             {
                 Instantiate(movesList[i].theEffect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation);
                 movePower = movesList[i].movePower;
+                isMagic = movesList[i].isSpell;
             }
         }
 
         Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.position, activeBattlers[currentTurn].transform.rotation);
 
-        DealDamage(selectedTarget, movePower);
+        DealDamage(selectedTarget, movePower, isMagic);
 
         uiButtonsHolder.SetActive(false); // disable buttons so they can't be double pressed
         targetMenu.SetActive(false);
@@ -383,19 +418,19 @@ public class BattleManager : MonoBehaviour
 
         List<int> Enemies = new List<int>();
 
-        for(int i = 0; i < activeBattlers.Count; i++)
+        for (int i = 0; i < activeBattlers.Count; i++)
         {
             // if activebattler is an enemy (not player)
-            if(!activeBattlers[i].isPlayer)
+            if (!activeBattlers[i].isPlayer)
             {
                 Enemies.Add(i); // add to list
             }
         }
 
         // sort through target buttons and set 
-        for(int i = 0; i < targetButtons.Length; i++)
+        for (int i = 0; i < targetButtons.Length; i++)
         {
-            if(Enemies.Count > i && activeBattlers[Enemies[i]].currentHP > 0)
+            if (Enemies.Count > i && activeBattlers[Enemies[i]].currentHP > 0)
             {
                 targetButtons[i].gameObject.SetActive(true);
 
@@ -420,18 +455,18 @@ public class BattleManager : MonoBehaviour
         magicMenu.SetActive(true); // open magic menu
 
         // for each magic button assign a spell until all player spells are shown
-        for(int i = 0; i < magicButtons.Length; i++)
+        for (int i = 0; i < magicButtons.Length; i++)
         {
-            if(activeBattlers[currentTurn].movesAvailable.Length > i)
+            if (activeBattlers[currentTurn].movesAvailable.Length > i)
             {
                 magicButtons[i].gameObject.SetActive(true); // set button as active
 
                 magicButtons[i].spellName = activeBattlers[currentTurn].movesAvailable[i];
                 magicButtons[i].nameText.text = magicButtons[i].spellName;
-            
-                for(int j = 0; j < movesList.Length; j++)
+
+                for (int j = 0; j < movesList.Length; j++)
                 {
-                    if(movesList[j].moveName == magicButtons[i].spellName)
+                    if (movesList[j].moveName == magicButtons[i].spellName)
                     {
                         magicButtons[i].spellCost = movesList[j].moveCost;
                         magicButtons[i].costText.text = magicButtons[i].spellCost.ToString();
@@ -454,7 +489,7 @@ public class BattleManager : MonoBehaviour
     {
         if (cannotFlee)
         {
-            battleNotice.theText.text = "Can not flee this battle!";
+            battleNotice.theText.text = "Cannot flee this battle!";
             battleNotice.Activate();
         }
         else
@@ -501,6 +536,12 @@ public class BattleManager : MonoBehaviour
                 {
                     if (activeBattlers[i].charName == GameManager.instance.playerStats[j].charName)
                     {
+                        if (activeBattlers[i].currentHP <= 0)
+                        {
+                            activeBattlers[i].currentHP = 10;
+                            activeBattlers[i].hasDied = false;
+                            GameManager.instance.playerStats[j].isDead = false;
+                        }
                         GameManager.instance.playerStats[j].currentHP = activeBattlers[i].currentHP;
                         GameManager.instance.playerStats[j].currentMP = activeBattlers[i].currentMP;
                     }
@@ -510,10 +551,29 @@ public class BattleManager : MonoBehaviour
             Destroy(activeBattlers[i].gameObject);
         }
 
+        // checks whether player is fleeing or is allowed to complete quest objective by running away
+        if ((markQuestComplete && !fleeing) || (markQuestComplete && completeWithFlee))
+        {
+            QuestManager.instance.MarkQuestComplete(questToMark);
+        }
+
+        // checks if player fulfilled requirements (beat enemies or flee is a valid win condition to deactivate) 
+        if ((deactivateOnceComplete && !fleeing) || (deactivateOnceComplete && completeWithFlee))
+        {
+            // set game object to inactive
+            activeBattleStarter.gameObject.SetActive(false);
+        }
+
+        if ((deactivateOnFlee && fleeing))
+        {
+            // set game object to inactive
+            activeBattleStarter.gameObject.SetActive(false);
+        }
+
+        activeBattleStarter = null;
         UIFade.instance.FadeFromBlack();
         activeBattlers.Clear();
         currentTurn = 0;
-        // GameManager.instance.battleActive = false;
 
         if(fleeing)
         {

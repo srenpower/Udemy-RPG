@@ -14,12 +14,16 @@ public class BattleStarter : MonoBehaviour
     public float timeBetweenBattles;
     private float betweenBattleCounter;
 
-    public bool deactivateAfterStarting;
+    public bool deactivateOnceComplete; // deactivates if battle is won or fleeing is considered a win condition
+    public bool deactivateOnFlee; // deactivate when player flees battle - will not complete quest without checking complete with flee
 
     public bool cannotFlee;
+    public bool completeWithFlee; //Fleeing still allows you to progress 
 
     public bool shouldCompleteQuest;
     public string questToComplete;
+
+    public int customChanceToFlee;
 
     // Start is called before the first frame update
     void Start()
@@ -78,6 +82,9 @@ public class BattleStarter : MonoBehaviour
 
     public IEnumerator StartBattleCo()
     {
+        PlayerController.instance.canMove = false;
+        yield return new WaitForSeconds(.2f);
+
         UIFade.instance.FadeToBlack();
         GameManager.instance.battleActive = true;
 
@@ -88,14 +95,17 @@ public class BattleStarter : MonoBehaviour
 
         yield return new WaitForSeconds(1.5f);
 
-        BattleManager.instance.BattleStart(potentialBattles[selectedBattle].enemies, cannotFlee);
+        BattleManager.instance.BattleStart(potentialBattles[selectedBattle].enemies, cannotFlee, this);
         UIFade.instance.FadeFromBlack();
 
-        if(deactivateAfterStarting)
+        BattleManager.instance.markQuestComplete = shouldCompleteQuest;
+        BattleManager.instance.questToMark = questToComplete;
+        BattleManager.instance.deactivateOnceComplete = deactivateOnceComplete;
+        BattleManager.instance.deactivateOnFlee = deactivateOnFlee;
+        BattleManager.instance.completeWithFlee = completeWithFlee;
+        if(customChanceToFlee != 0)
         {
-            gameObject.SetActive(false);
+            BattleManager.instance.chanceToFlee = customChanceToFlee;
         }
-        BattleRewards.instance.markQuestComplete = shouldCompleteQuest;
-        BattleRewards.instance.questToMark = questToComplete;
     }
 }

@@ -101,15 +101,17 @@ MonoBehaviour:
   - Slash
   - Plasma
   - Ice
+  - Slash
   charName: Dragon
   currentHP: 750
   maxHP: 750
   currentMP: 0
-  maxMP: 0
+  maxMP: 30
   strength: 10
-  defense: 10
+  defense: 7
   wpnPwr: 7
   armrPwr: 5
+  magDef: 3
   equippedWpn: 
   equippedArmr: 
   hasDied: 0

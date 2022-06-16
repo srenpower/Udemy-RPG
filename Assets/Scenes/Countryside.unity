@@ -362,6 +362,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &199655462 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8029018085109574833, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
@@ -385,6 +387,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &199655467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,6 +407,126 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &288481016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288481017}
+  - component: {fileID: 288481019}
+  - component: {fileID: 288481018}
+  - component: {fileID: 288481021}
+  - component: {fileID: 288481020}
+  m_Layer: 0
+  m_Name: Endgame Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &288481017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288481016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.714832, y: -4.308467, z: -2.6200917}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 715014297}
+  - {fileID: 861659427}
+  - {fileID: 1769886560}
+  - {fileID: 1385717781}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &288481018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288481016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1385717782}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &288481019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288481016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1769886561}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &288481020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288481016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1364458928}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &288481021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288481016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1251881862}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1001 &402251719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -478,6 +602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434648921}
   - component: {fileID: 434648920}
+  - component: {fileID: 434648922}
   m_Layer: 0
   m_Name: Objects & Items
   m_TagString: Untagged
@@ -516,8 +641,28 @@ Transform:
   - {fileID: 995481227}
   - {fileID: 1456456285}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &434648922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434648919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 995481224}
+  questsToCheck:
+  - Moved Log 1
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &582465977
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +760,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &590461862
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,12 +982,183 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &676953793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 676953796}
+  - component: {fileID: 676953794}
+  - component: {fileID: 676953795}
+  m_Layer: 0
+  m_Name: Battle Zone 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &676953794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676953793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Skeleton
+    - Skeleton
+    rewardXP: 300
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Wooden Sword +2
+    - Health Potion
+  - enemies:
+    - Spider
+    - Jelly
+    - Jelly
+    rewardXP: 330
+    rewardItems:
+    - Resurrection Potion
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Leather Armour +1
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - 'Jelly '
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Resurrection Potion
+    - Gold Coin
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 5
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 0
+  questToComplete: 
+  customChanceToFlee: 0
+--- !u!61 &676953795
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676953793}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.460949, y: -1.8642769}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.379005, y: 4.728554}
+  m_EdgeRadius: 0
+--- !u!4 &676953796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676953793}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.624175, y: 3.369951, z: 0.28437746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1364458929}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &715014296
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 288481017}
     m_Modifications:
     - target: {fileID: 1788857605, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: transitionName
@@ -864,19 +1182,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.39
+      value: 7.1048317
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.87
+      value: -1.561533
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5128744
+      value: 0.10721731
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.w
@@ -884,15 +1202,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -912,12 +1230,190 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+--- !u!4 &715014297 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+  m_PrefabInstance: {fileID: 715014296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &798700423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798700426}
+  - component: {fileID: 798700425}
+  - component: {fileID: 798700424}
+  m_Layer: 0
+  m_Name: Battle Zone 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &798700424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798700423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+    - Health Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    - Gold Coin
+  - enemies:
+    - Skeleton
+    - Skeleton
+    rewardXP: 300
+    rewardItems:
+    - Leather Armour +2
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Wooden Sword +1
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Spider
+    - Jelly
+    rewardXP: 230
+    rewardItems:
+    - Wooden Sword +1
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Leather Armour +1
+    - Gold Coin
+  - enemies:
+    - 'Jelly '
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Health Potion
+    - Resurrection Potion
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 4
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 0
+  questToComplete: 
+  customChanceToFlee: 0
+--- !u!61 &798700425
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798700423}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.0627403, y: -1.8642774}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 32.959038, y: 4.7285547}
+  m_EdgeRadius: 0
+--- !u!4 &798700426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798700423}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7141751, y: -4.840049, z: 0.28437746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1364458929}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &861659426
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 288481017}
     m_Modifications:
     - target: {fileID: 1788857605, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: transitionName
@@ -941,19 +1437,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.12
+      value: -4.405168
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.86
+      value: -6.5515327
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5128744
+      value: 0.10721731
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.w
@@ -961,15 +1457,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -989,6 +1485,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+--- !u!4 &861659427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+  m_PrefabInstance: {fileID: 861659426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &919389538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1527,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &919389540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,6 +1584,171 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1332052401}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &937393848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937393851}
+  - component: {fileID: 937393849}
+  - component: {fileID: 937393850}
+  m_Layer: 0
+  m_Name: Battle Zone 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &937393849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937393848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+  - enemies:
+    - Skeleton
+    - Jelly
+    rewardXP: 250
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Skeleton
+    - Jelly
+    rewardXP: 250
+    rewardItems:
+    - Leather Armour +2
+    - Health Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Eyeball
+    rewardXP: 200
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Wooden Sword +1
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Spider
+    - Jelly
+    rewardXP: 230
+    rewardItems:
+    - Wooden Sword +1
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Leather Armour +1
+    - Health Potion
+  - enemies:
+    - 'Jelly '
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 4
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 0
+  questToComplete: 
+  customChanceToFlee: 0
+--- !u!61 &937393850
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937393848}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 10.852755, y: -0.26632524}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.112679, y: 2.5979514}
+  m_EdgeRadius: 0
+--- !u!4 &937393851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937393848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.224175, y: 3.1999512, z: 0.28437746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1364458929}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995481224
 GameObject:
@@ -1139,6 +1807,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!4 &995481227
 Transform:
   m_ObjectHideFlags: 0
@@ -1224,7 +1894,7 @@ Transform:
   - {fileID: 1396469203}
   - {fileID: 1878179633}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1200616037
 GameObject:
@@ -1236,9 +1906,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1200616042}
   - component: {fileID: 1200616041}
-  - component: {fileID: 1200616040}
   - component: {fileID: 1200616039}
-  - component: {fileID: 1200616038}
+  - component: {fileID: 1200616040}
   m_Layer: 0
   m_Name: Received Item
   m_TagString: Untagged
@@ -1246,24 +1915,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1200616038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200616037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 4922844930604606943}
-  questsToCheck:
-  - Open Chest 2
-  mustCompleteAll: 0
-  activeIfComplete: 1
-  deactivateIfComplete: 0
 --- !u!61 &1200616039
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1321,6 +1972,7 @@ MonoBehaviour:
   rewardItems:
   - Mana Potion
   autoReceive: 1
+  DidRewardItem: 0
 --- !u!4 &1200616042
 Transform:
   m_ObjectHideFlags: 0
@@ -1334,6 +1986,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2699604414865476545}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1251881862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1251881863}
+  m_Layer: 0
+  m_Name: Endgame Battles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1251881863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251881862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.685825, y: -4.029951, z: -2.2575908}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1708926689}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1332052399
 GameObject:
@@ -1372,6 +2055,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!4 &1332052401
 Transform:
   m_ObjectHideFlags: 0
@@ -1387,7 +2072,7 @@ Transform:
   - {fileID: 919389542}
   - {fileID: 2034927377}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1332052402
 MonoBehaviour:
@@ -1407,6 +2092,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &1332052403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1425,6 +2112,149 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &1364458928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364458929}
+  m_Layer: 0
+  m_Name: Random Battles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364458929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364458928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.685825, y: -4.029951, z: -2.2575908}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 798700426}
+  - {fileID: 676953796}
+  - {fileID: 937393851}
+  - {fileID: 2064536888}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1385717780
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 288481017}
+    m_Modifications:
+    - target: {fileID: 1788857605, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: transitionName
+      value: Country-Town-End
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788857606, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788857606, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335579, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_Size.x
+      value: 1.231802
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335579, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_Size.y
+      value: 3.494573
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335579, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_Offset.x
+      value: 1.6118917
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335579, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_Offset.y
+      value: 4.670456
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335580, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: areaToLoad
+      value: Town Endgame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335580, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: areaTransitionName
+      value: Country-Town-End
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.10721731
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335582, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_Name
+      value: Area Exit (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260137075462335582, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+--- !u!4 &1385717781 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+  m_PrefabInstance: {fileID: 1385717780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1385717782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7260137075462335582, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+  m_PrefabInstance: {fileID: 1385717780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1396469202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,6 +2306,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1001 &1456456283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1551,12 +2383,204 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
   m_PrefabInstance: {fileID: 1456456283}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1708926688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1708926689}
+  - component: {fileID: 1708926690}
+  - component: {fileID: 1708926691}
+  m_Layer: 0
+  m_Name: Battle Zone 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1708926689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708926688}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7141751, y: -4.840049, z: 0.28437746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1251881863}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1708926690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708926688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Eyeball
+    - Eyeball
+    - Jelly
+    rewardXP: 500
+    rewardItems:
+    - Health Potion
+    - Resurrection Potion
+    - Gold Coin
+  - enemies:
+    - Skeleton
+    - Skeleton
+    - Skeleton
+    rewardXP: 450
+    rewardItems:
+    - Iron Armour
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 400
+    rewardItems:
+    - Resurrection Potion
+    - Gold Coin
+  - enemies:
+    - Eyeball
+    - Eyeball
+    - Eyeball
+    rewardXP: 300
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Spider
+    - Spider
+    - Spider
+    rewardXP: 390
+    rewardItems:
+    - Leather Armour +2
+    - Gold Coin
+  - enemies:
+    - Skeleton
+    - Skeleton
+    rewardXP: 300
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Spider
+    - Spider
+    - Spider
+    - Jelly
+    - Jelly
+    rewardXP: 590
+    rewardItems:
+    - Iron Armour +1
+    - Health Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    - Eyeball
+    rewardXP: 500
+    rewardItems:
+    - Iron Sword
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - 'Jelly '
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Eyeball
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+    - Resurrection Potion
+  - enemies:
+    - Skeleton
+    - Skeleton
+    - Skeleton
+    rewardXP: 450
+    rewardItems:
+    - Wooden Sword +2
+    - Mana Potion
+  - enemies:
+    - Spider
+    - Spider
+    - Spider
+    - Spider
+    rewardXP: 520
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+    - Gold Coin
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 5
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 0
+  questToComplete: 
+  customChanceToFlee: 0
+--- !u!61 &1708926691
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708926688}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.0627441, y: 2.463509}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 32.95903, y: 12.851474}
+  m_EdgeRadius: 0
 --- !u!1001 &1769886559
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 288481017}
     m_Modifications:
     - target: {fileID: 1788857605, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: transitionName
@@ -1564,11 +2588,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1788857606, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.2
+      value: -3.17
       objectReference: {fileID: 0}
     - target: {fileID: 1788857606, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.57
+      value: 4.15
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335579, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_Size.y
@@ -1588,19 +2612,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.21
+      value: 26.924831
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.93
+      value: -3.621533
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.5128744
+      value: 0.10721731
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1608,15 +2632,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1636,6 +2660,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+--- !u!4 &1769886560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+  m_PrefabInstance: {fileID: 1769886559}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1769886561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7260137075462335582, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
+  m_PrefabInstance: {fileID: 1769886559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1775103660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11191,10 +12225,13 @@ MonoBehaviour:
   activateOnStay: 0
   activateOnExit: 0
   timeBetweenBattles: 0
-  deactivateAfterStarting: 1
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
   cannotFlee: 0
+  completeWithFlee: 0
   shouldCompleteQuest: 1
   questToComplete: Fought Skeleton
+  customChanceToFlee: 0
 --- !u!61 &2034927379
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11239,6 +12276,174 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &2064536885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064536888}
+  - component: {fileID: 2064536887}
+  - component: {fileID: 2064536886}
+  m_Layer: 0
+  m_Name: Battle Zone 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2064536886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064536885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Mana Potion
+    - Health Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Spider
+    - Spider
+    rewardXP: 260
+    rewardItems:
+    - Leather Armour +1
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Eyeball
+    rewardXP: 200
+    rewardItems:
+    - Iron Sword
+    - Health Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Wooden Sword +1
+    - Health Potion
+    - Gold Coin
+  - enemies:
+    - Spider
+    - Jelly
+    - Jelly
+    rewardXP: 330
+    rewardItems:
+    - Iron Sword
+    - Health Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Leather Armour +2
+    - Health Potion
+  - enemies:
+    - 'Jelly '
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Wooden Sword +1
+    - Health Potion
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 5
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 0
+  questToComplete: 
+  customChanceToFlee: 0
+--- !u!61 &2064536887
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064536885}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 13.715752, y: 1.9974396}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 11.653011, y: 3.1306024}
+  m_EdgeRadius: 0
+--- !u!4 &2064536888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064536885}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7141751, y: -4.840049, z: 0.28437746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1364458929}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2145927498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11471,6 +12676,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!212 &4922844931265182496
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11576,6 +12783,7 @@ GameObject:
   - component: {fileID: 4922844931265182510}
   - component: {fileID: 4922844931265182499}
   - component: {fileID: 4922844931265182511}
+  - component: {fileID: 4922844931265182504}
   m_Layer: 0
   m_Name: Closed Chest
   m_TagString: Untagged
@@ -11583,6 +12791,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4922844931265182504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4922844931265182503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1200616037}
+  questsToCheck:
+  - Open Chest 2
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &4922844931265182510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11597,6 +12825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questToMark: Open Chest 2
   markComplete: 1
+  markIncomplete: 0
   markOnEnter: 0
   deactivateOnMarking: 1
 --- !u!61 &4922844931265182511
@@ -11659,8 +12888,10 @@ MonoBehaviour:
   questsToCheck:
   - Open Chest 2
   mustCompleteAll: 0
-  activeIfComplete: 1
+  activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &6961437170030260600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11673,12 +12904,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1200616037}
+  objectToActivate: {fileID: 4922844930604606943}
   questsToCheck:
   - Open Chest 2
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1001 &8029018085112337022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11688,7 +12921,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8029018085109574828, guid: 6b2c4c04fa347ad4788927a6b5d405aa, type: 3}
       propertyPath: m_LocalPosition.x

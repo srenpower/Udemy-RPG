@@ -11,4 +11,5 @@ public class BattleMove
     public int movePower;
     public int moveCost; // determines mp cost for move (for player)
     public AttackEffect theEffect; // what animation plays on attack
+    public bool isSpell; // uses magic multiplier and mag defense
 }

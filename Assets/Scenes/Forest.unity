@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 37898153}
   - component: {fileID: 37898152}
   m_Layer: 0
-  m_Name: Battle Zone 4
+  m_Name: Battle Zone 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,10 +194,13 @@ MonoBehaviour:
   activateOnStay: 0
   activateOnExit: 0
   timeBetweenBattles: 0
-  deactivateAfterStarting: 1
+  deactivateOnceComplete: 1
+  deactivateOnFlee: 0
   cannotFlee: 1
-  shouldCompleteQuest: 0
-  questToComplete: 
+  completeWithFlee: 0
+  shouldCompleteQuest: 1
+  questToComplete: Beat Forest Wizard
+  customChanceToFlee: 0
 --- !u!61 &37898153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -232,11 +235,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37898151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.9426, y: -3.4289846, z: -8.33533}
+  m_LocalPosition: {x: 2.364501, y: -0.68432236, z: 127.3132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1477524936}
-  m_RootOrder: 3
+  m_Father: {fileID: 1068297472}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &47775590
 GameObject:
@@ -312,6 +315,136 @@ MonoBehaviour:
   isTrigger: 0
   deactivateAfterUse: 0
   buttonOn: 1
+--- !u!1 &115779223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 115779226}
+  - component: {fileID: 115779225}
+  - component: {fileID: 115779224}
+  m_Layer: 0
+  m_Name: Barrel Dialog 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!61 &115779224
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115779223}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.953433, y: -0.8371861}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.5255375, y: 2.3767056}
+  m_EdgeRadius: 0
+--- !u!114 &115779225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115779223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cc6877829d415429e8cd610b32c277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Woody
+  - I wonder what Archibald is up to these days.
+  - n-Loris
+  - We... we killed him?
+  isPerson: 1
+  activateOnEnter: 0
+  questToMark: 
+  markComplete: 0
+--- !u!4 &115779226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115779223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &266650852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266650854}
+  - component: {fileID: 266650853}
+  m_Layer: 0
+  m_Name: Barrel Management 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &266650853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266650852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1497732508}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 0
+  activateIfIncomplete: 1
+  deactivateIfIncomplete: 0
+--- !u!4 &266650854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266650852}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.8976208, y: -0.83718634, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &291002388
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,9 +455,9 @@ GameObject:
   m_Component:
   - component: {fileID: 291002390}
   - component: {fileID: 291002389}
-  - component: {fileID: 291002393}
-  - component: {fileID: 291002392}
   - component: {fileID: 291002391}
+  - component: {fileID: 291002392}
+  - component: {fileID: 291002393}
   m_Layer: 0
   m_Name: Notice
   m_TagString: Untagged
@@ -374,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668336d672868b44f806e9a263e77b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoAdd: 0
+  autoAdd: 1
   playerIndex: 1
 --- !u!61 &291002392
 BoxCollider2D:
@@ -411,13 +544,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 291002388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31159124e7099c743a4e24fc4ba94c83, type: 3}
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questToMark: Woody in party
-  markComplete: 1
-  markOnEnter: 1
-  deactivateOnMarking: 1
+  objectToActivate: {fileID: 925892243}
+  questsToCheck:
+  - Found Woody
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &307671905
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,12 +586,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 1010656331}
+  objectToActivate: {fileID: 600241938}
   questsToCheck:
   - Found Woody
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &307671907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,7 +619,7 @@ MonoBehaviour:
   - Why don't I help you find him!
   isPerson: 1
   activateOnEnter: 0
-  questToMark: Woody in party
+  questToMark: Found Woody
   markComplete: 1
 --- !u!61 &307671908
 BoxCollider2D:
@@ -534,6 +673,9 @@ GameObject:
   - component: {fileID: 376675280}
   - component: {fileID: 376675282}
   - component: {fileID: 376675281}
+  - component: {fileID: 376675284}
+  - component: {fileID: 376675283}
+  - component: {fileID: 376675285}
   m_Layer: 0
   m_Name: Items & Objects
   m_TagString: Untagged
@@ -552,12 +694,12 @@ Transform:
   m_LocalPosition: {x: -4.16, y: -8.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2802780555914759332}
+  - {fileID: 9054185699454814229}
   - {fileID: 1468583028}
   - {fileID: 1198909739}
   - {fileID: 2137069681}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &376675281
 MonoBehaviour:
@@ -589,6 +731,232 @@ MonoBehaviour:
   itemToDeactivate: {fileID: 1198909738}
   itemToCheck: Coin 5
   deactivateOnPickup: 1
+--- !u!114 &376675283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376675279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 677896479}
+  questsToCheck:
+  - Moved Log 2
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &376675284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376675279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1104256729}
+  questsToCheck:
+  - Moved Log 2
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &376675285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376675279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1074355780}
+  questsToCheck:
+  - Woody in party
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &439735992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 439735993}
+  - component: {fileID: 439735995}
+  - component: {fileID: 439735994}
+  m_Layer: 0
+  m_Name: Battle Zone 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &439735993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439735992}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.2, y: 11.6, z: -8.33533}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1415046129}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &439735994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439735992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Spider
+    - Jelly
+    - Spider
+    rewardXP: 360
+    rewardItems:
+    - Mana Potion
+    - Resurrection Potion
+  - enemies:
+    - Spider
+    - Jelly
+    - Jelly
+    rewardXP: 330
+    rewardItems:
+    - Health Potion
+    - Leather Armour +1
+  - enemies:
+    - Spider
+    - Spider
+    - Jelly
+    rewardXP: 360
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 500
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 400
+    rewardItems:
+    - Mana Potion
+    - Leather Armour +2
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 500
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Spider
+    - Spider
+    - Spider
+    rewardXP: 390
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Spider
+    - Skeleton
+    - Skeleton
+    - Spider
+    rewardXP: 560
+    rewardItems:
+    - Leather Armour +2
+    - Resurrection Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Iron Sword
+  - enemies:
+    - Spider
+    - Spider
+    - Spider
+    rewardXP: 390
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    - Gold Coin
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 4
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 0
+  questToComplete: 
+  customChanceToFlee: 0
+--- !u!61 &439735995
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439735992}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 11.026703, y: -10.08998}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.129768, y: 21.734804}
+  m_EdgeRadius: 0
 --- !u!1001 &447215523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -610,7 +978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7260137075462335581, guid: 91a81ad49a82a5544846ae9111656426, type: 3}
       propertyPath: m_LocalPosition.x
@@ -746,9 +1114,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 600241943}
-  - component: {fileID: 600241942}
-  - component: {fileID: 600241941}
-  - component: {fileID: 600241940}
   m_Layer: 0
   m_Name: Woody Trigger
   m_TagString: Untagged
@@ -756,58 +1121,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &600241940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600241938}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 291002388}
-  questsToCheck:
-  - Woody in party
-  mustCompleteAll: 0
-  activeIfComplete: 0
-  deactivateIfComplete: 1
---- !u!114 &600241941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600241938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 307671905}
-  questsToCheck:
-  - Woody in party
-  mustCompleteAll: 0
-  activeIfComplete: 0
-  deactivateIfComplete: 1
---- !u!114 &600241942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600241938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31159124e7099c743a4e24fc4ba94c83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questToMark: Found Woody
-  markComplete: 1
-  markOnEnter: 1
-  deactivateOnMarking: 0
 --- !u!4 &600241943
 Transform:
   m_ObjectHideFlags: 0
@@ -1099,6 +1412,174 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &799639277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 799639278}
+  - component: {fileID: 799639280}
+  - component: {fileID: 799639279}
+  m_Layer: 0
+  m_Name: Battle Zone 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &799639278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799639277}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.777399, y: 10.921015, z: -8.33533}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1415046129}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &799639279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799639277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Spider
+    - Spider
+    - Jelly
+    - Jelly
+    rewardXP: 460
+    rewardItems:
+    - Health Potion
+    - Iron Sword
+  - enemies:
+    - Spider
+    - Jelly
+    - Jelly
+    rewardXP: 330
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Spider
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 430
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 500
+    rewardItems:
+    - Mana Potion
+    - Resurrection Potion
+    - Gold Coin
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 400
+    rewardItems:
+    - Mana Potion
+    - Leather Armour +2
+  - enemies:
+    - Spider
+    - Spider
+    - Jelly
+    rewardXP: 360
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    - Gold Coin
+  - enemies:
+    - Spider
+    - Spider
+    - Spider
+    rewardXP: 390
+    rewardItems:
+    - Health Potion
+    - Iron Armour
+  - enemies:
+    - Spider
+    - Skeleton
+    rewardXP: 280
+    rewardItems:
+    - Leather Armour +2
+    - Resurrection Potion
+  - enemies:
+    - Spider
+    - Spider
+    rewardXP: 260
+    rewardItems:
+    - Resurrection Potion
+    - Gold Coin
+  - enemies:
+    - Spider
+    - Skeleton
+    - Skeleton
+    rewardXP: 130
+    rewardItems:
+    - Iron Sword +1
+    - Mana Potion
+    - Gold Coin
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 4
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 0
+  questToComplete: 
+  customChanceToFlee: 0
+--- !u!61 &799639280
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799639277}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.2748556, y: -9.662034}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 18.195389, y: 20.878912}
+  m_EdgeRadius: 0
 --- !u!1 &925892243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,8 +1590,8 @@ GameObject:
   m_Component:
   - component: {fileID: 925892246}
   - component: {fileID: 925892245}
-  - component: {fileID: 925892244}
   - component: {fileID: 925892247}
+  - component: {fileID: 925892244}
   m_Layer: 0
   m_Name: Add Woody to Party
   m_TagString: Untagged
@@ -1127,11 +1608,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 925892243}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 668336d672868b44f806e9a263e77b15, type: 3}
+  m_Script: {fileID: 11500000, guid: 31159124e7099c743a4e24fc4ba94c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoAdd: 1
-  playerIndex: 1
+  questToMark: Woody in party
+  markComplete: 1
+  markIncomplete: 0
+  markOnEnter: 1
+  deactivateOnMarking: 1
 --- !u!61 &925892245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1188,8 +1672,10 @@ MonoBehaviour:
   questsToCheck:
   - Woody in party
   mustCompleteAll: 0
-  activeIfComplete: 0
+  activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &961100718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +2066,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 1, y: -17, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 2, y: -17, z: 0}
     second:
       serializedVersion: 2
@@ -1921,6 +2417,16 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 3, y: -16, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 4, y: -16, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -2991,6 +3497,16 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -7, y: -13, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -3, y: -13, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -13222,17 +13738,17 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1178
+  - m_RefCount: 1181
     m_Data: {fileID: 11400000, guid: 8fd0b940830c8a24ea54995f58cc6171, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 43c16e50afc114a4eb2adba10fcb3b8d, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1178
+  - m_RefCount: 1181
     m_Data: {fileID: 21300768, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
   - m_RefCount: 16
     m_Data: {fileID: 21300312, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1194
+  - m_RefCount: 1197
     m_Data:
       e00: 1
       e01: 0
@@ -13252,24 +13768,24 @@ Tilemap:
       e33: 1
   - m_RefCount: 0
     m_Data:
-      e00: 9.602943e+13
-      e01: NaN
-      e02: -2998072
+      e00: 0.00000008369011
+      e01: 1e-45
+      e02: -1.8553731e+18
       e03: 0
-      e10: 1.95e-43
-      e11: 1.1e-44
+      e10: 2.42e-43
+      e11: NaN
       e12: 4.5905e-41
       e13: 0
       e20: 4e-45
       e21: 0
-      e22: 9.6029295e+13
+      e22: 0.00000008369
       e23: 0
       e30: 0
       e31: 7.34684e-40
-      e32: 1.95e-43
+      e32: 2.42e-43
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1194
+  - m_RefCount: 1197
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -13295,6 +13811,257 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &964710768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 964710769}
+  - component: {fileID: 964710771}
+  - component: {fileID: 964710770}
+  m_Layer: 0
+  m_Name: Battle Zone 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &964710769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964710768}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.2, y: 11.6, z: -8.33533}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1477524936}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &964710770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964710768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Spider
+    - Jelly
+    rewardXP: 230
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    - Resurrection Potion
+  - enemies:
+    - Spider
+    - Jelly
+    rewardXP: 230
+    rewardItems:
+    - Health Potion
+    - Leather Armour +1
+  - enemies:
+    - Spider
+    - Jelly
+    rewardXP: 230
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    - Leather Armour +1
+  - enemies:
+    - Jelly
+    - Jelly
+    - Jelly
+    rewardXP: 300
+    rewardItems:
+    - Resurrection Potion
+    - Leather Armour +1
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Health Potion
+    - Health Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Leather Armour +1
+    - Health Potion
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Iron Sword
+  - enemies:
+    - Spider
+    rewardXP: 130
+    rewardItems:
+    - Health Potion
+    - Mana Potion
+    - Gold Coin
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 5
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 0
+  questToComplete: 
+  customChanceToFlee: 0
+--- !u!61 &964710771
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964710768}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.3843727, y: -5.140834}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 22.414429, y: 11.836512}
+  m_EdgeRadius: 0
+--- !u!1 &994774236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 994774239}
+  - component: {fileID: 994774238}
+  - component: {fileID: 994774237}
+  - component: {fileID: 994774240}
+  m_Layer: 0
+  m_Name: Barrel Dialog 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!61 &994774237
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994774236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.8976207, y: -0.8371861}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2976656, y: 2.3767056}
+  m_EdgeRadius: 0
+--- !u!114 &994774238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994774236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cc6877829d415429e8cd610b32c277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Woody
+  - I'm not kidding around! You shouldn't open that barrel!
+  isPerson: 1
+  activateOnEnter: 0
+  questToMark: Woody's Barrel 2
+  markComplete: 1
+--- !u!4 &994774239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994774236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &994774240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994774236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1258537979}
+  questsToCheck:
+  - Woody's Barrel 2
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &1010656331
 GameObject:
   m_ObjectHideFlags: 0
@@ -13306,8 +14073,6 @@ GameObject:
   - component: {fileID: 1010656333}
   - component: {fileID: 1010656332}
   - component: {fileID: 1010656335}
-  - component: {fileID: 1010656336}
-  - component: {fileID: 1010656334}
   m_Layer: 0
   m_Name: Woody
   m_TagString: Untagged
@@ -13381,24 +14146,6 @@ Transform:
   m_Father: {fileID: 307671909}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1010656334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010656331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 925892243}
-  questsToCheck:
-  - Woody in party
-  mustCompleteAll: 0
-  activeIfComplete: 1
-  deactivateIfComplete: 0
 --- !u!61 &1010656335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13425,24 +14172,136 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1265948, y: 1.3206844}
   m_EdgeRadius: 0
---- !u!114 &1010656336
+--- !u!1 &1027041980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1027041983}
+  - component: {fileID: 1027041982}
+  - component: {fileID: 1027041981}
+  - component: {fileID: 1027041984}
+  m_Layer: 0
+  m_Name: Barrel Dialog 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1027041981
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027041980}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.8976207, y: -0.8371861}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2976656, y: 2.3767056}
+  m_EdgeRadius: 0
+--- !u!114 &1027041982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010656331}
+  m_GameObject: {fileID: 1027041980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cc6877829d415429e8cd610b32c277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Woody
+  - '!!!!!!!!!'
+  - Hey! I wouldn't open that if I were you!
+  isPerson: 1
+  activateOnEnter: 0
+  questToMark: Woody's Barrel 1
+  markComplete: 1
+--- !u!4 &1027041983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027041980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1027041984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027041980}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 600241938}
+  objectToActivate: {fileID: 994774236}
   questsToCheck:
-  - Woody in party
+  - Woody's Barrel 1
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &1068297471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1068297472}
+  m_Layer: 0
+  m_Name: Wizard Battle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1068297472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068297471}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.578099, y: -2.7446623, z: -135.64853}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 37898154}
+  m_Father: {fileID: 1477524936}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1074355780
 GameObject:
   m_ObjectHideFlags: 0
@@ -13474,7 +14333,7 @@ Transform:
   - {fileID: 600241943}
   - {fileID: 925892246}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1098124047
 GameObject:
@@ -13488,7 +14347,7 @@ GameObject:
   - component: {fileID: 1098124049}
   - component: {fileID: 1098124048}
   m_Layer: 0
-  m_Name: Battle Zone 3
+  m_Name: Battle Zone 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13510,7 +14369,7 @@ MonoBehaviour:
   - enemies:
     - Spider
     - Spider
-    - Spider
+    - Jelly
     rewardXP: 390
     rewardItems:
     - Health Potion
@@ -13519,7 +14378,7 @@ MonoBehaviour:
   - enemies:
     - Spider
     - Spider
-    - Spider
+    - Jelly
     rewardXP: 390
     rewardItems:
     - Health Potion
@@ -13527,27 +14386,32 @@ MonoBehaviour:
   - enemies:
     - Spider
     - Spider
-    - Spider
+    - Jelly
     rewardXP: 390
     rewardItems:
     - Wooden Sword +2
+    - Health Potion
     - Gold Coin
   - enemies:
     - Spider
     - Spider
-    - Spider
+    - Jelly
     rewardXP: 390
     rewardItems:
     - Wooden Sword +2
+    - Health Potion
     - Health Potion
   activateOnEnter: 1
   activateOnStay: 0
   activateOnExit: 0
   timeBetweenBattles: 0
-  deactivateAfterStarting: 1
+  deactivateOnceComplete: 1
+  deactivateOnFlee: 0
   cannotFlee: 0
+  completeWithFlee: 1
   shouldCompleteQuest: 0
   questToComplete: 
+  customChanceToFlee: 0
 --- !u!61 &1098124049
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13586,7 +14450,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1477524936}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1104256729
 GameObject:
@@ -14439,7 +15303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14493,6 +15357,386 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
   m_PrefabInstance: {fileID: 1198909737}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1258537979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258537980}
+  - component: {fileID: 1258537982}
+  - component: {fileID: 1258537981}
+  - component: {fileID: 1258537983}
+  m_Layer: 0
+  m_Name: Barrel Dialog 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1258537980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258537979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1258537981
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258537979}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.8976207, y: -0.8371861}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2976656, y: 2.3767056}
+  m_EdgeRadius: 0
+--- !u!114 &1258537982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258537979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cc6877829d415429e8cd610b32c277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Woody
+  - 'Well, I guess we''re doing this... '
+  isPerson: 1
+  activateOnEnter: 0
+  questToMark: Woody's Barrel 3
+  markComplete: 1
+--- !u!114 &1258537983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258537979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1537445760}
+  questsToCheck:
+  - Woody's Barrel 3
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &1279212200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1279212201}
+  - component: {fileID: 1279212203}
+  - component: {fileID: 1279212202}
+  - component: {fileID: 1279212205}
+  - component: {fileID: 1279212207}
+  - component: {fileID: 1279212204}
+  - component: {fileID: 1279212206}
+  m_Layer: 0
+  m_Name: Barrel Fight 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1279212201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279212200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279212202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279212200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Archibald
+    rewardXP: 800
+    rewardItems:
+    - Archibald's Wrath
+  activateOnEnter: 1
+  activateOnStay: 0
+  activateOnExit: 0
+  timeBetweenBattles: 0
+  deactivateOnceComplete: 1
+  deactivateOnFlee: 1
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 1
+  questToComplete: Beat Archibald
+  customChanceToFlee: 65
+--- !u!61 &1279212203
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279212200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.888489, y: -0.80935264}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.2589927, y: 2.6187053}
+  m_EdgeRadius: 0
+--- !u!114 &1279212204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279212200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 266650852}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1279212205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279212200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1497732508}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1279212206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279212200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31159124e7099c743a4e24fc4ba94c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questToMark: Woody's Barrel 3.5
+  markComplete: 0
+  markIncomplete: 1
+  markOnEnter: 1
+  deactivateOnMarking: 0
+--- !u!114 &1279212207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279212200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1968220641}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 1
+--- !u!1 &1318847703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1318847706}
+  - component: {fileID: 1318847704}
+  - component: {fileID: 1318847705}
+  - component: {fileID: 1318847708}
+  - component: {fileID: 1318847707}
+  m_Layer: 0
+  m_Name: Barrel Management 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1318847704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318847703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1497732508}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1318847705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318847703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1537445760}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!4 &1318847706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318847703}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.8976208, y: -0.83718634, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1318847707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318847703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1279212200}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1318847708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318847703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1497732508}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &1396003157
 GameObject:
   m_ObjectHideFlags: 0
@@ -14505,7 +15749,7 @@ GameObject:
   - component: {fileID: 1396003159}
   - component: {fileID: 1396003158}
   m_Layer: 0
-  m_Name: Battle Zone 2
+  m_Name: Battle Zone 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14530,7 +15774,7 @@ MonoBehaviour:
     rewardXP: 230
     rewardItems:
     - Health Potion
-    - Iron Sword
+    - Wooden Sword +2
   - enemies:
     - Spider
     - Jelly
@@ -14574,11 +15818,13 @@ MonoBehaviour:
     rewardXP: 130
     rewardItems:
     - Health Potion
+    - Health Potion
   - enemies:
     - Spider
     rewardXP: 130
     rewardItems:
     - Leather Armour +1
+    - Health Potion
   - enemies:
     - Spider
     rewardXP: 130
@@ -14594,10 +15840,13 @@ MonoBehaviour:
   activateOnStay: 1
   activateOnExit: 0
   timeBetweenBattles: 4
-  deactivateAfterStarting: 0
+  deactivateOnceComplete: 0
+  deactivateOnFlee: 0
   cannotFlee: 0
+  completeWithFlee: 0
   shouldCompleteQuest: 0
   questToComplete: 
+  customChanceToFlee: 0
 --- !u!61 &1396003159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14636,8 +15885,124 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1477524936}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1415046128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1415046129}
+  - component: {fileID: 1415046131}
+  - component: {fileID: 1415046130}
+  - component: {fileID: 1415046133}
+  - component: {fileID: 1415046132}
+  m_Layer: 0
+  m_Name: Endgame Battles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1415046129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415046128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.6726007, y: -1.2310151, z: 5.2792497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 439735993}
+  - {fileID: 799639278}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1415046130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415046128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1074355780}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1415046131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415046128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1477524935}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1415046132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415046128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 799639277}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1415046133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415046128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 439735992}
+  questsToCheck:
+  - Endgame
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &1451588714
 GameObject:
   m_ObjectHideFlags: 0
@@ -15988,6 +17353,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &1468583025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16006,6 +17373,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &1468583026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16024,6 +17393,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!114 &1468583027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16042,6 +17413,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 0
   deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!4 &1468583028
 Transform:
   m_ObjectHideFlags: 0
@@ -16076,6 +17449,8 @@ MonoBehaviour:
   mustCompleteAll: 0
   activeIfComplete: 1
   deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1 &1477524935
 GameObject:
   m_ObjectHideFlags: 0
@@ -16085,6 +17460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1477524936}
+  - component: {fileID: 1477524937}
   m_Layer: 0
   m_Name: Battles
   m_TagString: Untagged
@@ -16104,12 +17480,278 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2147283530}
+  - {fileID: 964710769}
   - {fileID: 1396003160}
   - {fileID: 1098124050}
-  - {fileID: 37898154}
+  - {fileID: 1068297472}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1477524937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477524935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1068297471}
+  questsToCheck:
+  - Beat Forest Wizard
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &1497732508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1497732511}
+  - component: {fileID: 1497732510}
+  - component: {fileID: 1497732509}
+  - component: {fileID: 1497732512}
+  m_Layer: 0
+  m_Name: Barrel Dialog 3.5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!61 &1497732509
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497732508}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.8976207, y: -0.8371861}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2976656, y: 2.3767056}
+  m_EdgeRadius: 0
+--- !u!114 &1497732510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497732508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cc6877829d415429e8cd610b32c277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Woody
+  - On no! Not this again...
+  isPerson: 1
+  activateOnEnter: 0
+  questToMark: Woody's Barrel 3.5
+  markComplete: 1
+--- !u!4 &1497732511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497732508}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1497732512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497732508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1968220641}
+  questsToCheck:
+  - Woody's Barrel 3.5
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &1537445760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1537445761}
+  - component: {fileID: 1537445763}
+  - component: {fileID: 1537445765}
+  - component: {fileID: 1537445762}
+  - component: {fileID: 1537445766}
+  - component: {fileID: 1537445764}
+  m_Layer: 0
+  m_Name: Barrel Fight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1537445761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537445760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1537445762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537445760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731155a06812d6645bf82f5963b31fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Archibald
+    rewardXP: 800
+    rewardItems:
+    - Archibald's Wrath
+  activateOnEnter: 1
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 0
+  deactivateOnceComplete: 1
+  deactivateOnFlee: 1
+  cannotFlee: 0
+  completeWithFlee: 0
+  shouldCompleteQuest: 1
+  questToComplete: Beat Archibald
+  customChanceToFlee: 65
+--- !u!61 &1537445763
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537445760}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.8976207, y: -0.8371861}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.48833, y: 2.3767056}
+  m_EdgeRadius: 0
+--- !u!114 &1537445764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537445760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31159124e7099c743a4e24fc4ba94c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questToMark: Encountered Archibald
+  markComplete: 1
+  markIncomplete: 0
+  markOnEnter: 0
+  deactivateOnMarking: 0
+--- !u!114 &1537445765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537445760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1258537979}
+  questsToCheck:
+  - Woody's Barrel 2
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1537445766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537445760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 266650852}
+  questsToCheck:
+  - Woody's Barrel 3
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
 --- !u!1001 &1705994287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17142,6 +18784,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 1, y: -6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 1
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 2, y: -6, z: 0}
     second:
       serializedVersion: 2
@@ -17375,8 +19027,8 @@ Tilemap:
   - first: {x: 2, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 21
-      m_TileSpriteIndex: 23
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -20228,7 +21880,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 6c1698d223543d1418095059402c2120, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b4af14200f000b2429eaef27d33c2e5b, type: 2}
-  - m_RefCount: 25
+  - m_RefCount: 27
     m_Data: {fileID: 11400000, guid: 1dd70e201857c5b4f8c7d2b18df01d87, type: 2}
   - m_RefCount: 28
     m_Data: {fileID: 11400000, guid: cb449c25f7c80324c957b73f6ab028cc, type: 2}
@@ -20246,7 +21898,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: c37d8d27a23d859479d7f8cf44ae4824, type: 2}
   - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: 74fc6f492b4629447a1e3de73e78d741, type: 2}
-  - m_RefCount: 10
+  - m_RefCount: 9
     m_Data: {fileID: 11400000, guid: 5440b768d79cf87488b51abd503781b3, type: 2}
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: 32ca5d7f6c528494eb1b17807c04affa, type: 2}
@@ -20305,7 +21957,7 @@ Tilemap:
     m_Data: {fileID: 21300838, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 25
+  - m_RefCount: 27
     m_Data: {fileID: 21301190, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
   - m_RefCount: 28
     m_Data: {fileID: 21301192, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
@@ -20327,7 +21979,7 @@ Tilemap:
     m_Data: {fileID: 21300910, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300844, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
-  - m_RefCount: 10
+  - m_RefCount: 9
     m_Data: {fileID: 21301332, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 21301334, guid: af6bc9dfbb9b08e4890cf8e4b8dd00c3, type: 3}
@@ -20360,23 +22012,23 @@ Tilemap:
   m_TileMatrixArray:
   - m_RefCount: 0
     m_Data:
-      e00: 9.6026745e+13
-      e01: 2.8e-44
-      e02: -2998072
+      e00: -2.4658936e+10
+      e01: 1e-45
+      e02: -0.00000010197414
       e03: 0
-      e10: 1.95e-43
-      e11: 1e-45
-      e12: 4.5905e-41
+      e10: 2.89e-43
+      e11: NaN
+      e12: 4.5904e-41
       e13: 0
       e20: 6e-45
       e21: 0
-      e22: 9.602661e+13
+      e22: -2.4658903e+10
       e23: 0
       e30: 0
       e31: 7.34684e-40
-      e32: 1.95e-43
+      e32: 2.89e-43
       e33: 1
-  - m_RefCount: 372
+  - m_RefCount: 373
     m_Data:
       e00: 1
       e01: 0
@@ -20413,7 +22065,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 392
+  - m_RefCount: 393
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -20488,7 +22140,7 @@ Transform:
   - {fileID: 1104256730}
   - {fileID: 677896480}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1837376402
 GameObject:
@@ -20776,6 +22428,225 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1847444472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1847444476}
+  - component: {fileID: 1847444475}
+  - component: {fileID: 1847444474}
+  - component: {fileID: 1847444478}
+  - component: {fileID: 1847444480}
+  - component: {fileID: 1847444481}
+  - component: {fileID: 1847444473}
+  m_Layer: 0
+  m_Name: Barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1847444473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847444472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 266650852}
+  questsToCheck:
+  - Woody's Barrel 3
+  - Encountered Archibald
+  mustCompleteAll: 1
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1847444474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847444472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 994774236}
+  questsToCheck:
+  - Woody's Barrel 2
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1847444475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847444472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1027041980}
+  questsToCheck:
+  - Woody's Barrel 1
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!4 &1847444476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847444472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.45588076, y: -6.660458, z: -3.6895304}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1027041983}
+  - {fileID: 994774239}
+  - {fileID: 1258537980}
+  - {fileID: 1497732511}
+  - {fileID: 1968220643}
+  - {fileID: 1537445761}
+  - {fileID: 1279212201}
+  - {fileID: 2095973739}
+  - {fileID: 115779226}
+  - {fileID: 266650854}
+  - {fileID: 1318847706}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1847444478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847444472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 2095973736}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1847444480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847444472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 2095973736}
+  questsToCheck:
+  - Woody's Barrel 4
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!114 &1847444481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847444472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 115779223}
+  questsToCheck:
+  - Woody's Barrel 4
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &1968220641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1968220643}
+  - component: {fileID: 1968220642}
+  m_Layer: 0
+  m_Name: Activate Battle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1968220642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968220641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1279212200}
+  questsToCheck:
+  - Beat Archibald
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 0
+  activateIfIncomplete: 1
+  deactivateIfIncomplete: 0
+--- !u!4 &1968220643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968220641}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2054871204
 GameObject:
   m_ObjectHideFlags: 0
@@ -23817,6 +25688,104 @@ MonoBehaviour:
   m_PositionObjectValues: []
   m_PositionColorKeys: []
   m_PositionColorValues: []
+--- !u!1 &2095973736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2095973739}
+  - component: {fileID: 2095973738}
+  - component: {fileID: 2095973737}
+  - component: {fileID: 2095973740}
+  m_Layer: 0
+  m_Name: Barrel Dialog 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!61 &2095973737
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095973736}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.953433, y: -0.8371861}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.5255375, y: 2.3767056}
+  m_EdgeRadius: 0
+--- !u!114 &2095973738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095973736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cc6877829d415429e8cd610b32c277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Woody
+  - Oh! You beat him...
+  - Archibald and me used to be chums. But we had a bit of a falling out, so to speak.
+  - n-Loris
+  - Was that before or after you stuffed him in that barrel?
+  isPerson: 1
+  activateOnEnter: 1
+  questToMark: Woody's Barrel 4
+  markComplete: 1
+--- !u!4 &2095973739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095973736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1847444476}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2095973740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095973736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31159124e7099c743a4e24fc4ba94c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questToMark: Encountered Archibald
+  markComplete: 0
+  markIncomplete: 1
+  markOnEnter: 1
+  deactivateOnMarking: 0
 --- !u!1001 &2099933158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23826,7 +25795,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1028179201314821534, guid: 04bf62c3752d333428ab0f25ca82ea64, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1028179201314821534, guid: 04bf62c3752d333428ab0f25ca82ea64, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23899,7 +25868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8026363101647099687, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23989,6 +25958,7 @@ MonoBehaviour:
     - Jelly
     rewardXP: 200
     rewardItems:
+    - Resurrection Potion
     - Health Potion
     - Mana Potion
   - enemies:
@@ -23996,6 +25966,7 @@ MonoBehaviour:
     - Jelly
     rewardXP: 200
     rewardItems:
+    - Resurrection Potion
     - Health Potion
     - Gold Coin
   - enemies:
@@ -24003,16 +25974,33 @@ MonoBehaviour:
     - Jelly
     rewardXP: 200
     rewardItems:
-    - Mana Potion
+    - Resurrection Potion
+    - Leather Armour +1
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Resurrection Potion
+    - Health Potion
+  - enemies:
+    - Jelly
+    - Jelly
+    rewardXP: 200
+    rewardItems:
+    - Resurrection Potion
     - Leather Armour +1
   activateOnEnter: 1
   activateOnStay: 0
   activateOnExit: 0
   timeBetweenBattles: 0
-  deactivateAfterStarting: 1
+  deactivateOnceComplete: 1
+  deactivateOnFlee: 0
   cannotFlee: 0
+  completeWithFlee: 1
   shouldCompleteQuest: 0
   questToComplete: 
+  customChanceToFlee: 0
 --- !u!61 &2147283529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24053,178 +26041,27 @@ Transform:
   m_Father: {fileID: 1477524936}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &257710103678219402
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666102842042}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.12048894, y: -0.6084733}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.6868424, y: 2.2169466}
-  m_EdgeRadius: 0
---- !u!114 &257710103678219403
+--- !u!114 &2054049779870841074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666102842042}
+  m_GameObject: {fileID: 2054049779870841075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewardItems:
-  - Iron Armour
-  autoReceive: 1
---- !u!4 &2802780555914759332
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7136076481357379091}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3700004, y: 5.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 5170946666495048772}
-  - {fileID: 5170946666102842044}
-  m_Father: {fileID: 376675280}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &4019590922168963352
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.6641169
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.766993
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -33.520622
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899045529301521262, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2933424431089779694, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b98d6536ecf5fa443b921d7ebd4a52cb, type: 3}
---- !u!1001 &4604344828548652801
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4253863200191091983, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_Name
-      value: Resurrection Potion
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.690308
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.098202
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370936881224733968, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
---- !u!1 &5170946666102842042
+  objectToActivate: {fileID: 4644504533487921656}
+  questsToCheck:
+  - Open Chest 3
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &2054049779870841075
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24232,140 +26069,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5170946666102842044}
-  - component: {fileID: 5170946666102842045}
-  - component: {fileID: 5170946666102842047}
-  - component: {fileID: 257710103678219402}
-  - component: {fileID: 257710103678219403}
-  - component: {fileID: 5170946666102842043}
-  m_Layer: 0
-  m_Name: Open Chest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &5170946666102842043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666102842042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79a889ce923890744ad54a3b2604f467, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: Iron Armour Received!
-  isTrigger: 1
-  deactivateAfterUse: 1
-  buttonOn: 1
---- !u!4 &5170946666102842044
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666102842042}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 2.8, z: 5.826217}
-  m_LocalScale: {x: 1.0604, y: 0.9799, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2802780555914759332}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5170946666102842045
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666102842042}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 306602143
-  m_SortingLayer: 1
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300002, guid: 88ae461370fb3334d8f7009dad27cd8f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!61 &5170946666102842047
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666102842042}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0997591, y: -0.049879313}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.1995182, y: 1.0997586}
-  m_EdgeRadius: 0
---- !u!1 &5170946666495048770
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5170946666495048772}
-  - component: {fileID: 5170946666495048773}
-  - component: {fileID: 5170946666495048779}
-  - component: {fileID: 5170946666495048774}
-  - component: {fileID: 5170946666495048778}
+  - component: {fileID: 2054049779870841077}
+  - component: {fileID: 2054049779870841076}
+  - component: {fileID: 2054049779870841082}
+  - component: {fileID: 2054049779870841079}
+  - component: {fileID: 2054049779870841083}
+  - component: {fileID: 2054049779870841074}
   m_Layer: 0
   m_Name: Closed Chest
   m_TagString: Untagged
@@ -24373,27 +26082,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5170946666495048772
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666495048770}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19, y: 2.8, z: 5.826217}
-  m_LocalScale: {x: 1.0955, y: 1.0955, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2802780555914759332}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5170946666495048773
+--- !u!212 &2054049779870841076
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666495048770}
+  m_GameObject: {fileID: 2054049779870841075}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -24439,13 +26134,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5170946666495048774
+--- !u!4 &2054049779870841077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054049779870841075}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.04, y: 1.67, z: 5.826217}
+  m_LocalScale: {x: 1.0955, y: 1.0955, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9054185699454814229}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2054049779870841079
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666495048770}
+  m_GameObject: {fileID: 2054049779870841075}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -24465,13 +26174,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6540413, y: 1.4142246}
   m_EdgeRadius: 0
---- !u!61 &5170946666495048778
+--- !u!114 &2054049779870841082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054049779870841075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31159124e7099c743a4e24fc4ba94c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questToMark: Open Chest 3
+  markComplete: 1
+  markIncomplete: 0
+  markOnEnter: 0
+  deactivateOnMarking: 1
+--- !u!61 &2054049779870841083
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666495048770}
+  m_GameObject: {fileID: 2054049779870841075}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -24491,41 +26217,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5170946666495048779
+--- !u!114 &2054049780023830026
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5170946666495048770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31159124e7099c743a4e24fc4ba94c83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questToMark: Open Chest 3
-  markComplete: 1
-  markOnEnter: 0
-  deactivateOnMarking: 1
---- !u!114 &7136076481357379090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7136076481357379091}
+  m_GameObject: {fileID: 2054049780023830027}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToActivate: {fileID: 5170946666102842042}
+  objectToActivate: {fileID: 4644504533487921656}
   questsToCheck:
   - Open Chest 3
   mustCompleteAll: 0
-  activeIfComplete: 1
-  deactivateIfComplete: 0
---- !u!1 &7136076481357379091
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &2054049780023830027
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24533,8 +26245,119 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2802780555914759332}
-  - component: {fileID: 7136076481357379090}
+  - component: {fileID: 2054049780023830029}
+  - component: {fileID: 2054049780023830028}
+  - component: {fileID: 2054049780023830030}
+  - component: {fileID: 2054049780023830026}
+  m_Layer: 0
+  m_Name: Open Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &2054049780023830028
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054049780023830027}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 306602143
+  m_SortingLayer: 1
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300002, guid: 88ae461370fb3334d8f7009dad27cd8f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2054049780023830029
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054049780023830027}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0602, y: 1.6301, z: 5.826217}
+  m_LocalScale: {x: 1.0604, y: 0.9799, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9054185699454814229}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2054049780023830030
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054049780023830027}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0997591, y: -0.049879313}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1995182, y: 1.0997586}
+  m_EdgeRadius: 0
+--- !u!1 &4056608828669932194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9054185699454814229}
+  - component: {fileID: 4056608828669932197}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -24542,3 +26365,152 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4056608828669932197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056608828669932194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 2054049779870841075}
+  questsToCheck:
+  - Open Chest 3
+  mustCompleteAll: 0
+  activeIfComplete: 0
+  deactivateIfComplete: 1
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!1 &4644504533487921656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4644504533487921659}
+  - component: {fileID: 4644504533487921658}
+  - component: {fileID: 4644504533487921660}
+  - component: {fileID: 4644504533487921661}
+  - component: {fileID: 4644504533487921663}
+  m_Layer: 0
+  m_Name: Received Item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!61 &4644504533487921658
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4644504533487921656}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.15451145, y: 1.1842105}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.88797, y: 2.1403508}
+  m_EdgeRadius: 0
+--- !u!4 &4644504533487921659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4644504533487921656}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9054185699454814229}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4644504533487921660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4644504533487921656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ef4d56ed781104aac96287baba5129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardItems:
+  - Iron Armour
+  autoReceive: 1
+  DidRewardItem: 0
+--- !u!114 &4644504533487921661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4644504533487921656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a889ce923890744ad54a3b2604f467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Iron Armour Received!
+  isTrigger: 1
+  deactivateAfterUse: 1
+  buttonOn: 1
+--- !u!114 &4644504533487921663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4644504533487921656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1725629850cb86f48ae1a05ea250b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 2054049780023830027}
+  questsToCheck:
+  - Open Chest 3
+  mustCompleteAll: 0
+  activeIfComplete: 1
+  deactivateIfComplete: 0
+  activateIfIncomplete: 0
+  deactivateIfIncomplete: 0
+--- !u!4 &9054185699454814229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056608828669932194}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.87000036, y: 6.9700003, z: 5.826217}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2054049779870841077}
+  - {fileID: 4644504533487921659}
+  - {fileID: 2054049780023830029}
+  m_Father: {fileID: 376675280}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

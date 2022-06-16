@@ -108,5 +108,7 @@ MonoBehaviour:
   affectHP: 0
   affectMP: 0
   affectStr: 0
-  weaponStrength: 5
+  affectLife: 0
+  weaponStrength: 4
   armourStrength: 0
+  magicDefense: 0

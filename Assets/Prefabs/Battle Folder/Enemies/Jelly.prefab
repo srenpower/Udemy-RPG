@@ -103,11 +103,12 @@ MonoBehaviour:
   currentHP: 50
   maxHP: 50
   currentMP: 0
-  maxMP: 0
+  maxMP: 6
   strength: 3
   defense: 5
-  wpnPwr: 2
+  wpnPwr: 1
   armrPwr: 2
+  magDef: 1
   equippedWpn: 
   equippedArmr: 
   hasDied: 0

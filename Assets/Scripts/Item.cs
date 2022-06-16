@@ -18,11 +18,12 @@ public class Item : MonoBehaviour
 
     [Header("Item Affects")]
     public int amountToChange; // how much does it alter a stat - hp, mp, health, str, def
-    public bool affectHP, affectMP, affectStr; // does the object affect a stat
+    public bool affectHP, affectMP, affectStr, affectLife; // does the object affect a stat
 
     [Header("Weapon/Armour Details")]
     public int weaponStrength;
     public int armourStrength;
+    public int magicDefense;
 
     private string noItemEquipped = "None Equipped";
 
@@ -47,31 +48,87 @@ public class Item : MonoBehaviour
         {
             if (affectHP)
             {
-                selectedChar.currentHP += amountToChange;
-
-                if (selectedChar.currentHP > selectedChar.maxHP)
+                if (!selectedChar.hasDied)
                 {
-                    selectedChar.currentHP = selectedChar.maxHP;
+                    selectedChar.currentHP += amountToChange;
+
+                    if (selectedChar.currentHP > selectedChar.maxHP)
+                    {
+                        selectedChar.currentHP = selectedChar.maxHP;
+                    }
+
+                    // have to update out of battle character HP because that's where hp is tracked when performing magic attack
+                    inGameChar.currentHP += amountToChange;
+
+                    if (inGameChar.currentHP > inGameChar.maxHP)
+                    {
+                        inGameChar.currentHP = inGameChar.maxHP;
+                    }
+                    GameManager.instance.RemoveItem(itemName);
+                }
+                else
+                {
+                    /* notification */
+                    BattleManager.instance.battleNotice.theText.text = "Cannot use on dead character";
+                    BattleManager.instance.battleNotice.Activate();
                 }
             }
 
             if (affectMP)
             {
-                selectedChar.currentMP += amountToChange;
-
-                if (selectedChar.currentMP > selectedChar.maxMP)
+                if (!selectedChar.hasDied)
                 {
-                    selectedChar.currentMP = selectedChar.maxMP;
+                    selectedChar.currentMP += amountToChange;
+
+                    if (selectedChar.currentMP > selectedChar.maxMP)
+                    {
+                        selectedChar.currentMP = selectedChar.maxMP;
+                    }
+
+                    // have to update out of battle character MP because that's where mp is tracked when performing magic attack
+                    inGameChar.currentMP += amountToChange;
+
+                    if (inGameChar.currentMP > inGameChar.maxMP)
+                    {
+                        inGameChar.currentMP = inGameChar.maxMP;
+                    }
+
+                    GameManager.instance.RemoveItem(itemName);
+                }
+                else
+                {
+                    /* notification */
+                    BattleManager.instance.battleNotice.theText.text = "Cannot use on dead character";
+                    BattleManager.instance.battleNotice.Activate();
                 }
             }
 
+            if(affectLife)
+            {
+                if (selectedChar.hasDied)
+                {
+                    selectedChar.currentHP += selectedChar.maxHP;
+                    selectedChar.hasDied = false;
+                    BattleManager.instance.activeBattlers[charToUseOn].hasDied = false; // set battle character back to alive
+                    GameManager.instance.playerStats[charToUseOn].isDead = false; // set out of battle character to alive
+                    GameManager.instance.RemoveItem(itemName);
+                }
+                else
+                {
+                    /* notification */
+                    BattleManager.instance.battleNotice.theText.text = "Cannot use on living character";
+                    BattleManager.instance.battleNotice.Activate();
+                }
+            }
+
+            // seems like we didn't implement any sort of strength potion but there's no harm in leaving this in case we do
             if (affectStr)
             {
                 selectedChar.strength += amountToChange;
+                GameManager.instance.RemoveItem(itemName);
             }
         }
 
-        // todo: figure out battle time item swapping
         if (isWeapon)
         {
             if (selectedChar.equippedWpn != noItemEquipped)
@@ -85,6 +142,7 @@ public class Item : MonoBehaviour
             // change in-game items
             inGameChar.equippedWpn = itemName;
             inGameChar.wpnPwr = weaponStrength;
+            GameManager.instance.RemoveItem(itemName);
         }
 
         if (isArmour)
@@ -98,14 +156,14 @@ public class Item : MonoBehaviour
             selectedChar.equippedArmr = itemName;
             // change in-game items
             selectedChar.armrPwr = armourStrength;
+            selectedChar.magDef = magicDefense;
 
-            inGameChar.equippedWpn = itemName;
-            inGameChar.wpnPwr = armourStrength;
+            inGameChar.equippedArmr = itemName;
+            inGameChar.armrPwr = armourStrength;
+            inGameChar.magDef = magicDefense;
+            GameManager.instance.RemoveItem(itemName); 
         }
-        GameManager.instance.RemoveItem(itemName);
-        //BattleItems.instance.ShowItems();
     }
-
 
     public void Use(int charToUseOn)
     { 
@@ -121,6 +179,7 @@ public class Item : MonoBehaviour
                 {
                     selectedChar.currentHP = selectedChar.maxHP;
                 }
+                GameManager.instance.RemoveItem(itemName);
             }
 
             if (affectMP)
@@ -131,11 +190,31 @@ public class Item : MonoBehaviour
                 {
                     selectedChar.currentMP = selectedChar.maxMP;
                 }
+                GameManager.instance.RemoveItem(itemName);
+            }
+
+            // this situation shouldn't come up (shouldn't be able to go to zero health outside of battle)
+            if (affectLife)
+            {
+                if (selectedChar.isDead)
+                {
+                    selectedChar.currentHP += selectedChar.maxHP;
+                    selectedChar.isDead = false;
+                    GameManager.instance.playerStats[charToUseOn].isDead = false;
+                    GameManager.instance.RemoveItem(itemName);
+                }
+                else
+                {
+                    /* notification */
+                    BattleManager.instance.battleNotice.theText.text = "Cannot use on living character";
+                    BattleManager.instance.battleNotice.Activate(); ;
+                }
             }
 
             if (affectStr)
             {
                 selectedChar.strength += amountToChange;
+                GameManager.instance.RemoveItem(itemName);
             }
         }
 
@@ -148,6 +227,7 @@ public class Item : MonoBehaviour
 
             selectedChar.equippedWpn = itemName;
             selectedChar.wpnPwr = weaponStrength;
+            GameManager.instance.RemoveItem(itemName);
         }
 
         if (isArmour)
@@ -159,8 +239,7 @@ public class Item : MonoBehaviour
 
             selectedChar.equippedArmr = itemName;
             selectedChar.armrPwr = armourStrength;
+            GameManager.instance.RemoveItem(itemName);
         }
-
-        GameManager.instance.RemoveItem(itemName);
     }
 }   

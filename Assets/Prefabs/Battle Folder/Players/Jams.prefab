@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2032213379
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 6634202828824015816, guid: da884cda8a9b6fb4aa961f6e75b7b08c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,7 +100,7 @@ MonoBehaviour:
   movesAvailable:
   - Fire
   - Ice
-  charName: Jams
+  charName: Loris
   currentHP: 100
   maxHP: 100
   currentMP: 0
@@ -109,6 +109,9 @@ MonoBehaviour:
   defense: 0
   wpnPwr: 0
   armrPwr: 0
+  magDef: 0
+  equippedWpn: 
+  equippedArmr: 
   hasDied: 0
   theSprite: {fileID: 8520560021301822827}
   deadSprite: {fileID: 8888318505984086984, guid: da884cda8a9b6fb4aa961f6e75b7b08c, type: 3}

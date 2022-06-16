@@ -78,11 +78,27 @@ public class Shop : MonoBehaviour
                 buyItemButtons[i].buttonImage.gameObject.SetActive(true);
                 buyItemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(itemsForSale[i]).itemSprite;
                 buyItemButtons[i].amountText.text = ""; // shop can have unlimited items to buy
+                
+                // add +1 and +2 modifiers to armour and weapon buttons
+                if ((GameManager.instance.GetItemDetails(itemsForSale[i]).itemName).Contains("+"))
+                {
+                    string[] splitString = (GameManager.instance.GetItemDetails(itemsForSale[i]).itemName).Split('+');
+                    Debug.Assert(splitString.Length == 2, "Uh oh, this should be size 2");
+                    if (splitString.Length == 2)
+                    {
+                        buyItemButtons[i].modifierValue.text = "+" + splitString[1];
+                    }
+                }
+                else
+                {
+                    buyItemButtons[i].modifierValue.text = "";
+                }
             }
             else
             {
                 buyItemButtons[i].buttonImage.gameObject.SetActive(false);
                 buyItemButtons[i].amountText.text = "";
+                buyItemButtons[i].modifierValue.text = "";
             }
         }
     }
@@ -114,11 +130,27 @@ public class Shop : MonoBehaviour
                 sellItemButtons[i].buttonImage.gameObject.SetActive(true);
                 sellItemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite; // show player items
                 sellItemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString(); // show players item quantities
+
+                // show +1 and +2 modifiers for armour and weapon buttons
+                if ((GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemName).Contains("+"))
+                {
+                    string[] splitString = (GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemName).Split('+');
+                    Debug.Assert(splitString.Length == 2, "Uh oh, this should be size 2");
+                    if (splitString.Length == 2)
+                    {
+                        sellItemButtons[i].modifierValue.text = "+" + splitString[1];
+                    }
+                }
+                else
+                {
+                    sellItemButtons[i].modifierValue.text = "";
+                }
             }
             else
             {
                 sellItemButtons[i].buttonImage.gameObject.SetActive(false);
                 sellItemButtons[i].amountText.text = "";
+                sellItemButtons[i].modifierValue.text = "";
             }
         }
     }

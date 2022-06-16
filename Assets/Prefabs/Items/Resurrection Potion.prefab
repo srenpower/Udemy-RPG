@@ -100,13 +100,15 @@ MonoBehaviour:
   isWeapon: 0
   isArmour: 0
   isGold: 0
-  itemName: Restore Potion
-  description: Restores life in battle and adds 100hp
+  itemName: Resurrection Potion
+  description: Restores life in battle and restores full health
   value: 20
   itemSprite: {fileID: 4337684191699249041, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
-  amountToChange: 100
-  affectHP: 1
+  amountToChange: 150
+  affectHP: 0
   affectMP: 0
   affectStr: 0
+  affectLife: 1
   weaponStrength: 0
   armourStrength: 0
+  magicDefense: 0

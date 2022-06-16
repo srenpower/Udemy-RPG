@@ -52,7 +52,7 @@ public class CameraController : MonoBehaviour
         // set music if it hasn't been started
         if(!musicStarted)
         {
-            Debug.Log("Call PlayBGM");
+            Debug.Log("Call PlayBGM " + musicToPlay);
             musicStarted = true;
             AudioManager.instance.PlayBGM(musicToPlay);
         }

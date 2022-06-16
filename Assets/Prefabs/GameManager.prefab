@@ -116,6 +116,7 @@ MonoBehaviour:
   - {fileID: 4929860601084094161, guid: 1b02ca27f8129c94d8160ee7d5b858fe, type: 3}
   - {fileID: 8471242542387707293, guid: 6b435b85fca77f9468d88a744146ddf2, type: 3}
   - {fileID: 2270018167608661638, guid: c4377a57fbd5217499a18da4c9cf3162, type: 3}
+  - {fileID: 4808634709961972810, guid: b762564c86a6e8d49a52cc93516dc1de, type: 3}
   currentGold: 0
 --- !u!114 &8142836737255755149
 MonoBehaviour:
@@ -143,18 +144,29 @@ MonoBehaviour:
   - Fought Skeleton
   - Found Woody
   - Woody in party
+  - Beat Forest Wizard
   - Moved Log 1
   - Moved Log 2
   - Enter Cave
   - Enter Cave 2
   - Found Tater
+  - Beat Cave Wizard
   - Open Chest 3
   - Daisy Found
   - Dragon appears
   - Beat final boss
   - Open Chest 4
   - Del & Phil Final
-  questMarkersComplete: 000000000000000000000000000000000000000000000000
+  - Shopkeeper final
+  - Endgame
+  - Woody's Barrel 1
+  - Woody's Barrel 2
+  - Woody's Barrel 3
+  - Woody's Barrel 3.5
+  - Encountered Archibald
+  - Beat Archibald
+  - Woody's Barrel 4
+  questMarkersComplete: 0000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!114 &2033778083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,22 +233,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charName: Woody
-  playerLevel: 2
+  playerLevel: 3
   currentEXP: 0
   expToNextLevel: 
-  maxLevel: 20
+  maxLevel: 25
   baseEXP: 300
   currentHP: 150
   maxHP: 150
-  currentMP: 25
-  maxMP: 25
+  currentMP: 18
+  maxMP: 18
   mpLvlBonus: 
-  strength: 4
+  strength: 5
   defense: 8
   wpnPwr: 0
   armrPwr: 0
+  magDef: 0
   equippedWpn: 
   equippedArmr: 
+  isDead: 0
   charImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
 --- !u!1 &6812672594241629758
 GameObject:
@@ -282,22 +296,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charName: Tater
-  playerLevel: 3
+  playerLevel: 4
   currentEXP: 0
   expToNextLevel: 
-  maxLevel: 20
+  maxLevel: 25
   baseEXP: 300
   currentHP: 170
   maxHP: 170
-  currentMP: 25
-  maxMP: 25
+  currentMP: 0
+  maxMP: 0
   mpLvlBonus: 
   strength: 8
   defense: 8
   wpnPwr: 0
   armrPwr: 0
+  magDef: 0
   equippedWpn: 
   equippedArmr: 
+  isDead: 0
   charImage: {fileID: -9041646763189933228, guid: 19a08689932ad494087ad00bbf572161, type: 3}
 --- !u!1 &8142836737689907867
 GameObject:
@@ -342,21 +358,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 295d24bebb22f7b42a62eea6390bd8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Jams
+  charName: Loris
   playerLevel: 1
   currentEXP: 0
   expToNextLevel: 
-  maxLevel: 20
+  maxLevel: 25
   baseEXP: 300
-  currentHP: 100
-  maxHP: 100
-  currentMP: 30
-  maxMP: 30
+  currentHP: 115
+  maxHP: 115
+  currentMP: 20
+  maxMP: 20
   mpLvlBonus: 
   strength: 4
-  defense: 6
+  defense: 8
   wpnPwr: 0
   armrPwr: 0
+  magDef: 0
   equippedWpn: 
   equippedArmr: 
+  isDead: 0
   charImage: {fileID: 7152930139536384079, guid: da884cda8a9b6fb4aa961f6e75b7b08c, type: 3}

@@ -36,51 +36,55 @@ public class DialogManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dialogBox.activeInHierarchy)
+        if (!BattleManager.instance.battleScene.activeInHierarchy && !GameMenu.instance.gameNotification.isActiveAndEnabled)
         {
-            if(Input.GetButtonUp("Fire1"))
-            // GetButtonUp only activates once button press is complete (button is pressed and then let go of) 
+            if (dialogBox.activeInHierarchy)
             {
-                if (!justStarted)
+                if (Input.GetButtonUp("Fire1"))
+                // GetButtonUp only activates once button press is complete (button is pressed and then let go of) 
                 {
-                    currentLine++; // advance current line
-
-                    // check to see if we are at the end of the dialogLines array
-                    if (currentLine >= dialogLines.Length)
+                    if (!justStarted)
                     {
-                        // deactivate dialogBox
-                        dialogBox.SetActive(false);
+                        currentLine++; // advance current line
 
-                        // reactivate player movement because dialog window has been closed
-                        GameManager.instance.dialogActive = false;
-
-                        // if should mark quest is set to true
-                        if(shouldMarkQuest)
+                        // check to see if we are at the end of the dialogLines array
+                        if (currentLine >= dialogLines.Length)
                         {
-                            // set mark quest to false
-                            shouldMarkQuest = false;
-                            // if mark quest complete is true
-                            if(markQuestComplete)
+                            // deactivate dialogBox
+                            dialogBox.SetActive(false);
+
+                            // reactivate player movement because dialog window has been closed
+                            GameManager.instance.dialogActive = false;
+
+                            // if should mark quest is set to true
+                            if (shouldMarkQuest)
                             {
-                                QuestManager.instance.MarkQuestComplete(questToMark);
+                                // set mark quest to false
+                                shouldMarkQuest = false;
+                                // if mark quest complete is true
+                                if (markQuestComplete)
+                                {
+                                    QuestManager.instance.MarkQuestComplete(questToMark);
+                                }
+                                else
+                                {
+                                    QuestManager.instance.MarkQuestIncomplete(questToMark);
+                                }
                             }
-                            else
-                            {
-                                QuestManager.instance.MarkQuestIncomplete(questToMark);
-                            }
+                        }
+                        else
+                        {
+                            // Check if new line is a name change
+                            CheckIfName();
+
+                            // change text in dialogBox to current line text
+                            dialogText.text = dialogLines[currentLine];
                         }
                     }
                     else
                     {
-                        // Check if new line is a name change
-                        CheckIfName();
-
-                        // change text in dialogBox to current line text
-                        dialogText.text = dialogLines[currentLine];
+                        justStarted = false;
                     }
-                } else
-                {
-                    justStarted = false;
                 }
             }
         }
@@ -126,9 +130,9 @@ public class DialogManager : MonoBehaviour
     // activate quest at end of dialogue
     public void ShouldActivateQuestAtEnd(string questName, bool markComplete)
     {
-        questToMark = questName;
-        markQuestComplete = markComplete;
+            questToMark = questName;
+            markQuestComplete = markComplete;
 
-        shouldMarkQuest = true;
+            shouldMarkQuest = true;
     }
 }

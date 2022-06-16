@@ -14,7 +14,6 @@ public class CharStats : MonoBehaviour
     public int maxLevel = 20;
     public int baseEXP = 200;
 
-
     // other stat variables
     public int currentHP = 0; // health points
     public int maxHP = 100; // default HP 30
@@ -25,8 +24,10 @@ public class CharStats : MonoBehaviour
     public int defense;
     public int wpnPwr; // weapon power
     public int armrPwr; // armour power
+    public int magDef;
     public string equippedWpn;
     public string equippedArmr;
+    public bool isDead = false;
     public Sprite charImage;
 
     // Start is called before the first frame update
@@ -105,6 +106,7 @@ public class CharStats : MonoBehaviour
 
                 // add to maxHP
                 maxHP = (int)(maxHP * 1.05f);
+                isDead = false;
 
                 // max out current HP on levelup
                 currentHP = maxHP;

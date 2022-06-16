@@ -3119,6 +3119,7 @@ MonoBehaviour:
   - {fileID: 7134007438025955703, guid: 77f43ecfa7906a444b76f9dfc493a130, type: 3}
   - {fileID: 4598142278847816480, guid: daced6eda86cab9449d46f66e90eb070, type: 3}
   - {fileID: 2673843130652488151, guid: eddcf2cd540ad85458ac5c23a603359f, type: 3}
+  - {fileID: 5656616115948839604, guid: 032895a0d1ff89e418a9c9cf6b706717, type: 3}
   activeBattlers: []
   currentTurn: 0
   turnWaiting: 0
@@ -3128,18 +3129,22 @@ MonoBehaviour:
     movePower: 40
     moveCost: 0
     theEffect: {fileID: 7495036630029976749, guid: e182a45b52ea46d4e8025d8fccb07b85, type: 3}
+    isSpell: 0
   - moveName: Fire
-    movePower: 50
-    moveCost: 5
+    movePower: 40
+    moveCost: 8
     theEffect: {fileID: 3221368841433345379, guid: f75bcbfecdaaa9e4fa83a64f7121b633, type: 3}
+    isSpell: 1
   - moveName: Ice
     movePower: 50
     moveCost: 10
     theEffect: {fileID: 4331451007918320612, guid: 6d847d5b5c538a04aaaa8e8c447f2553, type: 3}
+    isSpell: 1
   - moveName: Plasma
     movePower: 55
-    moveCost: 6
+    moveCost: 12
     theEffect: {fileID: 5262999188574914534, guid: 18ef78d45a4a58345841628520ad7c05, type: 3}
+    isSpell: 1
   enemyAttackEffect: {fileID: 1320541618252145866, guid: 473c42720ea00c94ba5f985473d17b1d, type: 3}
   theDamageNumber: {fileID: 5440970485358547541, guid: ad87de65634611f47b3d7c50294b23c8, type: 3}
   playerName:
@@ -3174,6 +3179,10 @@ MonoBehaviour:
   chanceToFlee: 35
   gameOverScene: GameOver
   cannotFlee: 0
+  markQuestComplete: 0
+  questToMark: 
+  completeWithFlee: 0
+  deactivateOnceComplete: 0
   rewardXP: 500
   rewardItems:
   - Wooden Sword

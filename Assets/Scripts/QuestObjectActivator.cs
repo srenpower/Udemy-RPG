@@ -9,12 +9,19 @@ public class QuestObjectActivator : MonoBehaviour
     public string[] questsToCheck;
 
     public bool mustCompleteAll; // if all quests must be complete to activate/deactivate - otherwise any one of the quests completed will pass
+
+    [Header("Quest Complete Checks")]
     public bool activeIfComplete;
     public bool deactivateIfComplete;
 
+    [Header("Quest Incomplete Checks")]
+    public bool activateIfIncomplete;
+    public bool deactivateIfIncomplete;
+    
+
     private bool allComplete = false; // used to indicate whether all quests are complete when it is required
     private bool oneComplete = false;
-    private bool questObjectiveComplete; // used to stop update checks if this activator has been accomplished
+    private bool activatorObjectiveComplete; // used to stop update checks if this activator has been accomplished
 
     // Start is called before the first frame update
     void Start()
@@ -25,60 +32,70 @@ public class QuestObjectActivator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!questObjectiveComplete)
-        {
-            CheckCompletion();
-        }
+            if (!activatorObjectiveComplete)
+            {
+                CheckCompletion();
+            }
     }
 
     public void CheckCompletion()
     {
-        // Check if all or at least one of the required quests have been completed
-        for (int i = 0; i < questsToCheck.Length; i++)
-        {
-            if (QuestManager.instance.CheckIfComplete(questsToCheck[i]))
+            // Check if all or at least one of the required quests have been completed
+            for (int i = 0; i < questsToCheck.Length; i++)
             {
-                allComplete = true;
-                oneComplete = true;
-                if(mustCompleteAll)
+                if (QuestManager.instance.CheckIfComplete(questsToCheck[i]))
                 {
-                    for(int j = 0; j < questsToCheck.Length; j++)
+                    allComplete = true;
+                    oneComplete = true;
+                    if (mustCompleteAll)
                     {
-                        if(!QuestManager.instance.CheckIfComplete(questsToCheck[j]))
+                        for (int j = 0; j < questsToCheck.Length; j++)
                         {
-                            allComplete = false;
-                        }    
+                            if (!QuestManager.instance.CheckIfComplete(questsToCheck[j]))
+                            {
+                                allComplete = false;
+                            }
+                        }
                     }
                 }
+                else
+                {
+                    allComplete = false;
+                }
             }
-            else
+            // if all quests must be completed and they have been completed
+            // if not all quests must be completed and at least one of them have been completed
+            // if quest is supposed to be incomplete and it is incomplete
+            if ((mustCompleteAll && allComplete) || (!mustCompleteAll && oneComplete) || ((activateIfIncomplete || deactivateIfIncomplete) && !allComplete))
             {
-                allComplete = false;
+                CompleteQuestObjective();
             }
-        }
-        // if all quests must be completed and they have been completed
-        if (mustCompleteAll && allComplete)
-        {
-            CompleteQuestObjective();
-        }
-        // if not all quests must be completed and at least one of them have been completed
-        if(!mustCompleteAll && oneComplete)
-        {
-            CompleteQuestObjective();
-        }
     }
     
     public void CompleteQuestObjective()
-    { 
-        if (activeIfComplete)
+    {
+        if (activeIfComplete || activateIfIncomplete)
         {
-            objectToActivate.SetActive(activeIfComplete);
-            questObjectiveComplete = true;
+            objectToActivate.SetActive(true);
+            activatorObjectiveComplete = true;
         }
-        else
+        else if(deactivateIfIncomplete)
         {
+            objectToActivate.SetActive(!deactivateIfIncomplete);
+            activatorObjectiveComplete = true;
+        }
+        else if(deactivateIfComplete)
+        {
+            // I'm not convinced we do anything with this but I don't think it's doing any harm by staying
+            if(objectToActivate.GetComponent<GetItem>())
+            {
+                if(!objectToActivate.GetComponent<GetItem>().DidRewardItem)
+                {
+                    return;
+                }
+            }
             objectToActivate.SetActive(!deactivateIfComplete);
-            questObjectiveComplete = true;
+            activatorObjectiveComplete = true;
         }
     }
 }

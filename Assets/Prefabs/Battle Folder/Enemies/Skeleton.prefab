@@ -100,15 +100,17 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   - Fire
+  - Slash
   charName: Skeleton
   currentHP: 85
   maxHP: 85
   currentMP: 0
-  maxMP: 0
+  maxMP: 10
   strength: 6
-  defense: 4
+  defense: 5
   wpnPwr: 4
   armrPwr: 1
+  magDef: 1
   equippedWpn: 
   equippedArmr: 
   hasDied: 0
